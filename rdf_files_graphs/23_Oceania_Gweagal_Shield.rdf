@@ -1,0 +1,72 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q106238830">
+        <rdfs:label>Gweagal Shield</rdfs:label>
+        <dc:title>Bark shield (the Gweagal shield)</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q7710757"/>
+        <dc:description>Bark shield in the British Museum long identified as the shield taken at Kamay (Botany Bay) in April 1770, when James Cook&#x27;s crew landed and shot at Gweagal men. The identification is debated; the Gweagal descendant Rodney Kelly has asked for its return.</dc:description>
+        <dc:subject>Aboriginal Australians--Weapons</dc:subject>
+        <dc:subject>Cook, James, 1728-1779</dc:subject>
+        <dc:subject>Botany Bay (N.S.W.)</dc:subject>
+        <dc:type>Shield</dc:type>
+        <dct:created>before 1770</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q894682"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Gweagal_Shield_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Gweagal_Shield_taking_1770"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Gweagal_Shield_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q6373"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q6373"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-34.0045</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">151.221</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Gweagal_Shield_production">
+        <rdfs:label>Making of the Gweagal Shield</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q7710757"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q894682"/>
+        <cid:P4_has_time-span>before 1770</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Gweagal_Shield_taking_1770">
+        <rdfs:label>Taking at Kamay</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q7324"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q84"/>
+        <cid:P3_has_note>From Kamay (Botany Bay)</cid:P3_has_note>
+        <cid:P4_has_time-span>1770-04-29</cid:P4_has_time-span>
+        <cid:P3_has_note>Taken with about forty spears when Cook&#x27;s crew landed and shot at Gweagal men; the British Museum shield&#x27;s identification is debated.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Gweagal_Shield_condition">
+        <rdfs:label>Contested</rdfs:label>
+        <cid:P3_has_note>Contested. Claimed by Rodney Kelly.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q7324">
+        <rdfs:label>James Cook</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q6373">
+        <rdfs:label>British Museum</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q894682">
+        <rdfs:label>Kamay (Botany Bay)</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q84">
+        <rdfs:label>London</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="https://www.wikidata.org/wiki/Q7710757">
+        <rdfs:label>Dharawal people</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

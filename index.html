@@ -4,179 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Stolen Archive</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="timeline.js"></script>
-    <script src="lightmode.js"></script>
-    <link rel="icon" type="favicon/png" href="images\parthenon_favicon.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="PERSONALIZATION.js"></script>
+    <meta name="description" content="A virtual exhibition of thirty cultural objects removed from their places of origin during colonial history.">
+    <link rel="icon" type="image/png" href="images/parthenon_favicon.png">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <header>
-        <!-- NAVBAR -->
-         
-        <!-- toggle -->
-        <div class="hover-area"></div>
-        <nav>
-            <div class="theme-toggle-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-                    <!-- Cerchio centrale -->
-                    <circle cx="16" cy="16" r="7" fill="none" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Raggi del sole -->
-                    <!-- Verticali -->
-                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" />
-                    <line x1="16" y1="26" x2="16" y2="30" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Orizzontali -->
-                    <line x1="2" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="2" />
-                    <line x1="26" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Diagonali (uniformi) -->
-                    <line x1="5"  y1="5"  x2="8"  y2="8"  stroke="currentColor" stroke-width="2" />  
-                    <line x1="24" y1="8" x2="27" y2="5" stroke="currentColor" stroke-width="2" />
-                    <line x1="5"  y1="27" x2="8"  y2="24" stroke="currentColor" stroke-width="2" />   
-                    <line x1="24" y1="24" x2="27" y2="27" stroke="currentColor" stroke-width="2" />
-                  </svg>
-                  
-                <div class="toggle">
-                    <label class="theme-switch">
-                        <input type="checkbox" id="light-mode-checkbox"  aria-label="lightmode button">
-                        <span class="toggle-track"></span>
-                    </label>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-                <!-- 1) Hidden Checkbox  -->
-            <input type="checkbox" id="menu-toggle" aria-label="Open navigation menu" />
-
-            <!-- 2) Hamburgher label  -->
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-                    
-            
-           
-            
-        <!-- main button (long-button) -->
-                <div class="button" id="long-button">
-                    <ul class="menu-links">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="tours.html">tours</a></li>
-                        <!-- <li class="hidden-desktop"><a href="map_page.html">items museum map</a></li> -->
-                        <li class="hidden-desktop"><a href="collection.html">items collection</a></li>
-                        <li class="hidden-desktop">
-                            <button id="tour-button-1"><a href="" class="start-tour-btn">start tour</a></button>                                                                                   
-                        </li>
-                        <li><a href="documentation.html">documentation</a></li>
-                    </ul>
-                </div>
-                
-                <!-- icons -->
-                <div class="icon-container">
-
-                    <!-- <a href=map_page.html class="icon-link" >
-                      <div class="button" id="icon-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"/>
-                      </svg>
-                      </div>
-                      <span class="tooltip">Go to items museum map</span>
-                    </a> -->
-
-                    <a href="collection.html" class="icon-link">
-                        <div class="button" id="icon-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"/>
-                      </svg>
-                    </div>
-                    <span class="tooltip">Show the items collection</span>
-                    </a>
-                </div>
-                  
-                  <!-- tour button -->
-                <button class="button" id="tour-button">
-                    <a href="Object-page.html" id="tour-text">start tour</a>
+    <!-- HEADER: same on every page, set aria-current on the current link -->
+    <header class="site-header">
+        <div class="site-header__inner grid">
+            <a class="wordmark" href="index.html">The Stolen<br>Archive<span>.</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+                <ul class="site-nav__links" id="nav-links">
+                    <li><a href="collection.html"><span class="mono">01</span>Collection</a></li>
+                    <li><a href="tours.html"><span class="mono">02</span>Tours</a></li>
+                    <li><a href="atlas.html"><span class="mono">03</span>Atlas</a></li>
+                    <li><a href="about.html"><span class="mono">04</span>About</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__actions">
+                <button class="theme-toggle" type="button" aria-pressed="false">
+                    <span class="visually-hidden">Light mode</span>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
                 </button>
-            
-        </nav>
-        
-        <!-- end of nav -->
+                <a class="btn btn--signal" href="Object-page.html" data-start-tour="Timeline Tour">Start tour <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
     </header>
-    
-    <!-- button for scrolling up to the top of the page -->
-    <button id="scroll-to-top">
-        ↑
-    </button>
-        <!-- copy-paste header for every page!!!!!!!! -->
 
-    <section id="hero">
-        <h1 id="hero-text">The Stolen<br>Archive</h1>
-    </section>
+    <main id="main">
 
-    <div class="minisection">
-        <p>The Stolen Archive is a virtual exhibition which aims to explore the narratives surrounding artifacts that were appropriated during various eras of colonial history.</p>
-    </div>
-
-    <main>
-        <section id="main_section">
-            <div class="timeline-section">
-                <div id="imageDisplayContainer" style="display:flex; overflow-x:auto;"></div>
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-                    <div class="timeline-markers"></div>
-                    <!-- <input type="range" min="0" max="100" step="1" class="slider" id="timelineSlider"> -->
-                </div>
-                <div id="eraInfo"></div>
-            </div>
-        </section>
-
-        <section id="home">
-            <div class="text-container">
-                <h2>A Virtual Journey Through History's Stolen Treasures</h2>
-                <p>Embark on a groundbreaking digital experience that sheds light on colonial history. The virtual tour takes you on an immersive journey through an extensive archive of cultural artifacts stolen during periods of colonization.</p>
-                <div class="button" id="button-2"><a href="collection.html" class="button-text">Discover the collection</a></div>
-                <div class="button" id="button-3">
-                    <a href="map_page.html" id="map-link" class="button-text">Look at the items museum map</a>
+        <!-- HERO: meta line / title / rule / intro · facts / inventory strip -->
+        <section class="hero grid" aria-labelledby="hero-title">
+            <p class="hero__meta mono">
+                <span>Inv. 001 — 030</span>
+                <span>A virtual exhibition · DHDK, University of Bologna</span>
+            </p>
+            <h1 class="hero__title" id="hero-title">
+                <span class="line"><span>The Stolen</span></span>
+                <span class="line"><span>Archive</span></span>
+            </h1>
+            <hr class="hero__rule">
+            <div class="hero__intro">
+                <p>The Stolen Archive is a virtual exhibition which aims to explore the narratives surrounding artifacts that were appropriated during various eras of colonial history.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--signal" href="Object-page.html" data-start-tour="Timeline Tour">Start the tour <span class="arrow" aria-hidden="true">→</span></a>
+                    <a class="btn" href="collection.html">Browse the collection</a>
                 </div>
             </div>
+            <dl class="hero__facts">
+                <div><dt>Objects</dt><dd>30</dd></div>
+                <div><dt>Continents</dt><dd>05</dd></div>
+                <div><dt>Museum rooms</dt><dd>13</dd></div>
+                <div><dt>Floors</dt><dd>02</dd></div>
+                <div><dt>Tours</dt><dd>03</dd></div>
+            </dl>
+            <!-- the 30 objects as a numbered strip, filled by home.js from inventory.js -->
+            <ol class="hero__strip" id="hero-strip" aria-label="The thirty objects"></ol>
         </section>
 
-        <section id="map-section">
-            <div class="wrapper">
-                <h2 class="uppercase" id="map-text">...but where were they looted from???</h2>
-                <p id="map-text" class="p-map">This systematic theft of cultural heritage began in earnest during the early colonial period (1500-1700) and reached its zenith during the imperial era (1700-1914).<br><br>The Benin Bronzes, forcibly seized in 1897, epitomize the violent nature of these acquisitions. Similarly, the removal of the Parthenon Marbles in the early 19th century and the looting of the Old Summer Palace in 1860 demonstrate the scale of cultural dispossession. <br><br>These acts were not merely about acquiring beautiful objects; they were deliberate attempts to assert dominance over colonized peoples by stripping them of their cultural symbols.<br><br>The ongoing debates surrounding repatriation, exemplified by cases like the Nok terracotta statues and the bust of Nefertiti, highlight the persistent impact of these historical injustices.<br><br> As we critically examine this history, it becomes clear that the restitution of these artifacts is not just about returning objects, but about addressing deep-seated inequalities.</p>
+        <!-- MARQUEE: decorative, the same list is in the atlas below -->
+        <div class="marquee">
+            <div class="marquee__track" aria-hidden="true"></div>
+            <div class="marquee__track" aria-hidden="true"></div>
+            <button class="marquee__toggle" type="button" aria-pressed="false" aria-label="Pause the moving list of objects">Pause</button>
+        </div>
+
+        <!-- ERAS -->
+        <section class="section eras" aria-labelledby="eras-title">
+            <div class="grid">
+                <p class="section-label"><b>§01</b> Timeline</p>
+                <h2 class="section-title" id="eras-title" data-reveal>Five eras of appropriation</h2>
+                <div class="eras__tabs tabs" id="era-tabs" role="tablist" aria-label="Eras"></div>
+                <div class="eras__text" id="era-panel" role="tabpanel" data-reveal>
+                    <h3 id="era-title"></h3>
+                    <p id="era-text"></p>
+                </div>
+                <div class="eras__images" id="era-images" data-reveal style="--delay: .1s"></div>
             </div>
-            <div id="map"></div>
         </section>
 
-        <section id="about">
-            <div class="text-container">
-                <h2>Why This Matters</h2>
-                <p>Our virtual tours aims to educate, provoke thought, and foster dialogue about the lasting impacts of colonialism on cultural heritage. By digitally reuniting these objects with their stories, we hope to contribute to the ongoing conversation about repatriation and cultural preservation.</p>
-                <div class="button" id="button-2"><a href="tours.html" class="button-text">Explore the tours</a></div>
+        <!-- ATLAS -->
+        <section class="section atlas" aria-labelledby="atlas-title">
+            <div class="grid">
+                <p class="section-label"><b>§02</b> Atlas</p>
+                <h2 class="section-title" id="atlas-title" data-reveal>…But where were they taken from?</h2>
+                <div class="atlas__text" data-reveal>
+                    <p class="lead">The thirty objects left their homes in many ways: seized in wars and punitive expeditions, carried off after conquests, divided after excavations, bought from people who had little choice, smuggled, or given as gifts that later changed hands.</p>
+                    <p>Most of the routes end in a few capitals: London, Paris and Berlin above all. Many objects were taken where European powers ruled or dominated, from Benin City in 1897 to Beijing in 1860 and 1900. Others moved between European states at war, like the Horses of Saint Mark or the Codex Gigas.</p>
+                    <p>Putting them side by side shows who was able to take, who has been able to keep, and who has managed to get objects back: the dotted routes have since been reversed.</p>
+                    <p>Every object page says how the object left, who claims it and who holds it, with the sources for each position.</p>
+                </div>
+                <div class="atlas__map-wrap" data-reveal style="--delay: .1s">
+                    <div id="atlas-map" role="img" aria-label="World map with a line from each object's place of origin to the city where it is held today"></div>
+                    <p class="atlas__legend mono">
+                        <span><span class="legend-dot"></span>Place of origin</span>
+                        <span><span class="legend-square"></span>Held today</span>
+                        <span><span class="legend-square legend-square--former"></span>Former holder</span>
+                        <span><span class="legend-line"></span>Removal</span>
+                        <span><span class="legend-line legend-line--returned"></span>Since returned</span>
+                    </p>
+                </div>
             </div>
+        </section>
+
+        <!-- TOURS -->
+        <section class="section tours" aria-labelledby="tours-title">
+            <div class="grid">
+                <p class="section-label"><b>§03</b> Tours</p>
+                <h2 class="section-title" id="tours-title" data-reveal>A virtual journey through history's stolen treasures</h2>
+                <ol class="tour-rows">
+                    <li class="tour-row" data-reveal>
+                        <a href="Object-page.html" data-start-tour="Timeline Tour">
+                            <span class="outline-num" aria-hidden="true">01</span>
+                            <h3>Timeline</h3>
+                            <p>Discover the historical and artistic value of looted items through a chronological journey, highlighting their cultural and historical significance.</p>
+                            <span class="arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="tour-row" data-reveal>
+                        <a href="Object-page.html" data-start-tour="Colonial Conquests Tour">
+                            <span class="outline-num" aria-hidden="true">02</span>
+                            <h3>Colonial Conquests</h3>
+                            <p>Understand the social and political consequences of colonialism and looting, examining the stories behind the removal of these treasures.</p>
+                            <span class="arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li class="tour-row" data-reveal>
+                        <a href="Object-page.html" data-start-tour="Geo Tour">
+                            <span class="outline-num" aria-hidden="true">03</span>
+                            <h3>Geo</h3>
+                            <p>Explore the geographical origins of these items and the historical events tied to their creation and looting, tracing their journey across the globe.</p>
+                            <span class="arrow" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                </ol>
+                <p class="tours__more"><a class="btn" href="tours.html#preferences">Personalize length and complexity <span class="arrow" aria-hidden="true">→</span></a></p>
+            </div>
+        </section>
+
+        <!-- STATEMENT -->
+        <section class="section statement" aria-labelledby="statement-title">
+            <div class="grid">
+                <p class="section-label" id="statement-title"><b>§04</b> Why this matters</p>
+                <p class="statement__text" data-reveal>Our virtual tours aim to educate, provoke thought, and foster dialogue about the lasting impacts of <em>colonialism</em> on cultural heritage.</p>
+                <div class="statement__body" data-reveal style="--delay: .1s">
+                    <p>By digitally reuniting these objects with their stories, we hope to contribute to the ongoing conversation about repatriation and cultural preservation.</p>
+                    <p><a class="btn" href="collection.html">Discover the collection <span class="arrow" aria-hidden="true">→</span></a></p>
+                </div>
+            </div>
+            <div class="statement__art engraving engraving--3" aria-hidden="true"></div>
         </section>
     </main>
-    
-    <!-- copy paste footer into every page -->
-    <footer>
-        <hr>
-        <h2 class="footer-h2">The Stolen Archive</h2>
-        <p>Is a project developed for the final examination of the course Information Modelling and Web Technologies held by professor Fabio Vitali in the context of the Masters Degree program Digital Humanities and Digital Knowledge at Alma Mater Studiorum University of Bologna. As such, this project will not be maintained or updated past the scope of the course's examination.<br>However, if you have any reclaims or suggestions, you can contact us through our team page.</p>
-        <hr>
-        <p>&copy; 2024 The Stolen Archive. All rights reserved.</p>
+
+    <!-- FOOTER: same on every page -->
+    <footer class="site-footer grid">
+        <p class="site-footer__word" aria-hidden="true">The Stolen <span>Archive</span></p>
+        <div class="site-footer__col">
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="atlas.html">Atlas</a></li>
+                <li><a href="about.html">About &amp; team</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </div>
+        <div class="site-footer__col site-footer__col--wide">
+            <h2>The project</h2>
+            <p>Developed for the final examination of Information Modelling and Web Technologies, held by professor Fabio Vitali, in the Master's Degree in Digital Humanities and Digital Knowledge at Alma Mater Studiorum, University of Bologna. It will not be maintained or updated past the scope of the course's examination.</p>
+        </div>
+        <div class="site-footer__col">
+            <h2>Contact</h2>
+            <p>Claims or suggestions? Reach us through the <a href="about.html#contact">team page</a>.</p>
+        </div>
+        <div class="site-footer__legal mono">
+            <span>© 2024 The Stolen Archive</span>
+            <span>Inv. 001 — 030</span>
+        </div>
     </footer>
 
-    
-    <script src="map.js"></script>
-    <script src="toggle-navbar.js"></script>
-    <script src="start-tour-button.js"></script>
-    <script src="map_page-button.js"></script>
-    
+    <script src="site.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="inventory.js"></script>
+    <script src="timeline.js"></script>
+    <script src="atlas-map.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>

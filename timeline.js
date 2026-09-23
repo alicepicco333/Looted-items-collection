@@ -1,148 +1,112 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // const slider = document.getElementById('timelineSlider');
-    const markersContainer = document.querySelector('.timeline-markers');
-    const eraInfo = document.getElementById('eraInfo');
-    const imageDisplayContainer = document.getElementById('imageDisplayContainer');
+// Home page: the five eras of appropriation (when the objects were taken) as tabs,
+// each with its text and images.
 
-    const eras = [
-        {
-            position: 13,
-            title: "Ancient Era (500 BCE - 500 CE)",
-            description: "This period saw the creation of numerous artifacts that would later become subjects of colonial appropriation. The Parthenon Marbles, created in the 5th century BCE as integral components of the Parthenon temple in Athens, represent a significant example. These sculptures, depicting various mythological scenes and religious processions, remained in situ for over two millennia. Their eventual removal in the early 19th century by Lord Elgin, then British ambassador to the Ottoman Empire, sparked a debate on cultural ownership that continues to this day. Similarly, the Altar of Pergamon, constructed in the 2nd century BCE in what is now Turkey, stood as an example of Hellenistic architecture until its excavation and removal to Berlin in the late 19th century. These cases illustrate how ancient artifacts, created long before the colonial era, became entangled in later geopolitical dynamics and debates about cultural heritage.",
-            images: [
-                "images/cropped-parthenon1.jpg",
-                "images/cropped-parthenon2.jpeg",
-                "images/cropped-pergamon1.jpg",
-                "images/cropped-pergamon2.jpg"
-            ]
-        },
-        {
-            position: 30,
-            title: "Medieval Era (500 CE - 1500 CE)",
-            description: "During this epoch, numerous artifacts were produced that would subsequently become targets of colonial acquisition. The Sultanganj Buddha, a 7th-century copper statue discovered in Bihar, India, exemplifies this phenomenon. Standing over 2.3 meters tall and weighing over 500 kilograms, this statue represents the sophisticated metallurgical techniques of medieval India. Its removal during British colonial rule in the 19th century illustrates how medieval artifacts became subjects of later colonial appropriation. The Gdansk Astronomical Clock, an intricate 15th-century timepiece, presents a different case. While not a product of colonial looting per se, its removal from Gdansk (then Danzig) during World War II demonstrates how conflicts beyond the traditional colonial period resulted in the displacement of cultural artifacts.",
-            images: [
-                "images/cropped-buddha1.jpg",
-                "images/cropped-buddha2.jpg",
-                "images/cropped-buddha3.jpg",
-                "images/cropped-gdansk1.jpeg",
-                "images/cropped-gdansk2.jpg",
-            ]
-        },
-        {
-            position: 50,
-            title: "First Colonial Era (1500 - 1700)",
-            description: "This era marked the beginning of European colonial expansion and the systematic appropriation of cultural artifacts from non-European societies. The Benin Bronzes, created from at least the 16th century onwards in the Kingdom of Benin (present-day Nigeria), serve as a prime example. These artifacts, including plaques, animal and human figurines, and items of royal regalia, were commissioned by the Oba (king) of Benin for ancestral altars and royal ceremonies. The sophistication of these works challenged European assumptions about African art and technology. Their eventual seizure by British forces in 1897 represents a pivotal moment in the history of colonial looting.",
-            images: [
-                "images/cropped-benin1.jpg",
-                "images/cropped-benin2.jpg",
-                "images/cropped-benin3.jpeg",
-                "images/cropped-benin4.jpg",
-            ]
-        },
-        {
-            position: 75,
-            title: "Imperial Era (1700 - 1914)",
-            description: "The height of European imperialism witnessed widespread appropriation of cultural artifacts from colonized territories. The Koh-i-Noor diamond, with its long and complex history in South Asia, exemplifies this trend. Originally mined in India, the diamond passed through various hands before being appropriated by the British East India Company in 1849 and subsequently becoming part of the British Crown Jewels. This transfer symbolizes the material and cultural exploitation inherent in colonial enterprises. The Old Summer Palace artifacts present another significant case. The looting and destruction of the Yuanmingyuan (Old Summer Palace) in Beijing by Anglo-French forces in 1860 during the Second Opium War resulted in the dispersal of numerous Chinese artifacts across Western collections. This event remains a potent symbol of the cultural devastation wrought by Western imperialism in China. The violent seizure of the Benin Bronzes in 1897 during a British punitive expedition represents another pivotal moment. This action resulted in the destruction of Benin City, the exile of Oba Ovonramwen, and the dispersal of thousands of artworks across European and American museums and private collections.",
-            images: [
-                "images/cropped-summerpalace1.jpg",
-                "images/cropped-summerpalace2.jpg",
-                "images/cropped-summerpalace3.jpg",
-                "images/cropped-summerpalace4.jpg",
+const eras = [
+    {
+        title: "Spoils of Europe's wars (1204 - 1815)",
+        description: "Looting did not begin with overseas empires. In 1204 the Fourth Crusade sacked Constantinople, and Venice carried off the four gilded Horses of Saint Mark. In 1648, in the last months of the Thirty Years' War, Swedish troops emptied Prague Castle and took the Codex Gigas to Stockholm. The French Revolution turned confiscation into policy: in 1794 the central panels of the Ghent Altarpiece went to Paris, and in 1797 Napoleon removed the horses from Venice. After his defeat in 1815 the Allies sent much of this art back, one of the first large returns in history, though Venice kept what it had taken from Constantinople.",
+        images: [
+            "images/obj27-saint-mark-horses-1.jpg",
+            "images/obj30-codex-gigas-2.jpg",
+            "images/obj28-ghent-1.jpg",
+            "images/obj27-saint-mark-horses-2.jpg"
+        ]
+    },
+    {
+        title: "Conquest and voyages (1519 - 1801)",
+        description: "The Spanish conquest of the Aztec Empire (1519–1521) sent featherwork and gold to the Habsburg courts, where Moctezuma's headdress was recorded in 1596. Two centuries later, British voyages of exploration reached the Pacific: at Kamay in 1770 James Cook's crew took a shield and spears from the Gweagal, and in 1779 the Hawaiian chief Kalaniʻōpuʻu gave Cook his feather cloak and helmet. In 1799 British troops looted Tipu Sultan's palace at Srirangapatna, and in 1801 the Rosetta Stone passed from the defeated French army in Egypt to the British.",
+        images: [
+            "images/obj25-penacho-2.jpg",
+            "images/obj23-gweagal-1.jpg",
+            "images/obj24-kalaniopuu-1.jpg",
+            "images/obj16-rosetta-1.jpg"
+        ]
+    },
+    {
+        title: "The imperial century (1801 - 1880)",
+        description: "As European empires expanded, objects flowed to their capitals. Lord Elgin's agents removed the Parthenon sculptures in 1801–1812, and the Dendera Zodiac was cut from its temple ceiling in 1820. In 1849 the Koh-i-Noor was surrendered to the British after the Anglo-Sikh wars, and in 1860 British and French troops looted and burned the Old Summer Palace in Beijing. French forces took the royal Uigwe from Ganghwa Island in Korea in 1866, the Moai Hoa Hakananai'a was removed from Rapa Nui in 1868, and Heinrich Schliemann smuggled Priam's Treasure out of the Ottoman Empire in 1873.",
+        images: [
+            "images/cropped-parthenon1.jpg",
+            "images/obj17-dendera-1.jpg",
+            "images/cropped-summerpalace1.jpg",
+            "images/obj21-uigwe-1.jpg"
+        ]
+    },
+    {
+        title: "Scramble for the world (1880 - 1914)",
+        description: "At the height of imperialism, conquest and archaeology went hand in hand. French troops took the throne of King Glele from Abomey in 1892, and British forces sacked Benin City in 1897, carrying off the Benin Bronzes and the ivory mask of Queen Idia. After the Boxer War of 1900, French and German soldiers removed the instruments of the Beijing Observatory. German officers took Ngonnso' from the Nso' kingdom in Cameroon in 1902, German archaeologists excavated the Ishtar Gate at Babylon and the bust of Nefertiti at Amarna, and in 1907 Aurel Stein bought the Diamond Sutra at Dunhuang. Yale's expeditions shipped finds from Machu Picchu from 1912.",
+        images: [
+            "images/cropped-benin1.jpg",
+            "images/obj06-observatory-1.jpg",
+            "images/cropped-nefertiti1.jpg",
+            "images/obj22-ishtar-1.jpg"
+        ]
+    },
+    {
+        title: "World wars and returns (1914 - today)",
+        description: "The world wars moved heritage again. The Treaty of Versailles made Germany return the observatory instruments to China and the Ghent Altarpiece's wings to Belgium. The Nazis hid looted art, including the altarpiece, in the Altaussee salt mine, and in 1945 the Red Army took Priam's Treasure from Berlin to Moscow. Illegal trade continued, from the Paracas textiles smuggled to Sweden in the 1930s to the Nok terracottas looted in Nigeria. Since then some objects have gone home: the Machu Picchu finds in 2011–2012, the Uigwe in 2011, Kalaniʻōpuʻu's regalia in 2016, the Paracas textiles by 2021 and the throne of Glele in 2021. Most are still waiting.",
+        images: [
+            "images/obj28-ghent-2.jpg",
+            "images/obj29-priam-1.jpg",
+            "images/obj18-paracas-1.jpg",
+            "images/cropped-nok1.jpg"
+        ]
+    }
+];
 
-            ]
-        },
-        {
-            position: 90,
-            
-            title: "World Wars and Decolonization (1914 - 1960s)",
-            description: "This period saw continued appropriation during conflicts and the emergence of repatriation discourse. The Nok terracotta statues, dating from 500 BCE - 200 CE, were excavated in Nigeria in the 1940s. Many of these artifacts were subsequently exported illegally, highlighting the ongoing challenges of cultural heritage protection in the context of decolonization. The case of the Nok terracottas also illustrates the complexities of archaeological practice and artifact removal during the transition from colonial to post-colonial governance. The bust of Nefertiti, discovered in 1912 by German archaeologists in Amarna, Egypt, became a contentious symbol of colonial appropriation. Egypt has repeatedly requested its return from Germany, arguing that the bust was taken out of the country under dubious circumstances. This case exemplifies the ongoing debates about the legality and ethics of early 20th-century archaeological practices.",
-            images: [
-                "images/cropped-nok1.jpg",
-                "images/cropped-nok2.jpg",
-                "images/cropped-nok3.jpg",
-                "images/cropped-nefertiti1.jpg",
-                "images/cropped-nefertiti2.jpg",
+document.addEventListener('DOMContentLoaded', () => {
+    const tabList = document.getElementById('era-tabs');
+    const title = document.getElementById('era-title');
+    const text = document.getElementById('era-text');
+    const images = document.getElementById('era-images');
+    if (!tabList) return;
 
-            ]
-        }
-    ];
-    
+    // "Spoils of Europe's wars (1204 - 1815)" -> name "Spoils of Europe's wars", range "1204 - 1815"
+    const split = (t) => {
+        const m = t.match(/^(.*?)\s*\((.*)\)$/);
+        return m ? { name: m[1], range: m[2] } : { name: t, range: '' };
+    };
 
-
-    eras.forEach((era, index) => {
-        const marker = document.createElement('div');
-        marker.className = 'marker';
-       
-        marker.style.left = `${era.position}%`;
-        
-        
-        marker.addEventListener('click', () => {
-          
-          document.querySelectorAll('.marker').forEach(m => m.classList.remove('selected'));
-         
-          marker.classList.add('selected');
-  
-         
-          eraInfo.innerHTML = `
-            <h2>${era.title}</h2>
-            <p>${era.description}</p>
-          `;
-  
-        
-          imageDisplayContainer.innerHTML = '';
-          era.images.forEach(imageSrc => {
+    function show(index, focus) {
+        const era = eras[index];
+        tabList.querySelectorAll('.tab').forEach((tab, i) => {
+            tab.setAttribute('aria-selected', String(i === index));
+            tab.tabIndex = i === index ? 0 : -1;
+        });
+        if (focus) tabList.children[index].focus();
+        const { name, range } = split(era.title);
+        title.innerHTML = `${name}<span class="mono">${range}</span>`;
+        text.textContent = era.description;
+        images.innerHTML = '';
+        era.images.slice(0, 4).forEach((src) => {
+            const figure = document.createElement('figure');
+            figure.className = 'duotone';
             const img = document.createElement('img');
-            img.src = imageSrc;
-            img.alt = era.title;
-            img.style.width = '400px';
-            img.style.height = '300px'; 
-            img.style.marginRight = '10px';
-            img.style.transition = 'opacity 0.3s';
-            img.style.opacity = '0';
-  
-         
-            setTimeout(() => {
-              img.style.opacity = '1';
-            }, 50);
-  
-            imageDisplayContainer.appendChild(img);
-          });
+            img.src = src;
+            img.alt = '';
+            img.loading = 'lazy';
+            figure.appendChild(img);
+            images.appendChild(figure);
         });
-  
-        
-        markersContainer.appendChild(marker);
-      });
-  
-      
-      if (eras.length > 0) {
-        const defaultEra = eras[0];
-        
-      
-        eraInfo.innerHTML = `
-          <h2>${defaultEra.title}</h2>
-          <p>${defaultEra.description}</p>
-        `;
-        
-     
-        defaultEra.images.forEach(imageSrc => {
-          const img = document.createElement('img');
-          img.src = imageSrc;
-          img.alt = defaultEra.title;
-          img.style.width = '400px';
-          img.style.marginRight = '10px';
-          img.style.transition = 'opacity 0.3s';
-          img.style.opacity = '1';
-          imageDisplayContainer.appendChild(img);
+    }
+
+    eras.forEach((era, i) => {
+        const { name, range } = split(era.title);
+        const tab = document.createElement('button');
+        tab.type = 'button';
+        tab.className = 'tab';
+        tab.id = `era-tab-${i}`;
+        tab.setAttribute('role', 'tab');
+        tab.setAttribute('aria-controls', 'era-panel');
+        tab.innerHTML = `${name}<small>${range}</small>`;
+        tab.addEventListener('click', () => show(i));
+        // arrow keys move between tabs
+        tab.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') show((i + 1) % eras.length, true);
+            if (e.key === 'ArrowLeft') show((i - 1 + eras.length) % eras.length, true);
         });
-  
-        
-        const firstMarker = markersContainer.querySelector('.marker');
-        if (firstMarker) {
-          firstMarker.classList.add('selected');
-        }
-      }
+        tabList.appendChild(tab);
     });
 
-
-
-
+    show(0);
+});

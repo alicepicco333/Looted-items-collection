@@ -1,0 +1,95 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q439299">
+        <rdfs:label>Beijing Observatory Instruments</rdfs:label>
+        <dc:title>Astronomical instruments of the Beijing Ancient Observatory</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q378277"/>
+        <dc:description>Bronze astronomical instruments of the imperial observatory of Beijing, including armillary spheres, a celestial globe and a quadrant. Taken by French and German troops after the Boxer Rebellion in 1900, they were returned by France in 1902 and by Germany in 1921 under Article 131 of the Treaty of Versailles.</dc:description>
+        <dc:subject>Astronomical instruments</dc:subject>
+        <dc:subject>Beijing (China)--History</dc:subject>
+        <dc:subject>Boxer Rebellion, 1899-1901</dc:subject>
+        <dc:type>Scientific instruments</dc:type>
+        <dct:created>1439–1744</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q439299"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_seizure_1900"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_return_1902"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_return_1921"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q439299"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q439299"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.9057</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">116.428</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_production">
+        <rdfs:label>Making of the Beijing Observatory Instruments</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q378277"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q439299"/>
+        <cid:P4_has_time-span>1439–1744</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_seizure_1900">
+        <rdfs:label>Seizure by French and German troops</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q320404"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q1711"/>
+        <cid:P3_has_note>From Beijing Ancient Observatory</cid:P3_has_note>
+        <cid:P4_has_time-span>1900-1901</cid:P4_has_time-span>
+        <cid:P3_has_note>After the Boxer War; the French share went to the French legation, the German share to the gardens of the Potsdam palaces.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_return_1902">
+        <rdfs:label>Return of the French share</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/French_troops"/>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q439299"/>
+        <cid:P4_has_time-span>1902</cid:P4_has_time-span>
+    </cid:E9>
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_return_1921">
+        <rdfs:label>Return of the German share</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q8736"/>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q1711"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q439299"/>
+        <cid:P4_has_time-span>1921</cid:P4_has_time-span>
+        <cid:P3_has_note>Under Article 131 of the Treaty of Versailles.</cid:P3_has_note>
+    </cid:E9>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Beijing_Observatory_Instruments_condition">
+        <rdfs:label>Returned</rdfs:label>
+        <cid:P3_has_note>Returned. On the platform of the Beijing Ancient Observatory.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q378277">
+        <rdfs:label>Ferdinand Verbiest</rdfs:label>
+    </cid:E21>
+    <cid:E5 rdf:about="https://www.wikidata.org/wiki/Q8736">
+        <rdfs:label>Treaty of Versailles</rdfs:label>
+    </cid:E5>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q439299">
+        <rdfs:label>Beijing Ancient Observatory</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q90">
+        <rdfs:label>Paris</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1711">
+        <rdfs:label>Potsdam</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="https://www.wikidata.org/wiki/Q320404">
+        <rdfs:label>Eight-Nation Alliance</rdfs:label>
+    </cid:E74>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/French_troops">
+        <rdfs:label>French troops</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

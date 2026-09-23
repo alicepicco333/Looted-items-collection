@@ -1,0 +1,99 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q1073141">
+        <rdfs:label>Oegyujanggak Uigwe</rdfs:label>
+        <dc:title>Oegyujanggak Uigwe (Royal protocols of the Joseon dynasty)</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q28179"/>
+        <dc:description>Illustrated records of the state rites of the Joseon court, kept in the royal library annex on Ganghwa Island. French troops took 297 volumes in 1866; found in the Bibliothèque nationale de France in 1975, they returned to Korea in 2011 on a renewable loan.</dc:description>
+        <dc:subject>Joseon dynasty, 1392-1910</dc:subject>
+        <dc:subject>Rites and ceremonies--Korea</dc:subject>
+        <dc:subject>Illustrated manuscripts</dc:subject>
+        <dc:type>Illustrated manuscripts</dc:type>
+        <dct:created>17th–19th century</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q494786"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_seizure_1866"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_identification_1975"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_return_2011"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q494407"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q193563"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.747</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">126.487</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_production">
+        <rdfs:label>Making of the Oegyujanggak Uigwe</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q28179"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q494786"/>
+        <cid:P4_has_time-span>17th–19th century</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_seizure_1866">
+        <rdfs:label>Seizure by French troops</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q134142"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P3_has_note>From Oegyujanggak royal library annex</cid:P3_has_note>
+        <cid:P4_has_time-span>1866</cid:P4_has_time-span>
+        <cid:P3_has_note>297 volumes taken; the library was burned.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_identification_1975">
+        <rdfs:label>Identification at the Bibliothèque nationale</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Park_Byeong-seon"/>
+        <cid:P4_has_time-span>1975</cid:P4_has_time-span>
+    </cid:E7>
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_return_2011">
+        <rdfs:label>Return to Korea on renewable loan</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q193563"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q8684"/>
+        <cid:P3_has_note>From Paris</cid:P3_has_note>
+        <cid:P4_has_time-span>2011</cid:P4_has_time-span>
+        <cid:P3_has_note>Five-year loan renewed automatically; ownership stays with France.</cid:P3_has_note>
+    </cid:E10>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Oegyujanggak_Uigwe_condition">
+        <rdfs:label>Returned on renewable loan</rdfs:label>
+        <cid:P3_has_note>Returned on renewable loan.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="http://www.itemsontology.com/item_features/Park_Byeong-seon">
+        <rdfs:label>Park Byeong-seon</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q193563">
+        <rdfs:label>Bibliothèque nationale de France</rdfs:label>
+    </cid:E40>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q494407">
+        <rdfs:label>National Museum of Korea</rdfs:label>
+    </cid:E40>
+    <cid:E5 rdf:about="https://www.wikidata.org/wiki/Q134142">
+        <rdfs:label>French expedition to Korea</rdfs:label>
+    </cid:E5>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q494786">
+        <rdfs:label>Ganghwa Island</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="http://www.itemsontology.com/item_features/Oegyujanggak">
+        <rdfs:label>Oegyujanggak royal library annex</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q90">
+        <rdfs:label>Paris</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q8684">
+        <rdfs:label>Seoul</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="https://www.wikidata.org/wiki/Q28179">
+        <rdfs:label>Joseon dynasty</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

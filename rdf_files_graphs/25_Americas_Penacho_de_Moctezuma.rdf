@@ -1,0 +1,79 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q948240">
+        <rdfs:label>Moctezuma&#x27;s Headdress</rdfs:label>
+        <dc:title>Penacho (the feather headdress known as Moctezuma&#x27;s)</dc:title>
+        <dc:creator rdf:resource="http://www.itemsontology.com/item_features/Amanteca_featherworkers"/>
+        <dc:description>Headdress of quetzal and other feathers with gold, one of the very few surviving pieces of Aztec featherwork. Recorded in European collections from the 16th century, it is in the Weltmuseum Wien. Mexico has asked for it; a 2010–2012 binational study judged it too fragile to travel.</dc:description>
+        <dc:subject>Featherwork--Mexico</dc:subject>
+        <dc:subject>Aztecs--Antiquities</dc:subject>
+        <dc:subject>Moctezuma II</dc:subject>
+        <dc:type>Feather headdress</dc:type>
+        <dct:created>c. 1515</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q13695"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_production"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_europe"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_vienna"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q686488"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q686488"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.4326</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-99.1332</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_production">
+        <rdfs:label>Making of the Moctezuma&#x27;s Headdress</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Amanteca_featherworkers"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q13695"/>
+        <cid:P4_has_time-span>c. 1515</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_europe">
+        <rdfs:label>Transfer to Europe after the Spanish conquest</rdfs:label>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q13695"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q700764"/>
+        <cid:P4_has_time-span>after 1521</cid:P4_has_time-span>
+        <cid:P3_has_note>Route undocumented; first recorded at Ambras in 1596.</cid:P3_has_note>
+    </cid:E9>
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_vienna">
+        <rdfs:label>Transfer to Vienna</rdfs:label>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q700764"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q1741"/>
+        <cid:P4_has_time-span>19th century</cid:P4_has_time-span>
+        <cid:P3_has_note>Restored in 1878.</cid:P3_has_note>
+    </cid:E9>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Penacho_de_Moctezuma_condition">
+        <rdfs:label>Contested</rdfs:label>
+        <cid:P3_has_note>Contested. Judged too fragile to travel (binational study 2010-2012).</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q686488">
+        <rdfs:label>Weltmuseum Wien</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q700764">
+        <rdfs:label>Ambras Castle</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q13695">
+        <rdfs:label>Tenochtitlan</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1741">
+        <rdfs:label>Vienna</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/Amanteca_featherworkers">
+        <rdfs:label>Amanteca featherworkers</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

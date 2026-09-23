@@ -3,157 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="lightmode.js"></script>
-    <link rel="icon" type="favicon/png" href="images\papyrus_favicon.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="PERSONALIZATION.js"></script>
+    <title>About · The Stolen Archive</title>
+    <meta name="description" content="About The Stolen Archive, a DHDK project at the University of Bologna, and its team.">
+    <link rel="icon" type="image/png" href="images/amphora_favicon.png">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <header>
-        <!-- NAVBAR -->
-         
-        <!-- toggle -->
-        <div class="hover-area"></div>
-        <nav>
-            <div class="theme-toggle-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-                    <!-- Cerchio centrale -->
-                    <circle cx="16" cy="16" r="7" fill="none" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Raggi del sole -->
-                    <!-- Verticali -->
-                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" />
-                    <line x1="16" y1="26" x2="16" y2="30" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Orizzontali -->
-                    <line x1="2" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="2" />
-                    <line x1="26" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Diagonali (uniformi) -->
-                    <line x1="5"  y1="5"  x2="8"  y2="8"  stroke="currentColor" stroke-width="2" />  
-                    <line x1="24" y1="8" x2="27" y2="5" stroke="currentColor" stroke-width="2" />
-                    <line x1="5"  y1="27" x2="8"  y2="24" stroke="currentColor" stroke-width="2" />   
-                    <line x1="24" y1="24" x2="27" y2="27" stroke="currentColor" stroke-width="2" />
-                  </svg>
-                <div class="toggle">
-                    <label class="theme-switch">
-                        <input type="checkbox" id="light-mode-checkbox" aria-label="lightmode button">
-                        <span class="toggle-track"></span>
-                    </label>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER: same on every page, set aria-current on the current link -->
+    <header class="site-header">
+        <div class="site-header__inner grid">
+            <a class="wordmark" href="index.html">The Stolen<br>Archive<span>.</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+                <ul class="site-nav__links" id="nav-links">
+                    <li><a href="collection.html"><span class="mono">01</span>Collection</a></li>
+                    <li><a href="tours.html"><span class="mono">02</span>Tours</a></li>
+                    <li><a href="atlas.html"><span class="mono">03</span>Atlas</a></li>
+                    <li><a href="about.html" aria-current="page"><span class="mono">04</span>About</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__actions">
+                <button class="theme-toggle" type="button" aria-pressed="false">
+                    <span class="visually-hidden">Light mode</span>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+                </button>
+                <a class="btn btn--signal" href="Object-page.html" data-start-tour="Timeline Tour">Start tour <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- page intro -->
+        <header class="page-head grid">
+            <p class="section-label"><b>04</b> About</p>
+            <h1 class="page-head__title">About the archive</h1>
+            <p class="page-head__lead">The project is conceived as a virtual exhibition titled The Stolen Archive, which aims to explore the complex narratives surrounding artifacts that were appropriated during various eras of colonial history. This initiative is developed for the course Information Modelling and Web Technologies, hosted by Professor Fabio Vitali in the Master's Degree in Digital Humanities and Digital Knowledge at the University of Bologna.</p>
+        </header>
+
+        <section class="section about" aria-label="The project">
+            <div class="grid">
+                <blockquote class="about__quote" data-reveal>A “third space” to visualize, interact with, and reflect upon objects removed from their original contexts.</blockquote>
+                <div class="about__body prose">
+                    <p>The exhibition serves as a "third space" where users can visualize, interact with, and reflect upon historical objects that have been removed from their original contexts. The concept of this virtual exhibition is rooted in the recognition of cultural heritage as a living narrative shaped by historical events, power dynamics, and social contexts. By focusing on artifacts that were taken during colonial expansion, The Stolen Archive seeks to confront the legacies of colonialism and raise awareness about the ongoing implications of these histories. It provides an opportunity for users to engage with these objects not merely as relics of the past but as symbols of complex histories that continue to influence contemporary discussions about identity, ownership, and cultural representation. In creating this virtual space, the project aims to foster critical reflection on how colonial histories have shaped cultural narratives and societal structures. It encourages users to consider questions of restitution and repatriation, prompting discussions about who has the right to access and interpret cultural artifacts.</p>
+                    <p>By presenting these objects in a digital format, the exhibition democratizes access to knowledge, allowing a wider audience to engage with important historical themes without geographical or financial barriers. Moreover, the virtual exhibition embodies principles of open access, ensuring that educational resources are freely available to all. This approach aligns with contemporary movements in academia and cultural institutions advocating for transparency and inclusivity in knowledge dissemination. By leveraging digital technologies, the project not only enhances accessibility but also promotes collaboration among scholars, educators, and students in the field of digital humanities.</p>
+                    <p>Ultimately, The Stolen Archive serves as a platform for dialogue about cultural heritage and its preservation in a digital age. It emphasizes the importance of understanding history through multiple perspectives and encourages users to engage with the past in a way that acknowledges its complexities. By doing so, it contributes to a more nuanced understanding of our shared history and fosters a sense of responsibility toward cultural artifacts that embody significant yet often painful narratives. Through this interactive experience, users are invited to reflect on their own relationship with history and consider how it shapes their understanding of identity and culture today.</p>
                 </div>
             </div>
+        </section>
 
-                <!-- 1) Hidden Checkbox  -->
-            <input type="checkbox" id="menu-toggle" aria-label="Open navigation menu" />
-            <!-- 2) Hamburgher label  -->
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            
-        <!-- main button (long-button) -->
-                <div class="button" id="long-button">
-                    <ul class="menu-links">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="tours.html">tours</a></li>
-                        <!-- <li class="hidden-desktop"><a href="map_page.html">items museum map</a></li> -->
-                        <li class="hidden-desktop"><a href="collection.html">items collection</a></li>
-                        <li class="hidden-desktop">
-                            <button id="tour-button-1"><a href="" class="start-tour-btn">start tour</a></button>                                                                                   
-                        </li>
-                        <li><a href="documentation.html">documentation</a></li>
+        <section class="section team" aria-labelledby="team-title">
+            <div class="grid">
+                <p class="section-label"><b>§</b> Team</p>
+                <h2 class="section-title" id="team-title">The team</h2>
+                <ul class="people">
+                    <li class="person" data-reveal>
+                        <figure class="duotone person__photo"><img src="images/team-1.jpg" alt="Portrait of Alice Picco" loading="lazy"></figure>
+                        <p class="mono person__no">01</p>
+                        <h3>Alice Picco</h3>
+                        <a class="mono" href="mailto:alice.picco@studio.unibo.it">alice.picco@studio.unibo.it</a>
+                    </li>
+                    <li class="person" data-reveal>
+                        <figure class="duotone person__photo"><img src="images/team-2.jpg" alt="Portrait of Corrado Consiglio" loading="lazy"></figure>
+                        <p class="mono person__no">02</p>
+                        <h3>Corrado Consiglio</h3>
+                        <a class="mono" href="mailto:corrado.consiglio@studio.unibo.it">corrado.consiglio@studio.unibo.it</a>
+                    </li>
+                    <li class="person" data-reveal>
+                        <figure class="duotone person__photo"><img src="images/team-3.jpg" alt="Portrait of Marco Lamorte" loading="lazy"></figure>
+                        <p class="mono person__no">03</p>
+                        <h3>Marco Lamorte</h3>
+                        <a class="mono" href="mailto:marco.lamorte@studio.unibo.it">marco.lamorte@studio.unibo.it</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="grid">
+                <p class="section-label"><b>§</b> Contact</p>
+                <h2 class="section-title" id="contact-title">Claims or suggestions</h2>
+                <div class="contact__body">
+                    <p>The project will not be updated or maintained past the scope of the course's examination. For inquiries, questions or suggestions you can still write to any of us:</p>
+                    <ul class="contact__list">
+                        <li><a href="mailto:alice.picco@studio.unibo.it">alice.picco@studio.unibo.it</a></li>
+                        <li><a href="mailto:corrado.consiglio@studio.unibo.it">corrado.consiglio@studio.unibo.it</a></li>
+                        <li><a href="mailto:marco.lamorte@studio.unibo.it">marco.lamorte@studio.unibo.it</a></li>
                     </ul>
                 </div>
-                
-                <!-- icons -->
-                <div class="icon-container">
-
-                    <!-- <a href="map_page.html" class="icon-link">
-                      <div class="button" id="icon-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"/>
-                      </svg>
-                      <span class="tooltip">Go to items museum map</span>
-                      </div>
-                    </a> -->
-
-                    <a href="collection.html" class="icon-link">
-                        <div class="button" id="icon-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"/>
-                      </svg>
-                    </div>
-                    <span class="tooltip">Show the items collection</span>
-                    </a>
-                  </div>
-                  
-                  <!-- tour button -->
-                <div class="button" id="tour-button">
-                    <a href="Object-page.html" id="tour-text">start tour</a>
-                </div>
-            
-            
-        </nav>
-
-        <!-- button for scrolling up to the top of the page -->
-    <button id="scroll-to-top">
-        ↑
-    </button>
-
-        
-        <!-- end of nav -->
-    </header>
-    
-        <!-- copy-paste header for every page!!!!!!!! -->
-    <main class="about_main">
-        <section id="about-section">
-            <h2>About The Stolen Archive</h2>
-            <p id="about_par">The project is conceived as a virtual exhibition titled The Stolen Archive, which aims to explore the complex narratives surrounding artifacts that were appropriated during various eras of colonial history. This initiative is developed for the course Information Modelling and Web Technologies, hosted by Professor Fabio Vitali in the Master's Degree in Digital Humanities and Digital Knowledge at the University of Bologna.<br><br> 
-                The exhibition serves as a "third space" where users can visualize, interact with, and reflect upon historical objects that have been removed from their original contexts. The concept of this virtual exhibition is rooted in the recognition of cultural heritage as a living narrative shaped by historical events, power dynamics, and social contexts. By focusing on artifacts that were taken during colonial expansion, The Stolen Archive seeks to confront the legacies of colonialism and raise awareness about the ongoing implications of these histories. It provides an opportunity for users to engage with these objects not merely as relics of the past but as symbols of complex histories that continue to influence contemporary discussions about identity, ownership, and cultural representation. In creating this virtual space, the project aims to foster critical reflection on how colonial histories have shaped cultural narratives and societal structures. It encourages users to consider questions of restitution and repatriation, prompting discussions about who has the right to access and interpret cultural artifacts. <br><br>By presenting these objects in a digital format, the exhibition democratizes access to knowledge, allowing a wider audience to engage with important historical themes without geographical or financial barriers. Moreover, the virtual exhibition embodies principles of open access, ensuring that educational resources are freely available to all. This approach aligns with contemporary movements in academia and cultural institutions advocating for transparency and inclusivity in knowledge dissemination. By leveraging digital technologies, the project not only enhances accessibility but also promotes collaboration among scholars, educators, and students in the field of digital humanities. <br><br> Ultimately, The Stolen Archive serves as a platform for dialogue about cultural heritage and its preservation in a digital age. It emphasizes the importance of understanding history through multiple perspectives and encourages users to engage with the past in a way that acknowledges its complexities. By doing so, it contributes to a more nuanced understanding of our shared history and fosters a sense of responsibility toward cultural artifacts that embody significant yet often painful narratives. Through this interactive experience, users are invited to reflect on their own relationship with history and consider how it shapes their understanding of identity and culture today.</p>
-        </section>
-        <section class="team-section">
-            <h2>The Team</h2>
-            <div class="team-photo">
-                <div id="photo-1">
-                    <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/a6479a1e27957a1ee0c5966f544bd9519565dca1/images/team-1.jpg" alt="Team Member" />
-                    <p>Alice Picco</p>
-                </div>
-                <div id="photo-2">
-                    <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/a6479a1e27957a1ee0c5966f544bd9519565dca1/images/team-2.jpg" alt="Team Member" />
-                    <p>Corrado Consiglio</p>
-                </div>
-                    <div id="photo-3">
-                    <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/a6479a1e27957a1ee0c5966f544bd9519565dca1/images/team-3.jpg" alt="Team Member" />
-                    <p>Marco Lamorte</p>
-                </div>
-            
             </div>
-            
-        </section>
-        <section>
-            <p id="bottom_par">As said in the footer, the project will not be updated or maintained past the current scope. <br><br>However, for inquiries, questions or suggestions you can contact:<br><br>
-            alice.picco@studio.unibo.it<br><br>
-            corrado.consiglio@studio.unibo.it<br><br>
-            marco.lamorte@studio.unibo.it<br>
-            </p>
         </section>
     </main>
-        <!-- copy paste footer into every page -->
-        <footer>
-            <hr>
-            <h2 class="footer-h2">The Stolen Archive</h2>
-            <p>Is a project developed for the final examination of the course Information Modelling and Web Technologies held by professor Fabio Vitali in the context of the Masters Degree program Digital Humanities and Digital Knowledge at Alma Mater Studiorum University of Bologna. As such, this project will not be maintained or updated past the scope of the course's examination.<br>However, if you have any reclaims or suggestions, you can contact us through our team page.</p>
-            <hr>
-            <p>&copy; 2024 The Stolen Archive. All rights reserved.</p>
-        </footer>
-    
-        
-        <script src="toggle-navbar.js"></script>
-        <script src="start-tour-button.js"></script>
-    </body>
-    </html>
+
+    <!-- FOOTER: same on every page -->
+    <footer class="site-footer grid">
+        <p class="site-footer__word" aria-hidden="true">The Stolen <span>Archive</span></p>
+        <div class="site-footer__col">
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="atlas.html">Atlas</a></li>
+                <li><a href="about.html">About &amp; team</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </div>
+        <div class="site-footer__col site-footer__col--wide">
+            <h2>The project</h2>
+            <p>Developed for the final examination of Information Modelling and Web Technologies, held by professor Fabio Vitali, in the Master's Degree in Digital Humanities and Digital Knowledge at Alma Mater Studiorum, University of Bologna. It will not be maintained or updated past the scope of the course's examination.</p>
+        </div>
+        <div class="site-footer__col">
+            <h2>Contact</h2>
+            <p>Claims or suggestions? Reach us through the <a href="about.html#contact">team page</a>.</p>
+        </div>
+        <div class="site-footer__legal mono">
+            <span>© 2024 The Stolen Archive</span>
+            <span>Inv. 001 — 030</span>
+        </div>
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+</html>

@@ -3,573 +3,530 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="lightmode.js"></script>
-    <link rel="icon" type="favicon/png" href="images\ancient_book_favicon.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
+    <title>Documentation · The Stolen Archive</title>
+    <meta name="description" content="Documentation of The Stolen Archive: design, tours, collection, object page, perspectives, maps and data.">
+    <link rel="icon" type="image/png" href="images/ancient_book_favicon.png">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <header>
-        <!-- NAVBAR -->
-         
-        <!-- toggle -->
-        <div class="hover-area"></div>
-        <nav>
-            <div class="theme-toggle-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-                    <!-- Cerchio centrale -->
-                    <circle cx="16" cy="16" r="7" fill="none" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Raggi del sole -->
-                    <!-- Verticali -->
-                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" />
-                    <line x1="16" y1="26" x2="16" y2="30" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Orizzontali -->
-                    <line x1="2" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="2" />
-                    <line x1="26" y1="16" x2="30" y2="16" stroke="currentColor" stroke-width="2" />
-                    
-                    <!-- Diagonali (uniformi) -->
-                    <line x1="5"  y1="5"  x2="8"  y2="8"  stroke="currentColor" stroke-width="2" />  
-                    <line x1="24" y1="8" x2="27" y2="5" stroke="currentColor" stroke-width="2" />
-                    <line x1="5"  y1="27" x2="8"  y2="24" stroke="currentColor" stroke-width="2" />   
-                    <line x1="24" y1="24" x2="27" y2="27" stroke="currentColor" stroke-width="2" />
-                  </svg>
-                <div class="toggle">
-                    <label class="theme-switch">
-                        <input type="checkbox" id="light-mode-checkbox" aria-label="lightmode button">
-                        <span class="toggle-track"></span>
-                    </label>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <!-- 1) Hidden Checkbox  -->
-            <input type="checkbox" id="menu-toggle" aria-label="Open navigation menu" />
-
-            <!-- 2) Hamburgher label  -->
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-                    
-                    
-           
-            
-        <!-- main button (long-button) -->
-                <div class="button" id="long-button">
-                    <ul class="menu-links">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="tours.html">tours</a></li>
-                        <!-- <li class="hidden-desktop"><a href="map_page.html">items museum map</a></li> -->
-                        <li class="hidden-desktop"><a href="collection.html">items collection</a></li>
-                        <li class="hidden-desktop">
-                            <button id="tour-button-1"><a href="" class="start-tour-btn">start tour</a></button>                                                                                   
-                        </li>
-                        <li><a href="documentation.html">documentation</a></li>
-                    </ul>
-                </div>
-                
-                <!-- icons -->
-                <div class="icon-container">
-
-                    <!-- <a href="map_page.html" class="icon-link">
-                      <div class="button" id="icon-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"/>
-                      </svg>
-                      </div>
-                      <span class="tooltip">Go to items museum map</span>
-                    </a> -->
-
-                    <a href="collection.html" class="icon-link">
-                        <div class="button" id="icon-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"/>
-                      </svg>
-                    </div>
-                    <span class="tooltip">Show the items collection</span>
-                    </a>
-                
-                  </div>
-                  
-                  <!-- tour button -->
-                <button class="button" id="tour-button">
-                    <a href="Object-page.html" id="tour-text">start tour</a>
+    <!-- HEADER: same on every page, set aria-current on the current link -->
+    <header class="site-header">
+        <div class="site-header__inner grid">
+            <a class="wordmark" href="index.html">The Stolen<br>Archive<span>.</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+                <ul class="site-nav__links" id="nav-links">
+                    <li><a href="collection.html"><span class="mono">01</span>Collection</a></li>
+                    <li><a href="tours.html"><span class="mono">02</span>Tours</a></li>
+                    <li><a href="atlas.html"><span class="mono">03</span>Atlas</a></li>
+                    <li><a href="about.html"><span class="mono">04</span>About</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__actions">
+                <button class="theme-toggle" type="button" aria-pressed="false">
+                    <span class="visually-hidden">Light mode</span>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
                 </button>
-             
-            
-        </nav>
-        
-        <!-- end of nav -->
+                <a class="btn btn--signal" href="Object-page.html" data-start-tour="Timeline Tour">Start tour <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
     </header>
-    
-        <!-- copy-paste header for every page!!!!!!!! -->
 
-        <!-- button for scrolling up to the top of the page -->
-    <button id="scroll-to-top">
-        ↑
-    </button>
+    <main id="main">
+        <!-- page intro -->
+        <header class="page-head grid">
+            <p class="section-label"><b>§</b> Documentation</p>
+            <h1 class="page-head__title">Documentation</h1>
+            <p class="page-head__lead">How The Stolen Archive is designed and how every part of it works: the tours, the collection, the object page, the perspectives, the maps and the data behind them.</p>
+        </header>
 
-    <main>
-        <!-- Introduction Section -->
-        <section id="tours-introduction" class="object-main-container">
-            <h2 id="personalization-title">LOOTED ITEMS COLLECTION</h2>
-            <h2 id="personalization-title">Introduction</h2>
-            <p id="introduction_par">
-                The <strong>LOOTED ITEMS COLLECTION</strong> was born with the aim of bringing together, for the first time, some of the world’s most iconic artefacts, linked by a dark history of colonialism and looting. As we move through time and space, this virtual experience shows the users how these treasures were created, what they meant to their original cultures, and the stories behind their removal during periods of conflict and colonial expansion. Each item on this tour offers a glimpse into the artistic, spiritual, and political life of civilizations long past, while also raising important questions about cultural heritage and restitution today. Whether the visitor is looking for a quick overview, more detailed context, or an in-depth analysis, this tour adapts to his preferences. 
-                The main purpose of the project is the creation of a platform which could work as an added value for a visit in the physical context as much as a complete virtual museum experience. The focus is all around the user which can decide to move inside the collection choosing the characteristics more compliant to make his needs. A personalized tour can be created by selecting and combining different sets of variables. The final result is a tour entirely created around the visitor objectives and needs.
-            </p>
-            <h2 id="personalization-title">Web Design Reference and Prototype</h2>
-            <h2 id="personalization-title">Visual Identity</h3>
-            <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/refs/heads/main/visual%20identity.svg" alt="font-example-img">
-            <p>
-                <br>We designed the visual identity for this project with a focus on creating a harmonious and aesthetically pleasing interface based on the golden ratio. The process involved the following steps:<br><br>
-
-    Concept Development: We drew inspiration from classical Greek architecture, as reflected in the Parthenon-themed background images (e.g., partenone1.svg). This concept guided the overall design direction.<br><br>
-    Color Palette: We defined a cohesive color scheme using CSS variables:<br>
-        Primary Color: #B7B5E4<br>
-        Secondary Color: #847979<br>
-        Background Color: #0C0C0F<br>
-        Accent Colors: #BBC2E2 and #CFCCD6<br><br>
-    These colors ensure consistency and flexibility across the design.<br><br>
-    Typography: We implemented a custom font, Karrik, using the @font-face rule. This font gives our design a unique character and complements the theme.<br><br>
-    Layout Structure: Sections were strategically planned with heights like 100vh or 120vh to maintain a balanced layout. This approach ensures that content is well-organized and visually appealing.<br><br>
-    Responsive Design: Media queries were utilized to adapt the design for various screen sizes, ensuring usability across devices, from desktops to mobile phones.<br><br>
-            </p>
-            <h2 id="personalization-title">Design System Using CSS Variables</h2>
-<p>We built a scalable design system leveraging CSS variables, with proportions derived from the golden ratio (1.6181.618). This system ensures visual harmony and simplifies adjustments across typography, spacing, and layout.<br>
-    <h2 id="personalization-title">Key Variables</h2>
-    <pre>--golden-ratio: 1.618;
-        --base-font-size: 16px;
-        --base-line-height: 1.5;
-        --base-spacing: 1rem;
-        </pre>
-
-        <h2 id="personalization-title">Typography Scaling</h2>
-        <pre>--spacing-small: calc(var(--base-spacing) / var(--golden-ratio));
-            --spacing-large: calc(var(--base-spacing) * var(--golden-ratio));
-            </pre>
-
-            <p>By defining relationships between base values (e.g., font size, spacing), we ensured that all components scale proportionally. Adjusting any base variable automatically updates related elements throughout the design.</p>
-
-            <h2 id="personalization-title">Figma Prototype</h2>
-            <p>You can view the whole Figma prototype <a href="https://www.figma.com/design/q36Ndmq8i0unoqVYXBwCAz/stolenarchive?node-id=8-2&t=YYGfzPMyks7L9Qmc-1">here</a>.</p>
-
-        </section>
-
-        <section id="tours-presentation" class="object-main-container">
-            <h2 id="tours-title">Tours</h2>
-            <p id="introduction_par">The Looted Items Collection offers a unique opportunity to personalize the exploration of the items. While personalization is key, three tours: Timeline, Colonial Conquests, and Geo represent the core ways to interact with the collection.
-            </p>
-
-            <div class="tours-des-container">
-                <!-- Section -->
-                <div class="tours-des">
-                    <h3><strong>Narrative 1:</strong> Timeline</h3>
-                    <p id="Timeline_Tour_par">
-                        <strong>Focus:</strong> Historical and artistic value of the items<br><br>
-                        <strong>Description:</strong>
-                        Understanding the legacy of colonial looting and the cultural loss that  accompanied it requires more than just looking at individual artefacts. When we arrange these looted items in chronological order, we uncover a broader, more complex story. One that shows the steady unfolding of imperial expansion, cultural encounters, and the lasting impact on societies around the world. This narrative was carefully constructed to guide the visitor through the timeline of CC events. Each artefact represents a moment in history when conflict, conquest, and imperial ambition collided with the cultural heritage of nations. By following this path, it will be possible to see how the forces of colonialism evolved over time, how different parts of the world were affected, and how these artefacts became symbols of both loss and resilience.
-                        From the oldest looted treasures to more recent historical conflicts, this journey highlights the changing dynamics of power and resistance, showing that the story of these items is also the story of the people and nations that continue to fight for their rightful return.<br><br></p>
-
-                        <h3><strong>Narrative 2:</strong> Colonial Conquests and Cultural Loss</h3>
-                        <p id="Timeline_Tour_par">
-                    
-                    <strong>Focus:</strong> Social and political consequences of colonialism and the looting process.<br><br>
-                    <strong>Description:</strong> 
-                        Colonialism profoundly altered the course of global history, not only through the conquest of territories but also through the systematic looting of cultural and historical treasures. This narrative delves into the darker legacy of colonialism, where artifacts, sacred objects, and symbols of national identity were forcibly removed from their homelands, stripping cultures of their heritage. The looted artifacts on display today serve as reminders of these violent encounters. This journey traces the stories behind the theft, the motivations of colonial powers, and the enduring impact on the communities who lost their cultural heritage. As we explore each artifact, we reflect on the ways colonial conquests shaped cultural identities and the ongoing debates surrounding restitution.<br><br>
-                     </p>
-                     
-                     <h3><strong>Narrative 3:</strong> Geo tour</h3>
-                     <p id="Timeline_Tour_par">
-                    
-                    <strong>Focus:</strong> Through the analysis of these items geographical collocation focus on the historical events related to each one of them.<br><br>
-                    <strong>Description:</strong>
-                        The GEO LOOTING TOUR invites visitors to explore the complex and often painful history of colonialism through the lens of cultural artifacts taken from their countries of origin. Each section highlights a specific continent, illuminating the stories behind the looted items that embody the rich cultural heritages of diverse societies. By understanding the historical context in which these treasures were appropriated, visitors can appreciate the significance of repatriation efforts and the ongoing conversations surrounding cultural ownership. As we journey through Africa, Asia, Europe, Oceania, and the Americas, we will uncover how colonial powers, motivated by curiosity, conquest, and economic gain, systematically stripped cultures of their historical artifacts, leaving lasting scars on the nations and communities affected.<br><br>
-                    </p>
+        <div class="grid doc">
+            <nav class="doc-index" aria-labelledby="doc-index-title">
+                <h2 class="mono" id="doc-index-title">Index</h2>
+                <ol>
+                    <li><a href="#overview"><span class="mono">01</span>Overview</a></li>
+                    <li><a href="#site-map"><span class="mono">02</span>Site map</a></li>
+                    <li><a href="#visual-identity"><span class="mono">03</span>Visual identity</a></li>
+                    <li><a href="#accessibility"><span class="mono">04</span>Accessibility</a></li>
+                    <li><a href="#tours"><span class="mono">05</span>Tours and personalization</a></li>
+                    <li><a href="#visitor-profiles"><span class="mono">06</span>Visitor profiles</a></li>
+                    <li><a href="#collection"><span class="mono">07</span>The collection</a></li>
+                    <li><a href="#rooms"><span class="mono">08</span>Museum rooms</a></li>
+                    <li><a href="#object-page"><span class="mono">09</span>Object page</a></li>
+                    <li><a href="#perspectives"><span class="mono">10</span>Perspectives</a></li>
+                    <li><a href="#fairness"><span class="mono">11</span>Fairness review</a></li>
+                    <li><a href="#maps"><span class="mono">12</span>Maps as inline SVG</a></li>
+                    <li><a href="#three-d"><span class="mono">13</span>3D view</a></li>
+                    <li><a href="#atlas"><span class="mono">14</span>Atlas</a></li>
+                    <li><a href="#metadata"><span class="mono">15</span>Metadata</a></li>
+                    <li><a href="#llm"><span class="mono">16</span>LLM enrichment</a></li>
+                    <li><a href="#files"><span class="mono">17</span>Files and data</a></li>
+                    <li><a href="#credits"><span class="mono">18</span>Credits</a></li>
+                </ol>
+                <div class="doc-index__actions">
+                    <button class="btn" type="button" id="docs-expand">Expand all</button>
+                    <button class="btn" type="button" id="docs-collapse">Collapse all</button>
                 </div>
+            </nav>
+            <div class="doc-sections">
+                <details class="doc-section" id="overview" open>
+                    <summary><span class="mono">01</span><h2>Overview</h2></summary>
+                    <div class="doc-section__body prose">
+<p>The Stolen Archive (the Looted Items Collection) brings together thirty of the world's best-known artefacts that are linked by a history of colonialism, war and looting. It shows how they were made, what they meant to the cultures that made them, how they were taken, and where the question of their return stands today.</p>
+<p>The site works as a companion to a visit to a physical museum and as a complete virtual museum. The visitor decides how to move through the collection: which of three tours to follow, how long and how complex the texts should be, and in which language to read them.</p>
+<table>
+<thead><tr><th scope="col"></th><th scope="col"></th></tr></thead>
+<tbody>
+<tr><td>Objects</td><td>30, numbered 001–030</td></tr>
+<tr><td>Tours</td><td>3: Timeline, Colonial Conquests, Geo</td></tr>
+<tr><td>Texts per object and tour</td><td>9: three lengths × three complexity levels</td></tr>
+<tr><td>Texts in total</td><td>810 (30 objects × 3 tours × 9 versions)</td></tr>
+<tr><td>Museum</td><td>2 floors, 13 rooms (12 in use)</td></tr>
+<tr><td>Themes</td><td>Dark and light</td></tr>
+</tbody>
+</table>
+<p>The project was developed for the course Information Modelling and Web Technologies (prof. Fabio Vitali), Master's Degree in Digital Humanities and Digital Knowledge, University of Bologna.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="site-map">
+                    <summary><span class="mono">02</span><h2>Site map</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Every page shares the same header (wordmark, main navigation, theme switch, “Start tour”) and footer.</p>
+<table>
+<thead><tr><th scope="col">Page</th><th scope="col">File</th><th scope="col">What it does</th></tr></thead>
+<tbody>
+<tr><td>Home</td><td><code>index.html</code></td><td>Title, the thirty objects as a numbered strip, a moving list of routes, the five eras, the then → now map, the three tours and the project statement.</td></tr>
+<tr><td>01 Collection</td><td><code>collection.html</code></td><td>All objects as a grid of cards or as an index table, filterable by region of origin.</td></tr>
+<tr><td>02 Tours</td><td><code>tours.html</code></td><td>Reading preferences (length, complexity) and the three tours, each with its objects in tour order.</td></tr>
+<tr><td>Object page</td><td><code>Object-page.html</code></td><td>One object at a time inside a tour: gallery, museum label, text, perspectives, maps and metadata.</td></tr>
+<tr><td>03 Atlas</td><td><code>atlas.html</code></td><td>World map of all thirty routes and the two museum floors with every object.</td></tr>
+<tr><td>04 About</td><td><code>about.html</code></td><td>The project, the team and contacts.</td></tr>
+<tr><td>Documentation</td><td><code>documentation.html</code></td><td>This page.</td></tr>
+</tbody>
+</table>
+<h3>Typical paths</h3>
+<ul>
+<li><strong>Quick visit:</strong> Home → Start tour → previous / next through the thirty objects.</li>
+<li><strong>Planned visit:</strong> Tours → choose length and complexity → start a tour.</li>
+<li><strong>Looking for one object:</strong> Collection (or the strip on the home page, or the Atlas) → the object page, opened at that object with <code>Object-page.html?no=5</code>.</li>
+</ul>
+                    </div>
+                </details>
+                <details class="doc-section" id="visual-identity">
+                    <summary><span class="mono">03</span><h2>Visual identity</h2></summary>
+                    <div class="doc-section__body prose">
+<p>The design is called <strong>The Inventory</strong>: the order of a Swiss museum catalogue with a maximalist layer on top. Swiss design gives the structure (grid, numbering, labels, flush-left text, hairline rules); the maximalist layer gives the drama (full-width display type, outlined numerals, the engraved Parthenon drawings, a moving band of object names and tinted photographs).</p>
+<h3>Grid and spacing</h3>
+<p>A 12-column grid, 1440px wide at most, with gutters of 16–24px and outer margins of 16–56px (<code>.grid</code> in <code>site.css</code>). On screens narrower than 800px it becomes 4 columns. Sections are separated by 1px rules and generous vertical space instead of boxes.</p>
+<h3>Colour</h3>
+<table>
+<thead><tr><th scope="col">Token</th><th scope="col">Dark theme</th><th scope="col">Light theme</th><th scope="col">Used for</th></tr></thead>
+<tbody>
+<tr><td><code>--bg</code></td><td><span class="swatch" style="background:#0C0C0F"></span>#0C0C0F</td><td><span class="swatch" style="background:#F0F0F5"></span>#F0F0F5</td><td>Page background</td></tr>
+<tr><td><code>--fg</code></td><td><span class="swatch" style="background:#B7B5E4"></span>#B7B5E4</td><td><span class="swatch" style="background:#4A4A74"></span>#4A4A74</td><td>Text, rules, maps</td></tr>
+<tr><td><code>--fg-muted</code></td><td><span class="swatch" style="background:#8E8CB8"></span>#8E8CB8</td><td><span class="swatch" style="background:#5E5C80"></span>#5E5C80</td><td>Labels, secondary text</td></tr>
+<tr><td><code>--signal</code></td><td><span class="swatch" style="background:#FF4A1C"></span>#FF4A1C</td><td><span class="swatch" style="background:#C9341A"></span>#C9341A</td><td>Removals, current item, focus</td></tr>
+<tr><td><code>--bg-raised</code></td><td><span class="swatch" style="background:#15151B"></span>#15151B</td><td><span class="swatch" style="background:#E4E4EE"></span>#E4E4EE</td><td>Panels, map land</td></tr>
+</tbody>
+</table>
+<p>The lavender and ink pair comes from the first version of the site. Vermilion is the only accent: it marks what was taken, the object you are on, and keyboard focus. All text colours reach at least 4.5:1 contrast against their background in both themes.</p>
+<h3>Typography</h3>
+<table>
+<thead><tr><th scope="col">Role</th><th scope="col">Typeface</th><th scope="col">Where</th></tr></thead>
+<tbody>
+<tr><td>Display</td><td>Karrik (self-hosted, <code>fonts/</code>)</td><td>Headings, navigation, buttons, object titles</td></tr>
+<tr><td>Text</td><td>Space Grotesk 400</td><td>Paragraphs</td></tr>
+<tr><td>Data</td><td>IBM Plex Mono 400</td><td>Numbers, rooms, coordinates, Dublin Core fields, labels</td></tr>
+</tbody>
+</table>
+<p>Karrik exists only in a Regular cut, which reads as bold at text sizes, so paragraphs use Space Grotesk, a grotesque with a similar character. The type scale runs from 13px labels through an 18px body and a 22px lead to fluid display sizes (<code>--step-1</code> … <code>--step-hero</code>), which grow with the window.</p>
+<h3>Images and motifs</h3>
+<ul>
+<li><strong>Inventory numbers</strong> (001–030) appear on every page as outlined Karrik numerals and in mono labels.</li>
+<li><strong>Engravings:</strong> the three Parthenon drawings (<code>partenone1–3.svg</code>) are used as CSS masks, so they take the theme colour.</li>
+<li><strong>Duotone photographs:</strong> in grids and strips, photos are shown in greyscale tinted with the theme colour, and turn to full colour on hover or keyboard focus.</li>
+<li><strong>Stamps:</strong> rotated vermilion labels such as “Removed from Athens” or “Returned 2021”.</li>
+</ul>
+<h3>Motion</h3>
+<p>The title rises in on load, the object strip and sections fade in as they scroll into view, a band of object names scrolls across the home page (with a Pause button), and the removal arcs on the maps flow slowly. All motion stops when the visitor's system asks for reduced motion.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="accessibility">
+                    <summary><span class="mono">04</span><h2>Accessibility</h2></summary>
+                    <div class="doc-section__body prose">
+<ul>
+<li>One <code>&lt;h1&gt;</code> per page and a heading outline that follows the content.</li>
+<li>A “Skip to content” link as the first focusable element.</li>
+<li>A visible 3px vermilion focus ring on every interactive element.</li>
+<li>Real buttons for every control: the menu button reports <code>aria-expanded</code>; the theme, tour, length and complexity buttons report <code>aria-pressed</code>; era tabs use <code>role="tab"</code> and move with the arrow keys.</li>
+<li>The moving list of objects can be paused, and every animation stops under <code>prefers-reduced-motion</code>.</li>
+<li>The maps have text equivalents: the Atlas lists every route and every room next to the maps, and each object page gives origin, current location and room as text in the museum label.</li>
+<li>The map pages do not capture the mouse wheel, so scrolling the page never gets stuck inside a map.</li>
+<li>Colour contrast of at least 4.5:1 for text in both themes; Windows high-contrast mode is supported.</li>
+<li>The page language changes with the chosen translation (<code>&lt;html lang&gt;</code>).</li>
+</ul>
+                    </div>
+                </details>
+                <details class="doc-section" id="tours">
+                    <summary><span class="mono">05</span><h2>Tours and personalization</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Three tours are the core ways into the collection. Each visits all thirty objects, in its own order and with its own texts.</p>
+<table>
+<thead><tr><th scope="col">Tour</th><th scope="col">Focus</th><th scope="col">Order</th></tr></thead>
+<tbody>
+<tr><td>Timeline</td><td>The historical and artistic value of the objects.</td><td>Chronological, from the oldest object to the most recent.</td></tr>
+<tr><td>Colonial Conquests and Cultural Loss</td><td>The social and political consequences of colonialism and looting.</td><td>Alphabetical, each object read through the conquest or war in which it was taken.</td></tr>
+<tr><td>Geo</td><td>Where the objects come from and the events tied to their creation and removal.</td><td>Continent by continent: Africa, the Americas, Asia, Europe, Oceania.</td></tr>
+</tbody>
+</table>
+<h3>Complexity</h3>
+<ul>
+<li><strong>Fun:</strong> simple, engaging language that avoids technical terms without losing information. Meant for young visitors and school groups.</li>
+<li><strong>Basic:</strong> more context and specific information, still light in tone and understandable without previous knowledge.</li>
+<li><strong>Expert:</strong> historical detail, references to specific events, debates and scholarship, for students, academics and informed amateurs.</li>
+</ul>
+<h3>Length</h3>
+<ul>
+<li><strong>Short:</strong> the general context, concise.</li>
+<li><strong>Medium:</strong> more detail and context.</li>
+<li><strong>Long:</strong> the full narrative with dates, events and implications.</li>
+</ul>
+<p>Length and complexity combine freely, so every object has nine versions of its text in each tour. The visitor chooses them on the Tours page before starting and can change them at any time on the object page.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="visitor-profiles">
+                    <summary><span class="mono">06</span><h2>Visitor profiles</h2></summary>
+                    <div class="doc-section__body prose">
+<table>
+<thead><tr><th scope="col">Visitor</th><th scope="col">Goal</th><th scope="col">Suggested settings</th></tr></thead>
+<tbody>
+<tr><td>Alice, middle school teacher</td><td>Organize a class visit</td><td>To prepare: long texts at basic or expert level. During the visit: short texts at the fun level, to keep the class's attention.</td></tr>
+<tr><td>Bruno, businessman</td><td>A 30-minute visit</td><td>Short or medium texts at the basic or expert level: brief, but dense with information.</td></tr>
+<tr><td>Carla, PhD student</td><td>Academic research</td><td>Long texts at the expert level, then the Perspectives section and the metadata for sources.</td></tr>
+</tbody>
+</table>
+                    </div>
+                </details>
+                <details class="doc-section" id="collection">
+                    <summary><span class="mono">07</span><h2>The collection</h2></summary>
+                    <div class="doc-section__body prose">
+<p>The objects were chosen from all over the world and from different periods, to show that colonization and looting took many forms across time and space. All of them were removed from their original sites, by armies, collectors, archaeologists, diplomats or the market; some were given as gifts and later dispersed. Several have since been returned, see <a href="#perspectives">Perspectives</a>.</p>
+<p>The collection started with fifteen objects. In September 2026 the Gdańsk astronomical clock was removed (it was evacuated for safety in 1944 but never looted), the Beijing Observatory instruments took its number, 006, and fifteen objects were added as 016–030, on a second museum floor.</p>
+<p>The inventory number of each object is the number its RDF and metadata files already started with (<code>5_Europe_The_Parthenon_Elgin_Marbles.rdf</code> → 005).</p>
+<table>
+<thead><tr><th scope="col">No.</th><th scope="col">Object</th><th scope="col">Taken from</th><th scope="col">How it left</th><th scope="col">Held</th><th scope="col">Floor · room</th><th scope="col">Region</th></tr></thead>
+<tbody>
+<tr><td><code>001</code></td><td>Benin Bronzes</td><td>Benin City (Kingdom of Benin), Nigeria</td><td>Seized in the British attack on Benin City, 1897</td><td>London, UK</td><td>F1 · R5</td><td>Africa</td></tr>
+<tr><td><code>002</code></td><td>Koh-i-Noor Diamond</td><td>Lahore (Sikh Empire), Pakistan</td><td>Surrendered under the Treaty of Lahore after the Anglo-Sikh war, 1849</td><td>London, UK</td><td>F1 · R2</td><td>Asia</td></tr>
+<tr><td><code>003</code></td><td>Old Summer Palace Artefacts</td><td>Yuanmingyuan, Beijing (Qing China), China</td><td>Looted by British and French troops, 1860</td><td>London, UK</td><td>F1 · R4</td><td>Asia</td></tr>
+<tr><td><code>004</code></td><td>Sultanganj Buddha</td><td>Sultanganj, Bihar, India</td><td>Removed by a British railway engineer, 1861–1862</td><td>Birmingham, UK</td><td>F1 · R3</td><td>Asia</td></tr>
+<tr><td><code>005</code></td><td>Parthenon Marbles</td><td>Acropolis, Athens (Ottoman Greece), Greece</td><td>Removed by Lord Elgin's agents under a disputed Ottoman permit, 1801–1812</td><td>London, UK</td><td>F1 · R1</td><td>Europe</td></tr>
+<tr><td><code>006</code></td><td>Beijing Observatory Instruments</td><td>Beijing Ancient Observatory (Qing China), China</td><td>Seized by French and German troops, 1900</td><td>Potsdam, Germany <em>(returned 1902 (France) and 1921 (Germany))</em></td><td>F1 · R7</td><td>Asia</td></tr>
+<tr><td><code>007</code></td><td>Hoa Hakananai’a (Moai)</td><td>Orongo, Rapa Nui (Chile)</td><td>Taken by the crew of HMS Topaze, 1868</td><td>London, UK</td><td>F1 · R6</td><td>Oceania</td></tr>
+<tr><td><code>008</code></td><td>Throne of King Glele</td><td>Abomey (Kingdom of Dahomey), Benin</td><td>Seized by French troops in the conquest of Dahomey, 1892</td><td>Paris, France <em>(returned to Benin in 2021)</em></td><td>F1 · R2</td><td>Africa</td></tr>
+<tr><td><code>009</code></td><td>Machu Picchu Artefacts</td><td>Machu Picchu, Cusco region, Peru</td><td>Excavated by Yale expeditions and exported as a loan, 1912–1916</td><td>New Haven, USA <em>(returned to Peru in 2011–2012)</em></td><td>F1 · R4</td><td>Americas</td></tr>
+<tr><td><code>010</code></td><td>Nok Terracottas</td><td>Nok culture sites, Kaduna State, Nigeria</td><td>Dug up illegally and sold abroad, above all from the 1990s</td><td>Various museums</td><td>F1 · R1</td><td>Africa</td></tr>
+<tr><td><code>011</code></td><td>Achaemenid Reliefs</td><td>Persepolis, Fars, Iran</td><td>Taken by European diplomats and travellers in the 19th century; others later looted and sold</td><td>London, UK</td><td>F1 · R6</td><td>Asia</td></tr>
+<tr><td><code>012</code></td><td>Bust of Nefertiti</td><td>Amarna, Egypt</td><td>Excavated by a German team and exported in the division of finds, 1913</td><td>Berlin, Germany</td><td>F1 · R1</td><td>Africa</td></tr>
+<tr><td><code>013</code></td><td>Altar of Pergamon</td><td>Pergamon (Bergama), Türkiye</td><td>Excavated and shipped to Berlin under agreements with the Ottoman government, 1878–1886</td><td>Berlin, Germany</td><td>F1 · R1</td><td>Asia</td></tr>
+<tr><td><code>014</code></td><td>Tipu's Tiger</td><td>Srirangapatna (Kingdom of Mysore), India</td><td>Looted by British troops after the fall of Srirangapatna, 1799</td><td>London, UK</td><td>F1 · R2</td><td>Asia</td></tr>
+<tr><td><code>015</code></td><td>Mask of Queen Idia</td><td>Benin City (Kingdom of Benin), Nigeria</td><td>Seized in the British attack on Benin City, 1897</td><td>London, UK</td><td>F1 · R3</td><td>Africa</td></tr>
+<tr><td><code>016</code></td><td>Rosetta Stone</td><td>Rashid (Rosetta), Egypt</td><td>Handed from the French to the British army under the Capitulation of Alexandria, 1801</td><td>London, UK</td><td>F2 · R9</td><td>Africa</td></tr>
+<tr><td><code>017</code></td><td>Dendera Zodiac</td><td>Temple of Hathor, Dendera, Egypt</td><td>Cut out for a Paris collector under a permit from Muhammad Ali's government, 1820</td><td>Paris, France</td><td>F2 · R10</td><td>Africa</td></tr>
+<tr><td><code>018</code></td><td>Paracas Textiles</td><td>Paracas peninsula, Ica, Peru</td><td>Exported illegally by the Swedish consul in Lima, 1930s</td><td>Gothenburg, Sweden <em>(returned to Peru 2014–2021)</em></td><td>F2 · R13</td><td>Americas</td></tr>
+<tr><td><code>019</code></td><td>Ngonnso'</td><td>Kumbo (Nso' kingdom), Cameroon</td><td>Seized in a German colonial campaign, 1902</td><td>Berlin, Germany</td><td>F2 · R10</td><td>Africa</td></tr>
+<tr><td><code>020</code></td><td>Diamond Sutra</td><td>Mogao Caves, Dunhuang (Qing China), China</td><td>Sold by the caves' guardian to Aurel Stein for a small donation, 1907</td><td>London, UK</td><td>F2 · R9</td><td>Asia</td></tr>
+<tr><td><code>021</code></td><td>Oegyujanggak Uigwe</td><td>Ganghwa Island (Joseon Korea), South Korea</td><td>Seized by French troops, 1866</td><td>Paris, France <em>(returned to Korea in 2011 (renewable loan))</em></td><td>F2 · R9</td><td>Asia</td></tr>
+<tr><td><code>022</code></td><td>Ishtar Gate</td><td>Babylon, Iraq</td><td>Excavated by a German team and shipped in a division of finds under the British mandate, 1926–1927</td><td>Berlin, Germany</td><td>F2 · R10</td><td>Asia</td></tr>
+<tr><td><code>023</code></td><td>Gweagal Shield</td><td>Kamay (Botany Bay), Gweagal country, Australia</td><td>Taken by James Cook's crew at first contact, 1770 (identification debated)</td><td>London, UK</td><td>F2 · R12</td><td>Oceania</td></tr>
+<tr><td><code>024</code></td><td>Kalaniʻōpuʻu's Cloak and Helmet</td><td>Kealakekua Bay, Hawaiʻi (USA)</td><td>Given to James Cook, 1779, then sold between collectors</td><td>Wellington, New Zealand <em>(returned to Hawaiʻi in 2016, permanently in 2020)</em></td><td>F2 · R12</td><td>Oceania</td></tr>
+<tr><td><code>025</code></td><td>Moctezuma's Headdress</td><td>Tenochtitlan (Aztec Empire), Mexico</td><td>Sent to Europe after the Spanish conquest; route unknown</td><td>Vienna, Austria</td><td>F2 · R13</td><td>Americas</td></tr>
+<tr><td><code>026</code></td><td>Quimbaya Treasure</td><td>Filandia, Quindío, Colombia</td><td>Given by Colombia's president to the Spanish queen regent, 1893</td><td>Madrid, Spain</td><td>F2 · R13</td><td>Americas</td></tr>
+<tr><td><code>027</code></td><td>Horses of Saint Mark</td><td>Constantinople (Byzantine Empire), Türkiye</td><td>Seized by Venice in 1204 and by Napoleon in 1797</td><td>Venice, Italy</td><td>F2 · R11</td><td>Europe</td></tr>
+<tr><td><code>028</code></td><td>Ghent Altarpiece</td><td>Ghent, Belgium</td><td>Seized by revolutionary France, sold, stolen and seized by Nazi Germany, 1794–1942</td><td>Altaussee, Austria <em>(returned to Ghent in 1945)</em></td><td>F2 · R10</td><td>Europe</td></tr>
+<tr><td><code>029</code></td><td>Priam's Treasure</td><td>Troy (Hisarlık, Ottoman Empire), Türkiye</td><td>Smuggled out of the Ottoman Empire, 1873; seized by the Red Army, 1945</td><td>Moscow, Russia</td><td>F2 · R11</td><td>Asia</td></tr>
+<tr><td><code>030</code></td><td>Codex Gigas</td><td>Prague Castle (Kingdom of Bohemia), Czechia</td><td>Seized by the Swedish army at the end of the Thirty Years' War, 1648</td><td>Stockholm, Sweden</td><td>F2 · R9</td><td>Europe</td></tr>
+</tbody>
+</table>
+<p>“Held” follows the captions in <code>tour-data.json</code>; for returned objects it shows where they were held before their return. F1 and F2 are the two floors of the virtual museum.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="rooms">
+                    <summary><span class="mono">08</span><h2>Museum rooms</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Rooms are grouped by theme, not by continent, so that no region is set apart from the others.</p>
+<h3>Floor 1</h3>
+<table>
+<thead><tr><th scope="col">Room</th><th scope="col">Theme</th><th scope="col">Objects</th><th scope="col">Why together</th></tr></thead>
+<tbody>
+<tr><td>R1</td><td>Ancient Civilizations</td><td>Parthenon Marbles, Nok Terracottas, Bust of Nefertiti, Altar of Pergamon</td><td>Works of ancient states and cultures, from Egypt and Greece to the Nok culture and Anatolia.</td></tr>
+<tr><td>R2</td><td>Royal Treasures</td><td>Koh-i-Noor Diamond, Throne of King Glele, Tipu's Tiger</td><td>Regalia and treasures of rulers: the Mughal and Sikh courts, Dahomey, Mysore.</td></tr>
+<tr><td>R3</td><td>Religious and Spiritual Objects</td><td>Sultanganj Buddha, Mask of Queen Idia</td><td>Objects made for worship: Buddhist sculpture and the ancestral shrines of the Benin court.</td></tr>
+<tr><td>R4</td><td>Cities and Palaces</td><td>Old Summer Palace Artefacts, Machu Picchu Artefacts</td><td>Things taken from palaces and royal estates: the Yuanmingyuan and the Inca estate of Machu Picchu.</td></tr>
+<tr><td>R5</td><td>Royal Workshops</td><td>Benin Bronzes</td><td>The work of a royal guild: the casters of the Benin court.</td></tr>
+<tr><td>R6</td><td>Monumental Sculptures</td><td>Hoa Hakananai’a (Moai), Achaemenid Reliefs</td><td>Large-scale stone sculpture from Rapa Nui and Persepolis.</td></tr>
+<tr><td>R7</td><td>Scientific and Technological Achievements</td><td>Beijing Observatory Instruments</td><td>Scientific instruments taken as trophies of war and returned by treaty.</td></tr>
+<tr><td>R8</td><td>—</td><td></td><td>Empty in the current layout.</td></tr>
+</tbody>
+</table>
+<h3>Floor 2</h3>
+<table>
+<thead><tr><th scope="col">Room</th><th scope="col">Theme</th><th scope="col">Objects</th><th scope="col">Why together</th></tr></thead>
+<tbody>
+<tr><td>R9</td><td>Writing and Knowledge</td><td>Rosetta Stone, Diamond Sutra, Oegyujanggak Uigwe, Codex Gigas</td><td>Inscriptions, books and archives: the written record of states, faiths and scholars.</td></tr>
+<tr><td>R10</td><td>Sacred Places and Images</td><td>Dendera Zodiac, Ngonnso', Ishtar Gate, Ghent Altarpiece</td><td>Objects made for temples, palaces and churches, removed from the places they belonged to.</td></tr>
+<tr><td>R11</td><td>Trophies of War</td><td>Horses of Saint Mark, Priam's Treasure</td><td>Objects that changed hands again and again as spoils of war.</td></tr>
+<tr><td>R12</td><td>Gifts and Seizures</td><td>Gweagal Shield, Kalaniʻōpuʻu's Cloak and Helmet</td><td>Two meetings with James Cook's voyages: one a seizure, one a gift.</td></tr>
+<tr><td>R13</td><td>Feather, Gold and Cloth</td><td>Paracas Textiles, Moctezuma's Headdress, Quimbaya Treasure</td><td>Materials of power in the Americas: Paracas cloth, Mexica featherwork and Quimbaya gold.</td></tr>
+</tbody>
+</table>
+<p>The floor plans are the same inline SVG on the object page and the Atlas, one group per floor; see <a href="#maps">Maps as inline SVG</a>.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="object-page">
+                    <summary><span class="mono">09</span><h2>Object page</h2></summary>
+                    <div class="doc-section__body prose">
+<p>The object page shows one object at a time within a tour. From top to bottom:</p>
+<ol>
+<li><strong>Tour bar:</strong> the tour's name and position (“01 / 30”), a switch between the three tours, and previous / next buttons.</li>
+<li><strong>Title:</strong> the inventory number as a large outlined numeral, the object's name, and its date on a separate line.</li>
+<li><strong>3D view and gallery:</strong> when a real 3D scan exists, the object opens with it (see <a href="#three-d">3D view</a>); the first thumbnail, “3D”, returns to it. The other thumbnails show the object's photos (1–4 each), with author and licence under the photo; selecting a photo enlarges it in a zoomable viewer (<code>images-vis.js</code>; Escape closes it).</li>
+<li><strong>Museum label:</strong> a column that stays in view, with the inventory number, where the object was taken from, where it is held, its room, the length and complexity controls and, when translations exist, a language menu.</li>
+<li><strong>Text:</strong> the tour's text for the chosen length and complexity.</li>
+<li><strong>Perspectives:</strong> see <a href="#perspectives">Perspectives</a>.</li>
+<li><strong>Go deeper:</strong> history and geography panels, shown only when <code>llm-data.json</code> exists (see <a href="#llm">LLM enrichment</a>).</li>
+<li><strong>Then &amp; now:</strong> the floor plan with the object's pin (on the object's floor; the floor switch shows the other floor), and the world map zoomed to its journey.</li>
+<li><strong>The record:</strong> the RDF metadata as an interactive 3D graph, and the Dublin Core table (see <a href="#metadata">Metadata</a>).</li>
+<li><strong>Strip:</strong> 01–30, one button per object in the tour.</li>
+</ol>
+<h3>How it works</h3>
+<p><code>object-page.js</code> reads the visitor's choices from <code>localStorage</code> (key <code>tourData</code>: tour name, length, complexity), fetches <code>tour-data.json</code> and shows the item at <code>currentIndex</code>. <code>displayItem()</code> fills in every part of the page; the length and complexity buttons save the new choice and call it again, and the tour buttons save the new tour and reload from its first object.</p>
+<p>The page also accepts parameters in its address, read by <code>getQueryParams()</code>, so any object can be linked directly:</p>
+<table>
+<thead><tr><th scope="col">Parameter</th><th scope="col">Example</th><th scope="col">Effect</th></tr></thead>
+<tbody>
+<tr><td><code>no</code></td><td><code>?no=5</code></td><td>Opens inventory number 005 in the current tour.</td></tr>
+<tr><td><code>tour</code></td><td><code>?tour=Geo%20Tour</code></td><td>Switches to that tour (keeps length and complexity unless they are given too).</td></tr>
+<tr><td><code>length</code>, <code>complexity</code></td><td><code>&amp;length=long&amp;complexity=expert</code></td><td>Sets the reading preferences, together with <code>tour</code>.</td></tr>
+</tbody>
+</table>
+<h3>Saved in the browser</h3>
+<table>
+<thead><tr><th scope="col">Key</th><th scope="col">Content</th></tr></thead>
+<tbody>
+<tr><td><code>tourData</code></td><td>Tour name, length and complexity</td></tr>
+<tr><td><code>currentIndex</code></td><td>Position in the current tour</td></tr>
+<tr><td><code>theme</code></td><td><code>dark</code> or <code>light</code></td></tr>
+<tr><td><code>lang</code></td><td>Chosen translation</td></tr>
+<tr><td><code>collectionView</code></td><td>Grid or index on the Collection page</td></tr>
+</tbody>
+</table>
+                    </div>
+                </details>
+                <details class="doc-section" id="perspectives">
+                    <summary><span class="mono">10</span><h2>Perspectives</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Each object page has a section asking whose object it is. It draws on two kinds of source.</p>
+<h3>Two sides</h3>
+<p>For each object, <code>perspectives.json</code> records the position of the community or state of origin, the position of the institution that holds it, and the current status, each with the published sources it is drawn from (official statements, news reports, parliamentary records, museum pages). The status is one of: contested, in talks, returned, partly returned, dispersed, no formal claim found, or no removal found. Returned objects also change the stamp in the museum label (for example “Returned 2021”).</p>
+<p>These texts are researched and written by hand, not generated. Positions attributed to each side are theirs; the site does not declare a winner. The file records the date of the research (September 2026); positions change, so the sources should be checked again before publishing.</p>
+<h3>Three tours, three readings</h3>
+<p>Below the two sides, the page shows how each of the three tours tells the same object, at the visitor's current complexity level, with a link to read it inside the other tours. The tours frame each object differently (as art and history, as conquest, as geography), and seeing them side by side is part of the argument.</p>
+<h3>What the research changed</h3>
+<ul>
+<li>The Throne of King Glele was returned to Benin by France in 2021.</li>
+<li>Yale returned the Machu Picchu collection to Peru between 2011 and 2012.</li>
+<li>The Achaemenid relief from the Montreal Museum of Fine Arts was returned to Iran after its seizure in New York in 2017.</li>
+<li>The Gdańsk astronomical clock was never taken abroad: it was dismantled and evacuated for safety in 1944 and reconstructed in St Mary's Church. It was removed from the collection and replaced by the Beijing Observatory instruments.</li>
+<li>Among the new objects, the Paracas textiles (2014–2021), the Uigwe (2011, on renewable loan) and Kalaniʻōpuʻu's cloak and helmet (2016, permanently 2020) have been returned; Ngonnso's return was agreed in 2022 but is still pending.</li>
+<li>Five pins on the floor plan did not match their room captions and were moved into the right rooms, and Tipu's Tiger's caption was corrected to Room 2, as in the room list above.</li>
+</ul>
+                    </div>
+                </details>
+                <details class="doc-section" id="fairness">
+                    <summary><span class="mono">11</span><h2>Fairness review</h2></summary>
+                    <div class="doc-section__body prose">
+<p>In September 2026 the site was reviewed from the point of view of the communities the objects come from, looking for places where the way it names, groups or describes things tilts the story. These are the problems found and what was changed.</p>
+<h3>Changed</h3>
+<ul>
+<li><strong>Places named at different scales.</strong> Some objects were said to come from a city (Athens), others from a whole country (“India”, “Egypt”, “Nigeria”) or an old empire (“Persia”). Every object now follows one pattern: the place, the historical state in brackets when it helps, and the present-day country, for example “Srirangapatna (Kingdom of Mysore), India”. The present-day country only locates the place; it is not a statement about who the heritage belongs to.</li>
+<li><strong>Errors and ambiguities in origins.</strong> Tipu's Tiger was captioned as coming from Persepolis; it comes from Srirangapatna. “Benin (Nigeria)” could be read as the Republic of Benin; the Benin Bronzes and the mask of Queen Idia now say Benin City (Kingdom of Benin), Nigeria, and the throne of Glele says Abomey (Kingdom of Dahomey), Benin. The Koh-i-Noor was surrendered at Lahore, in today's Pakistan, not in “India”; its earlier history, through several South and Central Asian courts, is told in the texts.</li>
+<li><strong>One room named after a continent.</strong> Room 5 was “African Heritage” (captioned “African Artifacts”), while Greek and Egyptian works were “Ancient Civilizations” and no other continent had a room of its own. The Nok terracottas, as old as the Parthenon, moved to Room 1, Ancient Civilizations; Room 5 is now Royal Workshops, for the Benin casters' guild. “Treasures of the Americas” became Feather, Gold and Cloth, “Pacific Encounters” became Gifts and Seizures, and “Lost Cities and Civilizations” became Cities and Palaces.</li>
+<li><strong>Continents.</strong> The Altar of Pergamon was listed under Europe, although Pergamon is in Anatolia (Asia), where Troy is listed. Every object is now placed by where it was taken from.</li>
+<li><strong>How each object left.</strong> “Looted” does not fit every case. Each object now states how it left in one line (seized in war, surrendered under a treaty, removed under a permit, excavated and divided, sold, smuggled, given), shown on the object page, in the collection and in the table above. The home page asks where the objects were “taken”, not “looted”, from.</li>
+<li><strong>The “discovery” of Machu Picchu.</strong> The texts called Hiram Bingham the discoverer of a “lost city”. Quechua families were farming the site in 1911 and a local farmer guided him there. The 27 Machu Picchu texts were rewritten; they also no longer say that the objects went to Europe, or that Peru is still asking for objects that came back in 2011–2012.</li>
+<li><strong>Names.</strong> Rapa Nui comes before “Easter Island”, the moai is called by its Rapa Nui name, Hoa Hakananai'a, and the Parthenon sculptures are not called after Lord Elgin. Each object has the same name in all three tours.</li>
+<li><strong>Returned objects on the map.</strong> A city that only held objects that have since gone back is shown as a hollow square, “former holder”, instead of looking like the place where they are today.</li>
+<li><strong>Colonial and other takings.</strong> The Colonial Conquests tour now says that it also includes objects taken in wars between European states, so that colonial looting can be compared with other cases instead of being confused with them.</li>
+</ul>
+<h3>Still to do</h3>
+<ul>
+<li>Most sources are in English and many come from holding institutions or Western media; the perspectives would be fairer with more sources in the languages of the communities of origin.</li>
+<li>Translations are offered in Italian, French and Spanish, which are European languages. Arabic, Chinese, Korean, Hindi, Persian, Greek, Turkish and Indigenous languages such as Quechua or ʻŌlelo Hawaiʻi would serve the communities of origin better.</li>
+<li>Many of the original 2024 texts still use the museum language of the time (“artifacts”, “treasures”, “explorers”). The texts written in 2026 use it less; the older ones should be revised in the same way.</li>
+<li>The museum and the three tours present the holders' photographs; images made or chosen by communities of origin would change who is looking at whom.</li>
+</ul>
+                    </div>
+                </details>
+                <details class="doc-section" id="maps">
+                    <summary><span class="mono">12</span><h2>Maps as inline SVG</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Both maps are drawn directly in the HTML, not loaded as images. One drawing serves every object; only the markers move. This replaced 31 separate SVG files (about 22 MB).</p>
+<h3>Museum floor plan</h3>
+<p>The walls, the room numbers and a pin are paths inside <code>&lt;svg class="museum-map"&gt;</code>. Each floor is a group, <code>&lt;g class="museum-floor" data-floor="1"&gt;</code> and <code>data-floor="2"</code>, drawn on the same outline so that the pins use one coordinate system. Each object has a floor and a pin position in <code>tour-data.json</code>:</p>
+<pre><code>"maps": { "museum-pin": { "x": 110, "y": 506 }, "museum-floor": 1, "caption-1": "Room 1 - Ancient Civilizations" }</code></pre>
+<p>The floor switch above the plan (<code>.floor-switch</code>, tabs with arrow-key support) is wired by <code>setupFloors()</code> in <code>inventory.js</code>, which shows one floor group and hides the other. <code>object-page.js</code> opens the plan on the object's floor and moves the pin with <code>transform="translate(x y)"</code>; the pin is hidden while the other floor is shown. The colours come from CSS (<code>.museum-map-walls</code>, <code>.museum-map-pin</code>), so the plan follows the theme.</p>
+<h3>World map</h3>
+<p>The land is a single path generated from the country outlines of <em>world.geo.json</em> (Natural Earth): an equirectangular projection onto a 1000 × 394 box (longitude −180…180, latitude 84…−58), Antarctica left out, outlines simplified with the Ramer–Douglas–Peucker algorithm to about 64 KB. The same projection is in <code>inventory.js</code>:</p>
+<pre><code>x = (lng + 180) / 360 * 1000
+y = (84 - lat) / 142 * 394</code></pre>
+<p><code>renderGeoMap()</code> places a circle at the place of origin and a square at the holding city, draws a curved arc between them, and changes the SVG's <code>viewBox</code> to frame the journey, keeping markers and labels the same size on screen. Coordinates come from <code>inventory.js</code>: origins from the site's original map, destinations as city centres.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="three-d">
+                    <summary><span class="mono">13</span><h2>3D view</h2></summary>
+                    <div class="doc-section__body prose">
+<p>When a real 3D scan of an object is openly available, its page opens with it; the first thumbnail, “3D”, returns to it from the photos. Nine objects have one. The others show their photos only: making shapes up from a photograph (an earlier version of the site tried depth estimation) gave inflated, misleading models, and there were not enough photos from all sides to reconstruct them.</p>
+<h3>The scans</h3>
+<p>The scans come from Scan the World (MyMiniFactory) and other open collections, downloaded from Zenodo, which keeps a copy of each with its licence. <code>models/manifest.json</code> lists, for each, what the scan shows, whether it is the object itself or a related piece, the author, the licence and the source. Most are CC BY-NC-SA 4.0 (non-commercial, which this course project is); Nefertiti's is CC0. Two are not the object itself and say so under the model: a relief still in place at Persepolis, and a 19th-century marble copy of the Dendera Zodiac.</p>
+<table>
+<thead><tr><th scope="col">No.</th><th scope="col">Scan</th></tr></thead>
+<tbody>
+<tr><td><code>001</code></td><td>A Benin brass plaque in the British Museum</td></tr>
+<tr><td><code>005</code></td><td>The horse head of Selene, east pediment of the Parthenon</td></tr>
+<tr><td><code>007</code></td><td>Hoa Hakananai'a</td></tr>
+<tr><td><code>011</code></td><td>A relief still at Persepolis (related piece)</td></tr>
+<tr><td><code>012</code></td><td>The bust of Nefertiti</td></tr>
+<tr><td><code>013</code></td><td>A relief from the Pergamon Altar</td></tr>
+<tr><td><code>016</code></td><td>The Rosetta Stone</td></tr>
+<tr><td><code>017</code></td><td>A marble copy of the Dendera Zodiac (1819)</td></tr>
+<tr><td><code>022</code></td><td>A glazed-brick aurochs from the Ishtar Gate</td></tr>
+</tbody>
+</table>
+<h3>The viewer</h3>
+<p><code>viewer3d.js</code> uses three.js (loaded from jsDelivr as an ES module, with the Draco decoder for the compressed scans). Every scan is shown in one matte material in the theme's ink colour, lit from the upper left with a thin vermilion rim light, and follows the dark and light themes; when a scan has its own texture, <em>Colour</em> shows it. Drag to rotate, scroll or pinch to zoom; with the keyboard, the arrow keys rotate and + and − zoom. <em>Reset view</em> returns to the start. The model turns slowly until the visitor touches it, and not at all when the system asks for reduced motion. Without WebGL the page says so and shows the photos.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="atlas">
+                    <summary><span class="mono">14</span><h2>Atlas</h2></summary>
+                    <div class="doc-section__body prose">
+<p>The Atlas replaces the former Map page and the map on the home page with one view of the whole collection.</p>
+<ul>
+<li><strong>World:</strong> a Leaflet map (<code>atlas-map.js</code>, also used on the home page) with a point for each place of origin, a square for each holding city and an arc for each removal; arcs of returned objects are dotted. Next to it, the list of objects: hovering or focusing an object highlights its route and dims the others; selecting it opens its page.</li>
+<li><strong>Museum:</strong> the two floor plans with a numbered marker for every object and, next to them, the rooms with their objects, grouped by floor. Hovering an object in any list highlights it on the maps, switching to its floor when needed.</li>
+</ul>
+<p>The arc is a quadratic Bézier curve between origin and destination, bent to one side by 22% of the distance, drawn as a Leaflet polyline of 48 points.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="metadata">
+                    <summary><span class="mono">15</span><h2>Metadata</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Every object is described twice: with Dublin Core for a general description, and as an RDF graph based on CIDOC CRM for its history and movements.</p>
+<h3>Dublin Core table</h3>
+<p>Each object has an HTML table in <code>Items_JS_HTML/</code> with <code>dc:title</code>, <code>dc:creator</code>, <code>dc:subject</code>, <code>dc:type</code>, <code>dc:description</code>, <code>dcterms:created</code> and <code>dcterms:spatial</code>: authors, date and place of creation, subjects and title. The table's path is stored in <code>tour-data.json</code> (<code>metadata.Table</code>); <code>object-page.js</code> fetches it and inserts it into the page.</p>
+<pre><code>"metadata": {
+  "Rdf-Graph_image": "rdf_files_graphs/5_Europe_The_Parthenon_Elgin_Marbles.png",
+  "Rdf-file_link": "https://raw.githubusercontent.com/.../5_Europe_The_Parthenon_Elgin_Marbles.rdf",
+  "Table": "Items_JS_HTML/5_Europe_ The_Parthenon_Elgin_Marbles.html"
+}</code></pre>
+<h3>RDF graph</h3>
+<p>Each object has an RDF/XML file in <code>rdf_files_graphs/</code> built on CIDOC CRM (for example E22 human-made object or E24 physical human-made thing, E53 place, P55 has current location), combined with Dublin Core, Wikidata, GeoNames and WGS84 coordinates, plus a small project vocabulary (<em>items-ontology</em>) where no existing term fitted. On the object page the RDF is shown as an interactive 3D graph (<code>graph3d.js</code>, three.js). <code>tools/rdf_graph_json.py</code> parses each RDF file with rdflib, which also checks that it is valid, folds labels and classes into the nodes, lays the graph out in three dimensions with networkx and writes <code>graphs/NN.json</code>; the browser only draws it.</p>
+<ul>
+<li>The object is the vermilion node, resources (people, places, events, institutions) are spheres, and literal values are small cubes.</li>
+<li>Navigation works as in the 3D object viewer: drag to rotate, scroll or pinch to zoom, arrow keys and + / − with the keyboard, <em>Reset view</em> to start again, and <em>Labels</em> to show or hide the names.</li>
+<li>Hovering a node shows its name; selecting it brings it to the centre, highlights its statements with the property names, and lists them beside the graph, with links to Wikidata and buttons to move to each neighbour. Escape clears the selection.</li>
+<li>All statements are also listed as text under the graph, for reading and for screen readers. Without WebGL the older PNG image is shown instead (made with <code>tools/rdf_graph.py</code>).</li>
+</ul>
+                    </div>
+                </details>
+                <details class="doc-section" id="llm">
+                    <summary><span class="mono">16</span><h2>LLM enrichment</h2></summary>
+                    <div class="doc-section__body prose">
+<p>An optional script, <code>llm/enrich.mjs</code>, uses Claude (Anthropic API) to draft extra content from the site's own texts. It runs on a computer, not in the browser, so no API key is ever published; it writes <code>llm-data.json</code>, which the object page loads if it exists.</p>
+<table>
+<thead><tr><th scope="col">Task</th><th scope="col">Output</th></tr></thead>
+<tbody>
+<tr><td>CIDOC CRM RDF drafts from the object texts</td><td><code>llm/output/rdf/</code>, with a check of every Wikidata ID against Wikidata</td></tr>
+<tr><td>“Go deeper”: history and geography</td><td><code>llm-data.json</code></td></tr>
+<tr><td>Translations (Italian, French, Spanish by default)</td><td><code>llm-data.json</code>, language menu on the object page</td></tr>
+<tr><td>Alt text for the photos (vision)</td><td><code>llm-data.json</code></td></tr>
+<tr><td>Then / now places and coordinates</td><td><code>llm-data.json</code>, <code>llm/output/objects.geojson</code></td></tr>
+</tbody>
+</table>
+<p>Everything generated is marked <code>"reviewed": false</code> and labelled as an AI draft on the page until the team has checked it. How to run it is described in <code>llm/README.md</code>.</p>
+                    </div>
+                </details>
+                <details class="doc-section" id="files">
+                    <summary><span class="mono">17</span><h2>Files and data</h2></summary>
+                    <div class="doc-section__body prose">
+<table>
+<thead><tr><th scope="col">File</th><th scope="col">Role</th></tr></thead>
+<tbody>
+<tr><td><code>site.css</code></td><td>The whole design system: tokens, grid, components, every page, motion and preferences.</td></tr>
+<tr><td><code>theme.js</code></td><td>Applies the saved theme before the page is drawn.</td></tr>
+<tr><td><code>site.js</code></td><td>Shared behaviour: theme switch, mobile menu, header, “Start tour” links, scroll reveals.</td></tr>
+<tr><td><code>inventory.js</code></td><td>The thirty objects: number, region, floor, room, pin, origin, destination, photos; the room names; the floor switch (<code>setupFloors()</code>); the world map projection and <code>renderGeoMap()</code>.</td></tr>
+<tr><td><code>tour-data.json</code></td><td>The three tours: order of the objects and, for each, title, 9 texts, image, captions, pin and metadata links.</td></tr>
+<tr><td><code>perspectives.json</code></td><td>The researched two sides and status for each object, with sources.</td></tr>
+<tr><td><code>home.js</code>, <code>timeline.js</code></td><td>Home page: object strip, marquee, eras.</td></tr>
+<tr><td><code>atlas-map.js</code>, <code>atlas.js</code></td><td>The Leaflet world map; the Atlas page.</td></tr>
+<tr><td><code>collection.js</code>, <code>tours.js</code></td><td>Collection and Tours pages.</td></tr>
+<tr><td><code>object-page.js</code>, <code>perspectives.js</code>, <code>llm-content.js</code>, <code>images-vis.js</code>, <code>viewer3d.js</code></td><td>Object page: content, perspectives, generated content, image viewer, 3D viewer.</td></tr>
+<tr><td><code>models/</code></td><td>The open 3D scans (<code>NN.glb</code>), listed with their licences in <code>manifest.json</code>.</td></tr>
+<tr><td><code>graph3d.js</code>, <code>graphs/</code>, <code>tools/rdf_graph_json.py</code></td><td>The 3D metadata graph, its data for each object and the script that makes it from the RDF files.</td></tr>
+<tr><td><code>images/credits.json</code></td><td>Author, licence and source of the Wikimedia Commons photos.</td></tr>
+<tr><td><code>docs.js</code></td><td>This page: collapsible sections and index.</td></tr>
+<tr><td><code>Items_JS_HTML/</code>, <code>rdf_files_graphs/</code>, <code>Items_XML/</code></td><td>Dublin Core tables, RDF files and graph images, draw.io models.</td></tr>
+<tr><td><code>images/</code>, <code>partenone1–3.svg</code>, <code>fonts/</code></td><td>Photos, engravings, the Karrik font.</td></tr>
+<tr><td><code>llm/</code></td><td>The optional enrichment script.</td></tr>
+</tbody>
+</table>
+                    </div>
+                </details>
+                <details class="doc-section" id="credits">
+                    <summary><span class="mono">18</span><h2>Credits</h2></summary>
+                    <div class="doc-section__body prose">
+<p>Alice Picco, Corrado Consiglio and Marco Lamorte, for the course Information Modelling and Web Technologies held by professor Fabio Vitali, Master's Degree in Digital Humanities and Digital Knowledge, Alma Mater Studiorum University of Bologna.</p>
+<p>Country outlines: <em>world.geo.json</em> (Natural Earth, public domain). Map library: Leaflet. 3D: three.js; scans by Scan the World (MyMiniFactory) and other contributors, via Zenodo, under the licences listed in <code>models/manifest.json</code>. Typefaces: Karrik, Space Grotesk and IBM Plex Mono. Photographs of the objects 006 and 016–030 come from Wikimedia Commons under free licences; author, licence and source of each are listed in <code>images/credits.json</code>. A few are stand-ins and are captioned as such: other Uigwe volumes of the same kind, the replica horses on the façade of St Mark's, and a facsimile of the Codex Gigas.</p>
+<p>The project will not be maintained or updated past the scope of the course's examination.</p>
+                    </div>
+                </details>
             </div>
-
-            <div class="museum-rooms-org">
-                <h2>Museum Room Division</h2>
-                <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/refs/heads/main/map%20-%20example.svg" alt="museum-map-ex">
-                <p id="caption">
-                    Room 1: Ancient Civilizations<br><br>
-
-    THE PARTHENON MARBLES<br><br>
-    THE BUST OF NEFERTITI<br><br>
-    THE ALTAR OF PERGAMON<br><br>
-
-These artifacts represent some of the most significant ancient civilizations: Greece, Egypt, and Hellenistic culture. They showcase the artistic and architectural achievements of these early societies.<br><br>
-Room 2: Royal Treasures<br><br>
-
-    KOH-I-NOOR DIAMOND<br><br>
-    THE THRONE OF KING GLELE<br><br>
-    TIPU SULTAN'S TIGER<br><br>
-
-This room focuses on objects associated with royalty and power. The Koh-i-Noor diamond symbolizes imperial wealth, while the throne and tiger represent the regalia of African and Indian rulers respectively.<br><br>
-Room 3: Religious and Spiritual Artifacts<br><br>
-
-    THE SULTANGANJ BUDDHA<br><br>
-    MASK OF QUEEN IDIA<br><br>
-
-These objects represent different religious and spiritual traditions. The Buddha statue showcases Buddhism, while the Mask of Queen Idia represents ancestral worship in the Benin Kingdom.<br><br>
-Room 4: Lost Cities and Civilizations<br><br>
-
-    MACCHU PICCHU ARTIFACTS<br><br>
-    OLD SUMMER PALACE ARTIFACTS<br><br>
-
-This room highlights artifacts from civilizations that have been lost or dramatically changed over time. The Macchu Picchu items represent the Incan Empire, while the Old Summer Palace artifacts showcase China's imperial past.<br><br>
-Room 5: African Heritage<br><br>
-
-    BENIN BRONZES<br><br>
-    NOK TERRACOTTA STATUES<br><br>
-
-These artifacts represent the rich artistic traditions of West Africa. The Benin Bronzes showcase the metalworking skills of the Benin Kingdom, while the Nok statues represent one of Africa's oldest known civilizations.<br><br>
-Room 6: Monumental Sculptures<br><br>
-
-    MOAI STATUE<br><br>
-    THE ACHAEMENID RELIEFS<br><br>
-
-This room features large-scale sculptural works. The Moai statue represents the unique culture of Easter Island, while the Achaemenid reliefs showcase the grandeur of ancient Persian art.<br><br>
-Room 7: Scientific and Technological Achievements<br><br>
-
-    GDANSK ASTRONOMICAL CLOCK<br><br>
-
-This room is dedicated to objects that represent scientific and technological advancements. The Gdansk Astronomical Clock showcases medieval European craftsmanship and astronomical knowledge.<br><br>
-                </p>
-
-            </div>
-
-            <h2 id="personalization-title">Tour Personalization System</h2>
-            <p id="Timeline_Tour_par">
-                The tour selection is only the first variable in the visitor's tour personalization process. The looted items collection features a complex system of texts related to each item which adapt according to user decisions. Beyond tour selection, visitors can modify COMPLEXITY and LENGTH throughout their experience. Both of these variables move along a system of three different levels. 
-            </p>
-            
-            <div class="tours-des">
-                <h3><strong>Complexity Levels</strong></h3>
-                <p id="Timeline_Tour_par">
-                    <strong>Fun:</strong> Simple and engaging language, emphasizing fun or key ideas. The use of technical terms is avoided but without compromising the informative and educational purpose of the experience. Ideal for a young audience, typically schools.<br><br>
-                    <strong>Basic:</strong> Expands with more context and specific information but still light in tone and easily understandable even without particular previous knowledge. Thought for visitors interested in the subject but without a related specific education.
-                    <br><br>
-                    <strong>Expert:</strong> Goes into historical details, source-based, with references to specific events, debates, or related scholarship.Provide texts ideal for academics or amateurs expert in the subject. A level of tour which can help these types of figures in their studies and maybe additionally enrich their knowledge.</p>
-
-                <h3><strong>Length Options</strong></h3>
-                <p id="Timeline_Tour_par">
-                    <strong>Short:</strong> General context, concise but informative.<br><br>
-                    <strong>Medium:</strong> Enhanced details and context, balanced presentation.<br><br>
-                    <strong>Long:</strong> Comprehensive narrative including dates, events, and implications.<br><br>
-                    By using and combining these variables texts change in order to reflect different lengths, competence levels, and tones. This structure is entirely controlled by the user by using special buttons which incorporate various commands like Tell me more, Tell me less, This text is too simple, This text is too difficult, or make the text more fun and enjoyable. Essentially the grid that forms at the end of the process is designed to accommodate diverse visitor types such as young audiences, generic adults, and scholars, and can easily be adapted for personalized use in the site.
-                </p>
-
-            </div>
-    
-            <div class="tours-des">
-                <h2>Example of Visitor Profiles and related tours</h2>
-                <h3><strong>1. Alice (Middle School Teacher)</strong></h3>
-                <p>
-                    <strong>Goal:</strong> Organize a class museum visit<br>
-                    <strong>Recomendation:</strong> Probably it would be better for this user to use a tour with high length and middle or high level of complexity in order to prepare herself. Later, at the moment of the actual visit, a short tour with complexity of level “fun” would be ideal to maintain the young visitors attention and create an informative and not boring visit of the collection.
-                </p>
-            
-                <h3><strong>2. Bruno (Businessman)</strong></h3>
-                <p>
-                    <strong>Goal:</strong> Brief 30-minute visit<br>
-                    <strong>Recomendation:</strong> Given the short time available it would be useful to choose for short or medium texts maintaining, although, a basic or high level of complexity. In this way the text, even being short, can enrich its informative importance.
-                </p>
-            
-                <h3><strong>3. Carla (PhD Student)</strong></h3>
-                <p>
-                    <strong>Goal:</strong> Academic research<br>
-                    <strong>Recomendation:</strong> Without a doubt the needs of this visitor can be fulfilled by using the variables: Expert and long texts. Long and rich informative material for a complete and professional experience.
-                </p>
-            </div>
-            
-            <div class="tours-des">
-                <h2 id="collection-title">The Collection</h2>
-                <p>
-                    The items of the collection have been selected after an in depth research. All of them have in common the fact that they have been looted from their original sites. A major concern for us was to use items from all over the world and from different epochs in order to demonstrate how colonization and looting are processes which acted by many different forms in time and space.
-                </p>
-            
-                <!-- Africa -->
-                <h3><strong>Africa</strong></h3>
-                <p>
-                    <strong>Benin Bronzes</strong><br>
-                    Location: Nigeria<br>
-                    Looted By: British forces (1897)<br>
-                    Current Location: British Museum and European museums<br><br>
-            
-                    <strong>Throne of King Glele</strong><br>
-                    Location: Benin Republic<br>
-                    Looted By: French forces (1890s)<br>
-                    Current Location: Musée du Quai Branly, Paris<br><br>
-            
-                    <strong>Nok Terracotta Statues</strong><br>
-                    Location: Nigeria<br>
-                    Looted By: European collectors (19th-20th centuries)<br>
-                    Current Location: Various European and US museums<br><br>
-            
-                    <strong>Bust of Nefertiti</strong><br>
-                    Location: Egypt<br>
-                    Looted By: German archaeologists (1912)<br>
-                    Current Location: Neues Museum, Berlin<br><br>
-            
-                    <strong>Mask of Queen Idia</strong><br>
-                    Location: Nigeria<br>
-                    Looted By: British forces (1897)<br>
-                    Current Location: British Museum and European collections
-                </p>
-            
-                <!-- Asia -->
-                <h3><strong>Asia</strong></h3>
-                <p>
-                    <strong>Koh-i-Noor Diamond</strong><br>
-                    Location: India<br>
-                    Looted By: British East India Company (1849)<br>
-                    Current Location: British Crown Jewels<br><br>
-            
-                    <strong>Old Summer Palace Artefacts</strong><br>
-                    Location: China<br>
-                    Looted By: British and French forces (1860)<br>
-                    Current Location: British Museum, Victoria and Albert Museum<br><br>
-            
-                    <strong>Sultanganj Buddha</strong><br>
-                    Location: India<br>
-                    Looted By: British East India Company (1861)<br>
-                    Current Location: Birmingham Museum<br><br>
-            
-                    <strong>Achaemenid Reliefs</strong><br>
-                    Location: Iran (Persepolis)<br>
-                    Looted By: European explorers (19th-20th centuries)<br>
-                    Current Location: British Museum<br><br>
-            
-                    <strong>Tipu Sultan's Tiger</strong><br>
-                    Location: India<br>
-                    Looted By: British forces (1799)<br>
-                    Current Location: Victoria and Albert Museum
-                </p>
-            
-                <!-- Europe -->
-                <h3><strong>Europe</strong></h3>
-                <p>
-                    <strong>Parthenon (Elgin) Marbles</strong><br>
-                    Location: Greece<br>
-                    Looted By: Lord Elgin (1801-1805)<br>
-                    Current Location: British Museum<br><br>
-            
-                    <strong>Gdańsk Astronomical Clock</strong><br>
-                    Location: Poland<br>
-                    Looted By: Swedish forces (17th century)<br>
-                    Current Location: Church Museum, Uppsala<br><br>
-            
-                    <strong>Altar of Pergamon</strong><br>
-                    Location: Turkey<br>
-                    Looted By: German archaeologists (late 19th century)<br>
-                    Current Location: Pergamon Museum, Berlin
-                </p>
-            
-                <!-- Oceania -->
-                <h3><strong>Oceania</strong></h3>
-                <p>
-                    <strong>Moai Statue (Hoa Hakananai'a)</strong><br>
-                    Location: Easter Island (Chile)<br>
-                    Looted By: British sailors (19th century)<br>
-                    Current Location: British Museum
-                </p>
-            
-                <!-- South America -->
-                <h3><strong>South America</strong></h3>
-                <p>
-                    <strong>Machu Picchu Artefacts</strong><br>
-                    Location: Peru<br>
-                    Looted By: Hiram Bingham (1911)<br>
-                    Current Location: Yale University (partial return)
-                </p>
-            </div>
-        </section>
-        <section class="object_page-des">
-            <div id="object-visualization-des">
-                <h2> Object page Visualization</h2>
-                <h3>Object page description and working logic</h3>
-                <p id="object-des-p-1">
-                    The object page is where the choices done previously by the user in the personalization tour unfold. Here there are the tree tours:<strong> Timeline Tour</strong>, <strong>Colonial Conquest Tour</strong>, and <strong>Geo Tour</strong>. In the timeline tour the objects are presented according to a chronological order (from the oldest to the newest); in the colonial conquest tour they are disposed in an alphabetical order depending on their colonial conquest period; while in the Geo Tour they follow an alphabetical order as well according to their country of origin, which also follows an alphabetical order.
-                </p>
-                <p id="object-des-p-2">
-                    Each tour starts with an image showing the object and with a <strong>text description</strong> immediately below. Depending on the previous choices, the initial text can be of different <strong>lengths</strong> and <strong>difficulties</strong> (ex: it can be short but complex or long but easy), and with the <strong>more/less</strong> buttons it is possible to adjust these two parameters according to one’s information needs. Above the image there are the buttons of the three tours so clicking on one of them is always possible to change tour and start from the beginning. It is also possible to start directly from the timeline tour by clicking on the “Start Tour” on the top right in the navbar and this in particular can be done in every page.
-                </p>
-                <p id="object-des-p-3">
-                    The object’s images, the text and their length and complexity are all managed thanks to a JavaScript code composed by different functions that deal with the fetch and display of the item’s images and texts according to a predefined order. All the functions are saved in the <i>object-page.js</i> file. The tour content itself — titles, texts, images, maps, and metadata references for all 45 items (3 tours × 15 items each) — is stored in a separate <i>tour-data.json</i> file and loaded asynchronously at runtime via the <strong>Fetch API</strong>. This keeps the JavaScript logic lean and the data independently maintainable.
-                    <br><br>
-                    In <i>object-page.js</i> there is first a <strong>getQueryParams()</strong> function that takes the query parameters from the current object page URL (e.g.<strong>?tour=Timeline%20Tour&length=short
-                        &complexity=fun</strong>) and it extracts the selected <strong>tour name</strong> (<i>timeline</i>, <i>colonial conquest tour </i> and <i>geo tour</i>), the preferred <strong>text length</strong> (<i>short</i>, <i>medium</i>, <i>long</i>), and <strong>text complexity</strong> (<i>fun</i>, <i>basic</i>, <i>expert</i>). This function actually exists for a potential use case. It is designed to extract parameters from the URL, which could be used to dynamically load content based on URL-based selections instead of relying solely on <i>localStorage</i>, so if the <i>localStorage</i> gets cleared, but the URL contains parameters, <strong>getQueryParams()</strong> could still provide content.
-                </p>
-                <p id="object-des-p-4">
-                    The next step is managed by the <strong>getItemsFromLocalStorage()</strong> function that access to the items data stored in the the <i>localStorage</i>. This is useful for checking if the items data exist: if it is not the case then the function returns <i>null</i>, otherwise it converts the Json string items data into a <strong>Javascript object</strong> and return it. This function is set as a global function by this line of code: <strong>window.getItemsFromLocalStorage = getItemsFromLocalStorage</strong>; this means that it can be used anywhere within the code. <br>
-                    But the real logic of the entire JavaScript file starts from the subsequent <strong>loadTourContent()</strong> function that retrieves the data stored in the browser’s <i>localStorage</i> under the key <i>tourData</i>. If no data is found, it returns <i>null</i>. The data in <i>tourData</i> key it has been saved previously in the <i>localStorage</i> and it contains all the choices made by the user in the personalize tour page. This means that there is another Javascript code (in our case the <i>personalization.js</i> file) who stores these choices in a <i>const tourData</i> and then save them using something like this: <strong>localStorage.setItem('tourData', JSON.stringify(tourData))</strong>. This function saves the data in the key <i>tourData</i> in a Json string format.
-                </p>
-                <p id="object-des-p-5">
-                    More specifically, in the <i>personalization.js</i> file there is the <strong>startTour()</strong> function that creates the <i>const tourData</i> with the user’s choices and save them in the <i>localStorage</i>. This function has been declared as global with the <strong>window.startTour = startTour</strong>, because it can be triggered outside the <i>personalization.js</i> file, for example just clicking the start button defined in the personalization_tour.html file  and then it can redirects to the object-page.html with the user’s choices stored in the browser <i>localStorage</i>.
-                </p>
-                <p id="object-des-p-6">
-                    After being redirected to the object-page the <strong>loadTourContent</strong> function, as already mentioned, retrieves in the <i>tourData</i> key the choices saved in the <i>localStorage</i> in this way: <strong>const tourData = localStorage.getItem('tourData')</strong>. This retrieves the info contained in the <i>tourData</i> key saved as a string in the <i>localStorage</i>, then with the <strong>const { tourName, length, complexity } = JSON.parse(tourData)</strong>; the string is parsed and converted into an object so it is possible to extract values and assign them to the variables <i>tourName</i>, <i>length</i>, <i>complexity</i> to be used later. 
-                </p>
-                <p id="object-des-p-7">
-                    Then the <strong>loadTourContent</strong> function retrieves the content related to the variables <i>tourName</i>, <i>length</i>, <i>complexity</i> by fetching the external <i>tour-data.json</i> file using <strong>fetch('tour-data.json')</strong>. Because the function is <strong>async</strong>, it awaits the network response and parses it with <strong>response.json()</strong> before proceeding. The JSON file contains all the information to be shown on the object page: the title, the object images, the texts in every combination of complexity and length, the metadata information (RDF graph link and table URL), and the maps for the location of the object in the museum and in the world. If the fetch fails — for instance because the page is opened directly from the filesystem instead of an HTTP server — a graceful error message is shown to the user instead of a broken page.
-                </p>
-                <p id="object-des-p-8">
-                    To show properly the objects a display function has been implemented which takes as parameters the length, the complexity and the index of the object to be displayed. Using something like this <strong>const itemId = items[index]</strong> and <strong>const itemData = texts[itemId]</strong> it is possible to retrieve the position of the item and its content in the dataset and then update dynamically with a <strong>document.getElementById()</strong> function each element of the object-page (title object, images, metadata, maps).
-                    For the object page navigation menu there is a dedicated code section where <strong>document.getElementById('prev').
-                    addEventListener</strong> and <strong>document.getElementById('next').add
-                    EventListener</strong> deals with the scrolling from the previous to the next object and viceversa, while <strong>document.getElementById('length-less/length-more').
-                    addEventListener</strong> in combination with <strong>changeLength('less')
-                    /changeLength('more')</strong> and <strong>changeComplexity('less')/
-                    changeComplexity('more')</strong> functions manage the increase/decrease of text’s length/complexity of the current object.
-                </p>
-                <p id="object-des-p-9">
-                    In the <strong>Museum Localization</strong> and <strong>Geolocalization</strong> section there are maps for giving more information to the user about the locations of the object. The Museum Map shows the museum room where the object is placed, accompanied by a simple textual description of the room number; the second maps showing the original location and actual location in the world of the current displayed object. As well in this case there is a text simply explaining the previous and present location of the object.
-                    <br>
-                    Both Museum and Geolocalization Map have been inserted in the predefined dataset containing all the objects info and they are updated dynamically with a <strong>document.getElementById()</strong> function. The same goes for the textual references under the maps.
-                </p>
-            </div>
-
-            <div id="metadata-des">
-            <h3>Metadata section</h3>
-            <p id="metadata_intro_p-1">
-            The last section of the Object page is dedicated to the metadata. This section called <i>metadata-container</i> is composed by two parts(<i>metadata-content</i>): the first one contains the Image of a <strong>Rdf Graph</strong> and a short text to guide the user to a better visualization of the graph itself; the second one is dedicated to a html table enriched with <strong>Dublin core Metadata elements</strong>. 
-            </p>
-            <p id="metadata_intro_p-2">
-            Essentially, to guarantee a precise and detailed metadata representation for each item, it was decided to use the Dublin Core metadata elements as a vocabulary for a general description. Moreover, for a better understanding of the cultural and historical background as well as the item’s movement from one place to another, it was adopted the CIDOC CRM conceptual model in combination with other ontologies/models (such as DBpedia), and then created a RDF Graph to provide a complete visual representation.
-            </p>
-            <h3> Metadata Table</h3>
-            <p id="metadata_table_p-1">
-                As already mentioned, a html table containing general Dublin Core metadata elements was created for each one of the 15 items and inserted within the metadata <i>metadata-container</i> section in a div container defined as <i>metadata-content</i> using a JavaScript code.
-            </p>
-            <p id="metadata_table_p-2">
-                From the Dublin Core metadata were taken some of the main elements used when describing any resource, such as <span style="font-family: 'Courier New', Courier, monospace;">dc:title, dc:creator, dc:subject, dc:type, dc:description, dcterms:created, dcterms:spatial</span>. The idea was to give general information about the author/s. date/place of creation, main subjects, title etc…
-            </p>
-            <p id="metadata_table_p-3">
-                The table is composed by two columns: the one in the left contains the Dublin core elements, while the other in the right contains the corresponding values. Here is an example of the code structure of the table:
-                <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/5118ffe0397b97d09b4c4b7f24d1951a8fe5d6aa/images/table1.png" id="table-1" alt="Table image" />
-                The following image is how the table appears in the web page:
-                <br>
-                <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/5118ffe0397b97d09b4c4b7f24d1951a8fe5d6aa/images/table2.png" id="table-2" alt="Table image" />
-            </p>
-            <p id=”metadata_table_p-4”>
-                Each table was uploaded on a GitHub repository and, to be visualized correctly, its <strong>raw link</strong> was stored in the <i>tour-data.json</i> file as part of the metadata section for each item. This JSON file — loaded asynchronously by <i>object-page.js</i> at runtime — contains all the information to be displayed on the object page. Below an example of how the metadata section is structured within the JSON:
-                <img src=”https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/5118ffe0397b97d09b4c4b7f24d1951a8fe5d6aa/images/table3.png” id=”table-3” alt=”Table image” />
-                As it can be seen in the image above, the metadata section contains key-value pairs for the RDF graph elements and the HTML table, where for example the key is <i>”Table”</i> and the value is the <i>”raw link”</i>.
-            </p>
-            <p id=”metadata_table_p-5”>
-                To visualize the <strong>Table content</strong>, a JavaScript code is used to identify the exact point where to inject content inside the div <i>metadata-content</i> of the Object page, and fetching it with the raw link provided in the <i>tour-data.json</i> file. The code used for this operation was the following:
-                <img src="https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/5118ffe0397b97d09b4c4b7f24d1951a8fe5d6aa/images/table4.png" id="table-4" alt="Table image" />
-                The variable <strong> TableMetadata = document.getElementById('table-metadata')</strong> identifies the point whitin the div metadata-content where to load the table while the fetch(tableURL) uses the table url to get the table content with a http GET request and the TableMetadata.innerHTML = data, updates the TableMetadata element with the obtained content.
-                <br>
-                These steps are done for the tables of every item and in this way, using the javascript code it is possibile to update dinamically the content table corresponding to the right object to show.
-            </p>
-            <h3> Metadata RDF Graph </h3>
-            <p id="metadata_rdf_graph-intro">
-                Similar to what has been done with the Html Table, <stron>a RDF Graph</stron> was created to provide a different point of view about the historical and cultural background of the object, in particular whit a focus on the places where the object was created and/or found, moved from and to by foreign forces. 
-            </p>
-            <p id="metadata_rdf_graph-1">
-                First of all, it was developed for each object a rdf file in Javascript, using <strong> CIDOC CRM conceptual model</strong> as reference, in combination with other models/vocabularies such as <strong> DBpedia, Wikidata, Geonames, XML Schema</strong> etc… On some occasion it was necessary to adopt a personalized ontology (items-ontology) created ad hoc for describing specific aspects of the item.
-            </p>
-            <p id="metadata_rdf_graph-2">
-                After that it was used the <strong>RDF grapher</strong> web service for parsing RDF data and visualizing it as a graph. What we got are high resolution images of the rdf graph to be put within the <i>metadata-container</i>. The image can be clicked and opened to its full width, it is possible also to zoom in/out and pan around to explore the full graph. Here an example of the image obtained:
-                <img src= "https://raw.githubusercontent.com/Marcolamorte/Looted-items-collection/5118ffe0397b97d09b4c4b7f24d1951a8fe5d6aa/rdf_files_graphs/1_Africa_Benin_Bronzes.png" id="rdf-image" alt="rdf graph image" />
-            </p>
-            <p id="metadata_rdf_graph-3">
-                Below the image there is a section that helps the user to interact better with the graph using an external tool. In particular, it is possible to use the link of the rdf file hosted in the github repository and pasting it in the <i>Visualize Web page</i> section of <strong>isSemantic.net</strong>, a rdf visualizer tool, accessible through the “View on -isSemantic.net” button at the end of the section.
-            </p>
         </div>
+    </main>
 
-        <!-- This html snippet is for the modal container of the img -->
-        <div id="imageModal" class="modal">
-            <!-- “X” close button -->
-            <span class="close" onclick="closeModal()">&times;</span>
-            
-            <!-- Container for the image we want to show enlarged -->
-            <div class="modal-content">
-              <img id="expandedImg" src="" alt="Full size image" />
-            </div>
+    <!-- FOOTER: same on every page -->
+    <footer class="site-footer grid">
+        <p class="site-footer__word" aria-hidden="true">The Stolen <span>Archive</span></p>
+        <div class="site-footer__col">
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="atlas.html">Atlas</a></li>
+                <li><a href="about.html">About &amp; team</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
         </div>
-          <!-- End of the modal container -->
-
-    </section>
-
-    <section class="object-main-container">
-        <h2 id="collection-title">Collection Page</h2>
-        <p id="introduction_par">
-            The Collection page serves as a comprehensive catalog of all artifacts in The Stolen Archive. It's designed to provide an accessible overview while maintaining deep integration with the rest of the site's features.
-        </p>
-    
-        <div class="tours-des">
-            <h3><strong>Key Features and Components</strong></h3>
-            <p id="Timeline_Tour_par">
-                <strong>Grid Layout:</strong> Items are presented in a responsive grid format that adapts to different screen sizes, ensuring optimal viewing on all devices. Each item is displayed with high-quality imagery and basic identifying information.<br><br>
-                
-                <strong>Interactive Elements:</strong> Each artifact in the collection is clickable, leading visitors to the corresponding Map Page for deeper exploration of the item's journey and current location.<br><br>
-                
-                
-                <strong>Tour Integration:</strong> Direct access to start any of the three main tours (Timeline, Colonial Conquests, Geo) from any item in the collection, creating seamless navigation between different viewing modes.
-            </p>
+        <div class="site-footer__col site-footer__col--wide">
+            <h2>The project</h2>
+            <p>Developed for the final examination of Information Modelling and Web Technologies, held by professor Fabio Vitali, in the Master's Degree in Digital Humanities and Digital Knowledge at Alma Mater Studiorum, University of Bologna. It will not be maintained or updated past the scope of the course's examination.</p>
         </div>
-    
-        <div class="tours-des">
-            <h2>Map Page</h2>
-            <p id="Timeline_Tour_par">
-                The Map Page provides an interactive geographical interface that visualizes both the historical journey and current location of each artifact. This dual-map system offers visitors a comprehensive understanding of the object's spatial context.
-            </p>
-    
-            <h3><strong>Museum Map Features</strong></h3>
-            <p id="Timeline_Tour_par">
-                <strong>Internal Navigation:</strong> Interactive floor plan showing the exact location of each artifact within the museum space.<br><br>
-                
-                <strong>Room Context:</strong> Detailed information about the exhibition space, including nearby artifacts and thematic connections.<br><br>
-                
-                <strong>Accessibility Information:</strong> Clear indicators for wheelchair access, rest areas, and facility locations.
-            </p>
-    
-            <h3><strong>World Map Features</strong></h3>
-            <p id="Timeline_Tour_par">
-                <strong>Journey Visualization:</strong> Pop-ups showing the artifact's movement from its origin to its current location.<br><br>
-                
-                <strong>Historical Context:</strong> Timeline integration showing when and why each movement occurred.<br><br>
-                
-                <strong>Cultural Impact:</strong> Information about both the source community and current holding institution.
-            </p>
-    
-            <h3><strong>Tour Integration</strong></h3>
-            <p id="Timeline_Tour_par">
-                The Map Page seamlessly integrates with all three main tours:<br><br>
-                
-                <strong>Timeline Tour Map:</strong> Chronological visualization of artifact movements, with dates and historical context.<br><br>
-                
-                <strong>Colonial Conquests Tour Map:</strong> Focus on colonial expansion patterns and their impact on cultural heritage.<br><br>
-                
-                <strong>Geo Tour Map:</strong> Emphasis on geographical relationships and cultural connections between regions.
-            </p>
+        <div class="site-footer__col">
+            <h2>Contact</h2>
+            <p>Claims or suggestions? Reach us through the <a href="about.html#contact">team page</a>.</p>
         </div>
-    </section>
-
-</main>
-
-    <!-- copy paste footer into every page -->
-    <footer>
-        <hr>
-        <h2 class="footer-h2">The Stolen Archive</h2>
-        <p>Is a project developed for the final examination of the course Information Modelling and Web Technologies held by professor Fabio Vitali in the context of the Masters Degree program Digital Humanities and Digital Knowledge at Alma Mater Studiorum University of Bologna. As such, this project will not be maintained or updated past the scope of the course's examination.<br>However, if you have any reclaims or suggestions, you can contact us through our team page.</p>
-        <hr>
-        <p>&copy; 2024 The Stolen Archive. All rights reserved.</p>
+        <div class="site-footer__legal mono">
+            <span>© 2024 The Stolen Archive</span>
+            <span>Inv. 001 — 030</span>
+        </div>
     </footer>
 
-    <script src="toggle-navbar.js"></script>
-    <script src="start-tour-button.js"></script>
-    <script src="images-vis.js"></script>
-    
+    <script src="site.js"></script>
+    <script src="docs.js"></script>
 </body>
 </html>

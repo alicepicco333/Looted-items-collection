@@ -85,7 +85,7 @@
     </cid:E39>
     <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1688607">
         <rdfs:label>Jewel Tower</rdfs:label>
-        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">51.51945,</geo:lat>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">51.51945</geo:lat>
         <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-0.126472</geo:long>
         <ow:sameAs rdf:resource="https://www.openstreetmap.org/way/136105050"/>
         <dir:P10689 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136105050</dir:P10689>
@@ -93,7 +93,7 @@
     </cid:E53>
     <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q22424">
         <rdfs:label>Punjab</rdfs:label>
-        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.85,</geo:lat>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.85</geo:lat>
         <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.31667</geo:long>
         <ow:sameAs rdf:resource="http://sws.geonames.org/1167710/"/>
         <dir:P1566 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1167710</dir:P1566>

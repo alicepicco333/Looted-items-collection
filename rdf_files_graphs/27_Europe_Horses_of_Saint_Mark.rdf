@@ -1,0 +1,89 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q1994701">
+        <rdfs:label>Horses of Saint Mark</rdfs:label>
+        <dc:title>The Horses of Saint Mark (Triumphal Quadriga)</dc:title>
+        <dc:creator>Unknown (Roman or Greek)</dc:creator>
+        <dc:description>Four gilded bronze horses taken from Constantinople by the Venetians in the Fourth Crusade (1204) and set on the façade of St Mark&#x27;s Basilica. Taken to Paris by Napoleon in 1797, returned to Venice in 1815; the originals are now inside the basilica, replaced outside by copies.</dc:description>
+        <dc:subject>Bronze sculpture, Classical</dc:subject>
+        <dc:subject>Venice (Italy)--History</dc:subject>
+        <dc:subject>Spoils of war</dc:subject>
+        <dc:type>Bronze sculpture</dc:type>
+        <dct:created>2nd–3rd century CE (disputed)</dct:created>
+        <dct:spatial>Hippodrome of Constantinople</dct:spatial>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_sack_1204"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_seizure_1797"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_return_1815"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q172988"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q172988"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.0082</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.9784</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_production">
+        <rdfs:label>Making of the Horses of Saint Mark</rdfs:label>
+        <cid:P4_has_time-span>2nd–3rd century CE (disputed)</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_sack_1204">
+        <rdfs:label>Seizure in the sack of Constantinople</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q205688"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q641"/>
+        <cid:P3_has_note>From Hippodrome of Constantinople</cid:P3_has_note>
+        <cid:P4_has_time-span>1204</cid:P4_has_time-span>
+        <cid:P3_has_note>Taken by the Venetians in the Fourth Crusade.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_seizure_1797">
+        <rdfs:label>Seizure by Napoleon</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q517"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P3_has_note>From Venice</cid:P3_has_note>
+        <cid:P4_has_time-span>1797</cid:P4_has_time-span>
+        <cid:P3_has_note>Placed on the Arc de Triomphe du Carrousel in 1808.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_return_1815">
+        <rdfs:label>Return to Venice</rdfs:label>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q641"/>
+        <cid:P4_has_time-span>1815-12-13</cid:P4_has_time-span>
+    </cid:E9>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Horses_of_Saint_Mark_condition">
+        <rdfs:label>Originals inside the basilica since the 1980s; replicas on the façade</rdfs:label>
+        <cid:P3_has_note>Originals inside the basilica since the 1980s; replicas on the façade.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q205688">
+        <rdfs:label>Enrico Dandolo</rdfs:label>
+    </cid:E21>
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q517">
+        <rdfs:label>Napoleon</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q172988">
+        <rdfs:label>St Mark&#x27;s Basilica</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q387548">
+        <rdfs:label>Hippodrome of Constantinople</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q90">
+        <rdfs:label>Paris</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q641">
+        <rdfs:label>Venice</rdfs:label>
+    </cid:E53>
+</rdf:RDF>

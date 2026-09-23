@@ -1,0 +1,1482 @@
+{
+  "updated": "2026-09-23",
+  "note": "Researched from published sources in September 2026. Positions change: check the sources before publishing.",
+  "objects": {
+    "1": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The British Museum keeps its Benin collection. Other holders have returned objects: Germany returned the first bronzes in 2022, and the Horniman Museum in London transferred ownership of its collection the same year.",
+        "sources": [
+          {
+            "title": "NPR: Germany returns looted artifacts to Nigeria (2022)",
+            "url": "https://www.npr.org/2022/12/21/1144666811/germany-nigeria-returns-benin-bronzes-looted"
+          },
+          {
+            "title": "Africanews: Horniman Museum to return Benin Bronzes (2022)",
+            "url": "https://www.africanews.com/2022/08/08/londons-horniman-museum-to-return-benin-bronzes-to-nigeria/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Nigeria: National Commission for Museums and Monuments and the Benin Royal Court",
+        "text": [
+          "The bronzes were made from at least the 1500s by a guild working for the Oba's court, and record the kingdom's history and ancestors. They were taken when British forces sacked Benin City in 1897.",
+          "Nigeria's National Commission for Museums and Monuments (NCMM) asks for their return. Its director-general has said returns help restore “the pride and dignity” of Nigerians, and NCMM answered doubts about security in Nigeria by pointing to the thefts discovered at the British Museum in 2023."
+        ],
+        "sources": [
+          {
+            "title": "ARTnews: Nigeria renews call for return of Benin Bronzes",
+            "url": "https://www.artnews.com/art-news/news/nigeria-renews-call-for-return-of-benin-bronzes-following-british-museum-thefts-1234677578/"
+          },
+          {
+            "title": "Artnet: Why the Benin Bronzes are being returned",
+            "url": "https://news.artnet.com/art-world/mfa-boston-benin-bronzes-restitution-2662790"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Museum, London",
+        "text": [
+          "The museum cares for more than 900 objects from the Kingdom of Benin and acknowledges that Benin City was “systematically looted” by British troops in 1897.",
+          "It says the British Museum Act 1963 and the Heritage Act 1983 prevent it from giving them up, and works instead with Nigerian partners, including through the Benin Dialogue Group, towards new museums in Benin City supplied partly with loans."
+        ],
+        "sources": [
+          {
+            "title": "British Museum: Benin Bronzes",
+            "url": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/benin-bronzes"
+          },
+          {
+            "title": "National Geographic: The story of Nigeria's stolen Benin Bronzes",
+            "url": "https://www.nationalgeographic.com/travel/article/nigeria-stolen-benin-bronzes-london-museum"
+          }
+        ]
+      }
+    },
+    "2": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The UK government has rejected the claims and has no plans to return the diamond. It is set in the Crown Jewels at the Tower of London.",
+        "sources": [
+          {
+            "title": "Wikipedia: Koh-i-Noor",
+            "url": "https://en.wikipedia.org/wiki/Koh-i-Noor"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "India, and other claimants",
+        "text": [
+          "The diamond passed through several South and Central Asian courts before it reached the Sikh Empire in Punjab. It is claimed by India, and there have also been claims from Pakistan, where a petition reached the courts, and legal action in Britain by a private group, Mountain of Light, seeking its return to India.",
+          "For the claimants, the treaty that handed it over was imposed on a defeated child ruler after the Second Anglo-Sikh War."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Koh-i-Noor",
+            "url": "https://en.wikipedia.org/wiki/Koh-i-Noor"
+          },
+          {
+            "title": "Gulf News: Queen faces fight for return of Koh-i-Noor diamond",
+            "url": "https://gulfnews.com/world/europe/queen-faces-fight-for-return-of-koh-i-noor-diamond-1.1615584"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "UK government and the Royal Collection",
+        "text": [
+          "The British government holds that the diamond was acquired legally under the Treaty of Lahore of 1849. Article IV of the treaty, signed by the young Maharaja Duleep Singh, surrendered the Koh-i-Noor to the Queen of England.",
+          "It is part of the Crown Jewels, on public display in the Tower of London."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Koh-i-Noor",
+            "url": "https://en.wikipedia.org/wiki/Koh-i-Noor"
+          },
+          {
+            "title": "The Legists: The colonization of the Koh-i-Noor",
+            "url": "https://www.thelegists.co.uk/the-colonization-of-the-koh-i-noor-the-greatest-artefact-of-southern-asia"
+          }
+        ]
+      }
+    },
+    "3": {
+      "status": {
+        "kind": "dispersed",
+        "label": "Dispersed",
+        "text": "The looted objects are spread across more than 200 museums and many private collections. Returns have happened case by case, often through purchase at auction, not through a general agreement.",
+        "sources": [
+          {
+            "title": "Yuanmingyuan – Europe: Restitutions?",
+            "url": "https://www.yuanmingyuan.eu/en/the-looting/restitutions/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "People's Republic of China",
+        "text": [
+          "British and French forces looted and burned the Yuanmingyuan, the Old Summer Palace in Beijing, in 1860 during the Second Opium War. Chinese sources estimate that more than a million objects were lost.",
+          "China has bought back pieces offered at auction abroad, and in 2010 the government appealed to collectors worldwide to return objects taken from the palace."
+        ],
+        "sources": [
+          {
+            "title": "Kontinentalist: Restoring a nation",
+            "url": "https://kontinentalist.com/stories/restoring-a-nation-yuanmingyuan-and-chinas-journey-to-recover-its-lost-art"
+          },
+          {
+            "title": "Center for Art Law: Lessons from the sacking of the Summer Palace",
+            "url": "https://itsartlaw.org/cultural-heritage/lessons-learned-from-the-sacking-of-the-summer-palace-in-china-diplomacy-and-restitution-revisited/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Museums in Britain and France, among others",
+        "text": [
+          "Objects from the palace are displayed in the British Museum and the Victoria and Albert Museum in London, and in the Chinese Museum that Empress Eugénie set up at the Château de Fontainebleau.",
+          "These institutions present them as part of their Chinese collections; none has agreed a general return of objects from the palace."
+        ],
+        "sources": [
+          {
+            "title": "Kontinentalist: Restoring a nation",
+            "url": "https://kontinentalist.com/stories/restoring-a-nation-yuanmingyuan-and-chinas-journey-to-recover-its-lost-art"
+          },
+          {
+            "title": "Yuanmingyuan – Europe: Restitutions?",
+            "url": "https://www.yuanmingyuan.eu/en/the-looting/restitutions/"
+          }
+        ]
+      }
+    },
+    "4": {
+      "status": {
+        "kind": "contested",
+        "label": "Request in preparation",
+        "text": "In 2026 the state of Bihar asked India's culture ministry to start the process of bringing the Buddha back. Birmingham says it will treat any request case by case.",
+        "sources": [
+          {
+            "title": "ETV Bharat: Bihar takes steps to bring back the Sultanganj Buddha (2026)",
+            "url": "https://www.etvbharat.com/en/bharat/bihar-takes-steps-to-bring-back-sultanganj-buddha-from-birmingham-museum-enn26081104711"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "India: Archaeological Survey of India and the state of Bihar",
+        "text": [
+          "The Buddha was found at Sultanganj, in Bhagalpur district, in 1861, during railway construction, and taken to Britain.",
+          "The Archaeological Survey of India lists it among the artefacts it wants Britain to return and has called for a “diplomatic and legal campaign”. In 2026 Bihar's Chief Minister wrote to the Union Minister of Culture asking him to begin the process."
+        ],
+        "sources": [
+          {
+            "title": "Scroll.in: Four other artefacts India wants Britain to return",
+            "url": "https://scroll.in/article/807006/not-just-the-kohinoor-four-other-artefacts-that-india-wants-britain-to-return"
+          },
+          {
+            "title": "ETV Bharat (2026)",
+            "url": "https://www.etvbharat.com/en/bharat/bihar-takes-steps-to-bring-back-sultanganj-buddha-from-birmingham-museum-enn26081104711"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Birmingham Museum and Art Gallery",
+        "text": [
+          "The statue has been in Birmingham since the 1860s. The museum has said it has not received an official request for its return, and that “any requests for restitution will be treated on a case-by-case basis”."
+        ],
+        "sources": [
+          {
+            "title": "ETV Bharat (2026)",
+            "url": "https://www.etvbharat.com/en/bharat/bihar-takes-steps-to-bring-back-sultanganj-buddha-from-birmingham-museum-enn26081104711"
+          },
+          {
+            "title": "Wikipedia: Sultanganj Buddha",
+            "url": "https://en.wikipedia.org/wiki/Sultanganj_Buddha"
+          }
+        ]
+      }
+    },
+    "5": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested · in talks",
+        "text": "Talks between Greece and the British Museum have been reported since 2022, but the British Museum Act 1963 restricts the museum from permanently giving up objects, and the UK Parliament debated that law again in 2025.",
+        "sources": [
+          {
+            "title": "IanVisits: British Museum confirms talks over the Parthenon Sculptures",
+            "url": "https://www.ianvisits.co.uk/articles/british-museum-confirms-talks-over-parthenon-sculptures-to-resolve-the-historic-dispute-81642/"
+          },
+          {
+            "title": "Hansard: Parthenon Marbles, British Museum Act 1963 (30 April 2025)",
+            "url": "https://hansard.parliament.uk/commons/2025-04-30/debates/3FB2AE77-B169-4BB1-BEBD-20ADA692D28E/ParthenonMarblesBritishMuseumAct1963"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Greece: Ministry of Culture",
+        "text": [
+          "Greece asks for the “permanent reunification” of the sculptures in the Acropolis Museum, in sight of the temple they were cut from. Minister Lina Mendoni describes the Parthenon as “an indivisible artistic whole”.",
+          "She renewed the request at UNESCO's General Conference in 2025, and Italy's culture minister has publicly supported it."
+        ],
+        "sources": [
+          {
+            "title": "To Vima: Greece urges UNESCO to support return of Parthenon Marbles",
+            "url": "https://www.tovima.com/culture/greece-urges-unesco-to-support-return-of-parthenon-marbles/"
+          },
+          {
+            "title": "Artnet: Greece rallies global allies to reclaim the Parthenon Marbles",
+            "url": "https://news.artnet.com/art-world/parthenon-marbles-update-2662028"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Museum: the Trustees",
+        "text": [
+          "The Trustees say Lord Elgin acted with the permission of the authorities of the day in Athens and London, and that a Parliamentary Select Committee found the acquisition legal in 1816, after which Parliament paid for the collection.",
+          "They argue there is a public benefit in the sculptures being divided between two museums telling complementary stories. They say they would consider a request to borrow the sculptures, but that Greece has only ever asked for their permanent return."
+        ],
+        "sources": [
+          {
+            "title": "British Museum: Parthenon Sculptures, the Trustees' statement",
+            "url": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/parthenon-sculptures/parthenon"
+          }
+        ]
+      }
+    },
+    "6": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned 1902 and 1921",
+        "text": "France returned its share of the instruments in 1902. The instruments taken to Potsdam came back in 1921 under Article 131 of the Treaty of Versailles. They stand again on the observatory platform in Beijing.",
+        "sources": [
+          {
+            "title": "Treaty of Versailles, Part IV (Articles 118–158)",
+            "url": "https://www.firstworldwar.com/source/versailles118-158.htm"
+          },
+          {
+            "title": "Wikipedia: Beijing Ancient Observatory",
+            "url": "https://en.wikipedia.org/wiki/Beijing_Ancient_Observatory"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "China: the Beijing Ancient Observatory",
+        "text": [
+          "The observatory, founded in 1442 on the Ming city wall, made the calendar for the imperial court. Its bronze instruments were cast in 1673 under the Jesuit Ferdinand Verbiest and in the eighteenth century.",
+          "After the Boxer War the instruments were taken as trophies by French and German troops. China secured the return of the German share through the peace settlement of 1919, although it refused to sign the treaty because of the Shandong clauses."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Beijing Ancient Observatory",
+            "url": "https://en.wikipedia.org/wiki/Beijing_Ancient_Observatory"
+          },
+          {
+            "title": "Alpha History: China and the Treaty of Versailles",
+            "url": "https://alphahistory.com/chineserevolution/treaty-of-versailles-1919/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "France and Germany (until 1902 and 1921)",
+        "text": [
+          "France moved its share to the legation in Beijing and returned it in 1902. Germany shipped its share to Potsdam and displayed it in the gardens of the royal palaces.",
+          "Article 131 of the Treaty of Versailles obliged Germany to restore 'all the astronomical instruments which her troops in 1900–1901 carried away from China' within twelve months, at its own expense."
+        ],
+        "sources": [
+          {
+            "title": "Treaty of Versailles, Part IV (Articles 118–158)",
+            "url": "https://www.firstworldwar.com/source/versailles118-158.htm"
+          },
+          {
+            "title": "Wikipedia: Boxer Rebellion",
+            "url": "https://en.wikipedia.org/wiki/Boxer_Rebellion"
+          }
+        ]
+      }
+    },
+    "7": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The moai remains in the British Museum. The Rapa Nui community asked for its return in 2018 and has also asked for a loan.",
+        "sources": [
+          {
+            "title": "Smithsonian: Rapa Nui representatives visit the British Museum",
+            "url": "https://www.smithsonianmag.com/smart-news/british-museum-hosts-rapa-nui-representatives-discuss-repatriation-easter-island-statue-180970878/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Rapa Nui: Council of Elders, CODEIPA and the municipality",
+        "text": [
+          "In July 2018 the Council of Elders, the island's development commission (CODEIPA) and the municipality made a written request for the return of Hoa Hakananai'a. A delegation came to London that November.",
+          "“This is no rock. It embodies the spirit of an ancestor, almost like a grandfather,” said Carlos Edmunds, president of the Council of Elders. Governor Tarita Alarcón Rapu asked at least for a loan: “You have kept him for 150 years. Just give us some months.”"
+        ],
+        "sources": [
+          {
+            "title": "CNN: ‘You have our soul’: Easter Island pleads for statue's return",
+            "url": "https://www.cnn.com/style/article/easter-island-british-museum-moai-return/index.html"
+          },
+          {
+            "title": "Smithsonian magazine",
+            "url": "https://www.smithsonianmag.com/smart-news/british-museum-hosts-rapa-nui-representatives-discuss-repatriation-easter-island-statue-180970878/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Museum, London",
+        "text": [
+          "The statue was taken from Orongo in 1868 by the crew of the British ship HMS Topaze and given to Queen Victoria, who presented it to the museum.",
+          "The museum received the 2018 delegation and has since sent staff to the island for further talks; it has not agreed to a return."
+        ],
+        "sources": [
+          {
+            "title": "British Museum: Moai",
+            "url": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/moai"
+          },
+          {
+            "title": "CNN: British Museum delegates travel to Easter Island",
+            "url": "https://edition.cnn.com/style/article/easter-island-statue-return-museum-statue-scli-intl/index.html"
+          }
+        ]
+      }
+    },
+    "8": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned 2021",
+        "text": "France returned the throne to Benin in November 2021, with 25 other royal treasures of Abomey.",
+        "sources": [
+          {
+            "title": "Musée du quai Branly: Restitution of 26 works to the Republic of Benin",
+            "url": "https://m.quaibranly.fr/en/collections/living-collections/news/restitution-of-26-works-to-the-republic-of-benin"
+          },
+          {
+            "title": "ABC News: France returning 26 looted treasures to Benin",
+            "url": "https://abcnews.go.com/International/france-returning-26-looted-treasures-back-benin/story?id=80999015"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Republic of Benin",
+        "text": [
+          "The throne belonged to King Glele of Dahomey, who reigned from 1858 to 1889. French troops took it from the royal palaces of Abomey during the conquest of Dahomey in the 1890s.",
+          "Benin campaigned for the treasures' return for decades. They were to be housed in a new museum in Abomey dedicated to the Amazons and the kings of Danhomè."
+        ],
+        "sources": [
+          {
+            "title": "News4Jax/AP: 129-year journey nears end as France returns Benin treasures",
+            "url": "https://www.news4jax.com/news/world/2021/10/25/129-year-journey-nears-end-as-france-returns-benin-treasures/"
+          },
+          {
+            "title": "Afro Heritage Atlas: The Abomey treasures",
+            "url": "https://afroatlas.org/articles/abomey-treasures-france-restitution/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Musée du quai Branly – Jacques Chirac, Paris (until 2021)",
+        "text": [
+          "The treasures were shown in Paris from their capture, first at the Musée d'Ethnographie du Trocadéro and from 2006 at the quai Branly.",
+          "The museum displayed them one last time in October 2021 before handing them to Benin, after the French parliament passed a law allowing their return."
+        ],
+        "sources": [
+          {
+            "title": "Musée du quai Branly: Restitution of 26 works",
+            "url": "https://m.quaibranly.fr/en/collections/living-collections/news/restitution-of-26-works-to-the-republic-of-benin"
+          },
+          {
+            "title": "Artnet: 26 royal objects on view in Paris before being returned",
+            "url": "https://news.artnet.com/art-world/quai-branly-benin-restitution-2025098"
+          }
+        ]
+      }
+    },
+    "9": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned 2011–2012",
+        "text": "Yale returned the collection in three shipments between March 2011 and December 2012.",
+        "sources": [
+          {
+            "title": "Higher Ed Dive: Yale returns last of Incan artifacts to Peru",
+            "url": "https://www.highereddive.com/news/yale-returns-last-of-incan-artifacts-to-peru/80170/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Peru",
+        "text": [
+          "The objects were excavated and taken to the United States by Hiram Bingham, who made Machu Picchu famous in 1911. Peru said they had only been lent, and sued Yale in 2008.",
+          "Since 2011 the collection has been kept in Cusco, at the Casa Concha, an Inca palace, run by the Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)."
+        ],
+        "sources": [
+          {
+            "title": "Science: Yale agrees to return Machu Picchu artifacts",
+            "url": "https://www.science.org/content/article/yale-agrees-return-machu-picchu-artifacts-peru"
+          },
+          {
+            "title": "The World (PRX): Machu Picchu artifacts returned by Yale",
+            "url": "https://theworld.org/stories/2012/11/13/machu-picchu-artifacts-returned-yale-peru"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Yale University (until 2012)",
+        "text": [
+          "Yale settled the dispute in November 2010. In February 2011 it signed an agreement with UNSAAC to create a museum and research centre in Cusco, and the two universities continue to work together on the collection."
+        ],
+        "sources": [
+          {
+            "title": "Yale News: Peru-Yale partnership for the future of Machu Picchu artifacts",
+            "url": "https://news.yale.edu/2015/06/04/peru-yale-partnership-future-machu-picchu-artifacts"
+          },
+          {
+            "title": "Science: Yale agrees to return Machu Picchu artifacts",
+            "url": "https://www.science.org/content/article/yale-agrees-return-machu-picchu-artifacts-peru"
+          }
+        ]
+      }
+    },
+    "10": {
+      "status": {
+        "kind": "partial",
+        "label": "Partly returned",
+        "text": "Some pieces have come back: ten terracottas seized in New York were returned to Nigeria in 2012, and France gave Nigeria a Nok statuette in 2014. Many more remain in collections abroad and on the art market.",
+        "sources": [
+          {
+            "title": "UNESCO: Restitution of a cultural property of the Nok civilization",
+            "url": "https://www.unesco.org/en/articles/restitution-cultural-property-nok-civilization"
+          },
+          {
+            "title": "Trafficking Culture: Nok terracottas",
+            "url": "https://traffickingculture.org/encyclopedia/case-studies/nok-terracottas/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Nigeria",
+        "text": [
+          "Nok terracottas are among the oldest sculptures in West Africa. Most on the market were dug up illegally and smuggled out of Nigeria.",
+          "When the French state bought two for the Louvre in 1998, Nigeria's government demanded their return, saying they had been exported illegally."
+        ],
+        "sources": [
+          {
+            "title": "Trafficking Culture: Nok terracottas",
+            "url": "https://traffickingculture.org/encyclopedia/case-studies/nok-terracottas/"
+          },
+          {
+            "title": "ZAM: Inside the illicit trade in West Africa's oldest artworks",
+            "url": "https://www.zammagazine.com/arts/1324-inside-the-illicit-trade-in-west-africa-s-oldest-artworks"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Museums and collectors in Europe and the United States",
+        "text": [
+          "For the two Louvre pieces, France recognised Nigeria as the owner and Nigeria lent them back to France for 25 years, renewable. A law professor at the University of Ibadan called the arrangement “a totally unfair smuggler's charter”.",
+          "Other terracottas are held by museums and private collectors in Europe and the US, often without a documented export."
+        ],
+        "sources": [
+          {
+            "title": "Trafficking Culture: Nok terracottas",
+            "url": "https://traffickingculture.org/encyclopedia/case-studies/nok-terracottas/"
+          }
+        ]
+      }
+    },
+    "11": {
+      "status": {
+        "kind": "dispersed",
+        "label": "Dispersed · one returned",
+        "text": "Relief fragments from Persepolis are held by museums in Europe and North America. One of them, stolen from the Montreal Museum of Fine Arts in 2011, was seized in New York in 2017 and returned to Iran by court order.",
+        "sources": [
+          {
+            "title": "Wikipedia: 2011 Montreal Museum of Fine Arts theft",
+            "url": "https://en.wikipedia.org/wiki/2011_Montreal_Museum_of_Fine_Arts_theft"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Iran: cultural heritage authorities",
+        "text": [
+          "The reliefs were carved for the palaces of Persepolis between the late 6th and the 4th century BCE, showing guards, courtiers and delegations bringing tribute to the king.",
+          "Iran has pursued fragments that reappear on the market. For the Montreal relief, a soldier's head, Iran said it had been taken from the Persepolis ruins in the 1930s without permission, after export restrictions on antiquities were already in force, and a New York court ordered its return."
+        ],
+        "sources": [
+          {
+            "title": "Institute of Art and Law: New York seizure of a “recovered” Persian artefact",
+            "url": "https://ial.uk.com/new-york-seizure-of-a-recovered-persian-artefact/"
+          },
+          {
+            "title": "Wikipedia: 2011 Montreal Museum of Fine Arts theft",
+            "url": "https://en.wikipedia.org/wiki/2011_Montreal_Museum_of_Fine_Arts_theft"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Museums in Europe and North America",
+        "text": [
+          "Fragments reached Western collections through excavation, travellers and the art market in the 19th and 20th centuries. Examples are in the British Museum, the Louvre, the Metropolitan Museum of Art in New York and the Museum of Fine Arts in Boston.",
+          "The Montreal fragment, given to the Montreal Museum of Fine Arts in the 1950s, shows how such provenance can be reopened: after its theft and recovery the museum chose not to buy it back from its insurer, and it was seized when offered for sale."
+        ],
+        "sources": [
+          {
+            "title": "Metropolitan Museum of Art: Relief, figure in a procession (Achaemenid)",
+            "url": "https://www.metmuseum.org/art/collection/search/323723"
+          },
+          {
+            "title": "Museum of Fine Arts, Boston: Relief of a Persian servant",
+            "url": "https://collections.mfa.org/objects/244641"
+          },
+          {
+            "title": "Wikipedia: 2011 Montreal Museum of Fine Arts theft",
+            "url": "https://en.wikipedia.org/wiki/2011_Montreal_Museum_of_Fine_Arts_theft"
+          }
+        ]
+      }
+    },
+    "12": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The Prussian Cultural Heritage Foundation says there are no negotiations with Egypt about returning the bust.",
+        "sources": [
+          {
+            "title": "The New Arab: Inside Egypt's bid to return Nefertiti's bust",
+            "url": "https://www.newarab.com/features/inside-egypts-bid-return-nefertitis-bust-berlin-museum"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Egypt, and Egyptian archaeologists",
+        "text": [
+          "The bust was found at Amarna in 1912 and has been in Germany since 1913. Egypt first asked for it back in the 1920s.",
+          "In 2011 Zahi Hawass, then in charge of Egypt's antiquities, requested it on behalf of the government, and in 2024 he launched a public petition calling on Germany's culture minister, the Foundation and the Neues Museum to return it."
+        ],
+        "sources": [
+          {
+            "title": "Al Jazeera: Egyptian archaeologist urges German museum to return Nefertiti's bust (2024)",
+            "url": "https://www.aljazeera.com/news/2024/9/8/egyptian-archaeologist-urges-german-museum-to-return-nefertitis-bust"
+          },
+          {
+            "title": "NBC News: Nefertiti bust petition",
+            "url": "https://www.nbcnews.com/news/world/nefertiti-bust-return-egypt-petition-berlin-museum-rcna170171"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Prussian Cultural Heritage Foundation (SPK), Neues Museum, Berlin",
+        "text": [
+          "The Foundation, which owns the bust, has held for decades that it was brought to Berlin legally in 1913, after the excavation's finds were divided with the Egyptian authorities of the time. When Egypt asked in 2011, Germany replied by asking for a signed letter from the minister."
+        ],
+        "sources": [
+          {
+            "title": "The New Arab",
+            "url": "https://www.newarab.com/features/inside-egypts-bid-return-nefertitis-bust-berlin-museum"
+          },
+          {
+            "title": "Science: Cairo or bust for Nefertiti",
+            "url": "https://www.science.org/content/article/cairo-or-bust-nefertiti"
+          }
+        ]
+      }
+    },
+    "13": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The altar is still in Berlin. Turkey has asked for it several times, and a German official has publicly suggested returning it.",
+        "sources": [
+          {
+            "title": "Hürriyet Daily News: German official suggests return of Pergamon Altar",
+            "url": "https://www.hurriyetdailynews.com/german-official-suggests-return-of-pergamon-altar-to-turkiye-179857"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Türkiye: Ministry of Culture",
+        "text": [
+          "The altar stood at Pergamon, near modern Bergama. Turkey's culture minister asked for its return in 1998 and again in 2001.",
+          "Research coordinated by the ministry suggests the German engineer Carl Humann may have sent parts of the altar to Germany before the agreement with the Ottoman government was concluded."
+        ],
+        "sources": [
+          {
+            "title": "Art in Context: Pergamon Altar",
+            "url": "https://artincontext.org/pergamon-altar/"
+          },
+          {
+            "title": "Daily Sabah: Germany resists calls for return of artifacts",
+            "url": "https://www.dailysabah.com/turkey/germany-resists-calls-for-return-of-artifacts-smuggled-from-turkey-decades-ago/news"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Berlin State Museums (Antikensammlung)",
+        "text": [
+          "Excavation began in 1878 with an Ottoman permit. Germany points to its agreement with the Ottoman Empire, under which the Ottoman government sold its share of the finds to the Berlin collection, and the panels were brought to Berlin from 1879."
+        ],
+        "sources": [
+          {
+            "title": "Art in Context: Pergamon Altar",
+            "url": "https://artincontext.org/pergamon-altar/"
+          },
+          {
+            "title": "Bard College Berlin: Museum wars, Turkey battles for history",
+            "url": "https://blog.berlin.bard.edu/pergamon-museum-wars-turkey-battles-for-history"
+          }
+        ]
+      }
+    },
+    "14": {
+      "status": {
+        "kind": "unclaimed",
+        "label": "No formal claim found",
+        "text": "We found no formal request from India's government for this object in our sources. It is often cited in the wider debate about objects taken from India.",
+        "sources": [
+          {
+            "title": "History Hit: The spoils of war, why is Tipu's Tiger in London?",
+            "url": "https://www.historyhit.com/the-spoils-of-war-why-does-tipus-tiger-exist-and-why-is-it-in-london/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Mysore, India",
+        "text": [
+          "The tiger was made for Tipu Sultan, ruler of Mysore from 1782 to 1799: an almost life-size wooden automaton of a tiger mauling a man in European clothes, with an organ inside that imitates his cries.",
+          "It was taken from Tipu's palace after British forces stormed Seringapatam (Srirangapatna) on 4 May 1799, the battle in which Tipu was killed."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Tipu's Tiger",
+            "url": "https://en.wikipedia.org/wiki/Tipu's_Tiger"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Victoria and Albert Museum, London",
+        "text": [
+          "The East India Company displayed the tiger at East India House in London from 1808. It was transferred to the V&A in 1880 and is part of its permanent display on the imperial courts of South India."
+        ],
+        "sources": [
+          {
+            "title": "V&A: Tippoo's Tiger, collection record",
+            "url": "https://collections.vam.ac.uk/item/O61949/tippoos-tiger-mechanical-organ-unknown/"
+          },
+          {
+            "title": "Wikipedia: Tipu's Tiger",
+            "url": "https://en.wikipedia.org/wiki/Tipu's_Tiger"
+          }
+        ]
+      }
+    },
+    "15": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The mask remains in the British Museum, which is bound by the same law as for the Benin Bronzes.",
+        "sources": [
+          {
+            "title": "British Museum: Benin Bronzes",
+            "url": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/benin-bronzes"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Benin Kingdom and Nigeria",
+        "text": [
+          "The ivory mask, made in the 16th century, is believed to depict Idia, mother of Oba Esigie. It was taken from the Oba's palace in 1897.",
+          "For FESTAC '77, the world festival of Black arts held in Lagos, Nigeria asked to borrow the mask and was refused. A replica carved by Erhabor Emokpae became the festival's emblem and a symbol of the campaign for return."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Benin ivory mask",
+            "url": "https://en.wikipedia.org/wiki/Benin_ivory_mask"
+          },
+          {
+            "title": "Wikipedia: Erhabor Emokpae",
+            "url": "https://en.wikipedia.org/wiki/Erhabor_Emokpae"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Museum, London",
+        "text": [
+          "The museum declined the 1977 loan, reportedly citing the fragility of the ivory and asking for a large deposit. Like the rest of its Benin collection, the mask falls under the British Museum Act 1963."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Benin ivory mask",
+            "url": "https://en.wikipedia.org/wiki/Benin_ivory_mask"
+          },
+          {
+            "title": "British Museum: Benin Bronzes",
+            "url": "https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/benin-bronzes"
+          }
+        ]
+      }
+    },
+    "16": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "Egyptian archaeologists have called for the stone's return; petitions in 2022 gathered more than 100,000 signatures. The British Museum keeps it and says it is bound by the British Museum Act 1963.",
+        "sources": [
+          {
+            "title": "Al Jazeera: After 220 years, Egypt demands the return of the Rosetta Stone (2022)",
+            "url": "https://www.aljazeera.com/news/2022/11/30/after-220-years-egypt-demands-the-return-of-the-rosetta-stone"
+          },
+          {
+            "title": "Artnet: Egyptologists call on the British Museum to return the Rosetta Stone",
+            "url": "https://news.artnet.com/art-world/egyptologists-call-on-british-museum-return-rosetta-stone-again-2708336"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Egyptian archaeologists and campaigners",
+        "text": [
+          "Zahi Hawass, Egypt's former antiquities minister, and the archaeologist Monica Hanna argue that the stone was taken during a war between two foreign armies occupying Egypt, and that the Capitulation of Alexandria of 1801 was an agreement to which Egypt was not a party.",
+          "For them the stone is a symbol of Egyptian identity and belongs in Egypt, where new museums such as the Grand Egyptian Museum can house it."
+        ],
+        "sources": [
+          {
+            "title": "Al Jazeera: Egypt calls for return of Rosetta Stone (2022)",
+            "url": "https://www.aljazeera.com/news/2022/10/6/egypt-calls-for-return-of-rosetta-stone"
+          },
+          {
+            "title": "Egypt Independent: How do we return the Rosetta Stone to Egypt?",
+            "url": "https://www.egyptindependent.com/how-do-we-return-the-rosetta-stone-to-egypt/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Museum, London",
+        "text": [
+          "The museum states that the stone was acquired under Article 16 of the Capitulation of Alexandria, signed by British, French and Ottoman commanders in 1801, and has been on display since 1802.",
+          "It says that the British Museum Act 1963 does not allow it to remove objects from the collection, and points to its partnerships with Egyptian institutions and to the stone's global audience."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Rosetta Stone",
+            "url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
+          },
+          {
+            "title": "Returning Heritage: Rosetta Stone 'no priority' for restitution",
+            "url": "https://www.returningheritage.com/rosetta-stone-no-priority-for-restitution"
+          }
+        ]
+      }
+    },
+    "17": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "Egypt has asked for the zodiac's return, including in a 2022 petition. The Louvre keeps it. A French bill to simplify restitutions passed the Senate in January 2026 and was awaiting the Assemblée nationale in spring 2026.",
+        "sources": [
+          {
+            "title": "The National: France restitution bill puts five colonial-era artefacts back in focus (April 2026)",
+            "url": "https://www.thenationalnews.com/arts-culture/art-design/2026/04/14/france-restitution-bill-puts-five-colonial-era-artefacts-from-algeria-egypt-and-jordan-back-in-focus/"
+          },
+          {
+            "title": "Change.org: Petition for the return of the Rosetta Stone and the Dendera Zodiac",
+            "url": "https://www.change.org/p/petition-for-the-return-of-the-rosetta-stone-and-the-dendera-zodiac-to-egypt"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Egypt: Zahi Hawass and the Egyptian heritage campaign",
+        "text": [
+          "The zodiac was cut out of the ceiling of a chapel of the Temple of Hathor at Dendera in 1820 with saws, chisels and gunpowder, by an agent of a Paris collector.",
+          "Hawass has named it, with the Rosetta Stone and the bust of Nefertiti, as one of the objects Egypt most wants back, arguing that permits granted by Muhammad Ali's government to please European powers cannot justify the removal of a temple ceiling."
+        ],
+        "sources": [
+          {
+            "title": "Egypt Independent: Hawass to launch campaign to recover Nefertiti bust, Dendera Zodiac, Rosetta Stone",
+            "url": "https://www.egyptindependent.com/photos-zahi-hawass-to-launch-campaign-to-recover-nefertiti-bust-dendera-zodiac-rosetta-stone/"
+          },
+          {
+            "title": "Wikipedia: Dendera zodiac",
+            "url": "https://en.wikipedia.org/wiki/Dendera_zodiac"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Musée du Louvre, Paris",
+        "text": [
+          "Louis XVIII bought the zodiac in 1821; it was shown at the royal library and has been in the Louvre since 1922.",
+          "Under French law public collections are inalienable, and until now each restitution has required a specific law. The 2026 bill would create a general procedure, but it is not yet clear whether it would cover objects removed from Egypt, which was never a French colony."
+        ],
+        "sources": [
+          {
+            "title": "Wikipedia: Dendera zodiac",
+            "url": "https://en.wikipedia.org/wiki/Dendera_zodiac"
+          },
+          {
+            "title": "The National: France restitution bill (April 2026)",
+            "url": "https://www.thenationalnews.com/arts-culture/art-design/2026/04/14/france-restitution-bill-puts-five-colonial-era-artefacts-from-algeria-egypt-and-jordan-back-in-focus/"
+          }
+        ]
+      }
+    },
+    "18": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned 2014–2021",
+        "text": "Sweden agreed in 2013 to return the Paracas textiles. The Museum of World Culture in Gothenburg sent all 89 back to Peru in several shipments between 2014 and 2021.",
+        "sources": [
+          {
+            "title": "HALI: Gothenburg completes return of Paracas textiles to Peru",
+            "url": "https://hali.com/news/gothenburg-paracas-textiles-return-peru/"
+          },
+          {
+            "title": "Peruvian Times: Return of the first Paracas textiles from Gothenburg",
+            "url": "https://www.peruviantimes.com/17/return-of-the-first-paracas-textiles-from-gothenburg/22328/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Peru: Ministry of Culture",
+        "text": [
+          "The textiles come from the burial bundles of the Paracas Necropolis, excavated from 1927 by the Peruvian archaeologist Julio C. Tello. Peruvian law already protected archaeological heritage when they were exported.",
+          "Peru asked Sweden for their return as part of a long campaign against the illegal trade in its antiquities, and Peruvian conservators worked with the Swedish museum on their documentation and packing."
+        ],
+        "sources": [
+          {
+            "title": "Peruvian Times: Return of the first Paracas textiles",
+            "url": "https://www.peruviantimes.com/17/return-of-the-first-paracas-textiles-from-gothenburg/22328/"
+          },
+          {
+            "title": "Yarns and Fibers: Peru gets back its ancient Paracas textiles from Sweden",
+            "url": "https://www.yarnsandfibers.com/news/textile-news/peru-gets-back-its-ancient-paracas-textiles-from-sweden/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Museum of World Culture, Gothenburg (until 2021)",
+        "text": [
+          "The textiles reached the Ethnographic Museum in Gothenburg in the 1930s through the Swedish consul in Lima, Sven Karell. The Swedish side accepted that they had left Peru illegally.",
+          "The museum presented the return as the start of a relationship of cooperation with Peru, and staged it over seven years to protect the fragile textiles."
+        ],
+        "sources": [
+          {
+            "title": "HALI: Gothenburg completes return of Paracas textiles",
+            "url": "https://hali.com/news/gothenburg-paracas-textiles-return-peru/"
+          },
+          {
+            "title": "Anonymous Swiss Collector: Paracas, past looting and trafficking of mummy bundle textiles",
+            "url": "https://www.anonymousswisscollector.com/2014/06/paracas-past-looting-and-trafficking-of-mummy-bundle-textiles-from-peru.html"
+          }
+        ]
+      }
+    },
+    "19": {
+      "status": {
+        "kind": "contested",
+        "label": "Return agreed · pending",
+        "text": "The Prussian Cultural Heritage Foundation authorised Ngonnso's return to Cameroon in June 2022. The transfer has been delayed by the armed conflict in Cameroon's English-speaking regions, and she was still in Berlin in 2025.",
+        "sources": [
+          {
+            "title": "Staatliche Museen zu Berlin: Path is clear for returning the Ngonnso' to Cameroon",
+            "url": "https://www.smb.museum/en/whats-new/detail/ethnologisches-museum-path-is-clear-for-returning-the-ngonnso-to-cameroon/"
+          },
+          {
+            "title": "Africa Is a Country: Bring back Ngonnso' (2025)",
+            "url": "https://africasacountry.com/2025/01/bring-back-ngonnso"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "The Nso' people and the #BringBackNgonnso campaign",
+        "text": [
+          "For the Nso', Ngonnso' is the founding mother of their kingdom, not an ethnographic object. They connect misfortunes suffered by the community to her absence since she was taken by the German officer Kurt von Pavel in 1902.",
+          "The activist Sylvie Njobati, working with the Nso' palace, led the campaign #BringBackNgonnso that pressed Berlin to return her; Nso' delegations have visited her in Berlin to perform rites."
+        ],
+        "sources": [
+          {
+            "title": "CNN: Germany to return Ngonnso' statue to Cameroon",
+            "url": "https://www.cnn.com/style/article/germany-ngonnso-statue-cameroon/index.html"
+          },
+          {
+            "title": "TRT Afrika: Cameroon's 120-year wait for the return of its queen mother",
+            "url": "https://trtafrika.com/africa/cameroons-120-year-wait-for-return-of-queen-mother-from-germany-14273956"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Ethnologisches Museum, Berlin (Stiftung Preußischer Kulturbesitz)",
+        "text": [
+          "The Foundation's board agreed in 2022 that Ngonnso' should return, acknowledging that she was taken in the context of colonial violence.",
+          "The museum says the return will take place once it can be carried out safely and in agreement with the Nso' and the Cameroonian authorities."
+        ],
+        "sources": [
+          {
+            "title": "Staatliche Museen zu Berlin: Path is clear for returning the Ngonnso'",
+            "url": "https://www.smb.museum/en/whats-new/detail/ethnologisches-museum-path-is-clear-for-returning-the-ngonnso-to-cameroon/"
+          },
+          {
+            "title": "Atlas Obscura: The long road home for Ngonnso'",
+            "url": "https://www.atlasobscura.com/articles/ngonnso-statue-germany-cameroon"
+          }
+        ]
+      }
+    },
+    "20": {
+      "status": {
+        "kind": "unclaimed",
+        "label": "No formal claim · digitised",
+        "text": "No formal restitution claim for the Diamond Sutra is known. The British Library and other holders of Dunhuang manuscripts share them online through the International Dunhuang Project, founded in 1994.",
+        "sources": [
+          {
+            "title": "Wikipedia: Diamond Sutra",
+            "url": "https://en.wikipedia.org/wiki/Diamond_Sutra"
+          },
+          {
+            "title": "Smithsonian: Five things to know about the Diamond Sutra",
+            "url": "https://www.smithsonianmag.com/smart-news/Five-things-to-know-about-diamond-sutra-worlds-oldest-dated-printed-book-180959052/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "China: memory of the Dunhuang dispersal",
+        "text": [
+          "The scroll was one of tens of thousands of manuscripts sealed in the Library Cave at Mogao around the year 1000. After the cave was reopened in 1900, foreign expeditions took much of its contents to London, Paris, St Petersburg and Japan.",
+          "In China the dispersal is remembered as a national loss; the historian Chen Yinke called Dunhuang a 'history of sorrow' for Chinese scholarship. The Dunhuang Academy now cares for the caves."
+        ],
+        "sources": [
+          {
+            "title": "Silk Road Foundation: The Diamond Sutra",
+            "url": "http://silkroadfoundation.org/artl/diamondsutra.shtml"
+          },
+          {
+            "title": "Bookride: Great book finds, Aurel Stein and the Diamond Sutra",
+            "url": "http://www.bookride.com/2008/04/great-book-finds-aurel-stein-and.html"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Library, London",
+        "text": [
+          "The library holds the scroll as part of the collection acquired by Aurel Stein in 1907 from the monk Wang Yuanlu, in exchange for donations to his restoration of the caves.",
+          "It presents the Diamond Sutra as the world's earliest dated printed book and has conserved and digitised it, making it freely viewable online."
+        ],
+        "sources": [
+          {
+            "title": "Linda Hall Library: Scientist of the day, the Diamond Sutra",
+            "url": "https://www.lindahall.org/about/news/scientist-of-the-day/the-diamond-sutra/"
+          },
+          {
+            "title": "Wikipedia: Diamond Sutra",
+            "url": "https://en.wikipedia.org/wiki/Diamond_Sutra"
+          }
+        ]
+      }
+    },
+    "21": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned 2011 · on loan",
+        "text": "The 297 volumes came back to Korea in 2011 under a five-year loan that is renewed automatically, because French public collections are inalienable. They are held by the National Museum of Korea.",
+        "sources": [
+          {
+            "title": "Trafficking Culture: Uigwe",
+            "url": "https://traffickingculture.org/encyclopedia/case-studies/uigwe/"
+          },
+          {
+            "title": "Korea Times: National Museum marks 10th year of the Uigwe's return from France",
+            "url": "https://www.koreatimes.co.kr/southkorea/society/20221031/national-museum-holds-exhibit-to-mark-10th-year-of-uigwes-return-from-france"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Republic of Korea",
+        "text": [
+          "French troops took the royal protocols from the Oegyujanggak library on Ganghwa Island in 1866 and burned the building. The historian Park Byeong-seon identified them at the Bibliothèque nationale de France in 1975.",
+          "Korea campaigned for decades for their return. Many Koreans objected to the loan formula, arguing that it leaves ownership of their royal records with France."
+        ],
+        "sources": [
+          {
+            "title": "Korea.net: Uigwe return from France",
+            "url": "https://www.korea.net/NewsFocus/Culture/view?articleId=261712"
+          },
+          {
+            "title": "Wikipedia: Uigwe",
+            "url": "https://en.wikipedia.org/wiki/Uigwe"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Bibliothèque nationale de France (owner under the loan)",
+        "text": [
+          "The manuscripts had been in the French national library since 1867. President Mitterrand returned one volume in 1993, which curators at the library opposed.",
+          "The 2010 agreement between the French and Korean presidents allowed their physical return without a change of ownership, preserving the principle that French public collections cannot be given away."
+        ],
+        "sources": [
+          {
+            "title": "Trafficking Culture: Uigwe",
+            "url": "https://traffickingculture.org/encyclopedia/case-studies/uigwe/"
+          },
+          {
+            "title": "Wikipedia: Uigwe",
+            "url": "https://en.wikipedia.org/wiki/Uigwe"
+          }
+        ]
+      }
+    },
+    "22": {
+      "status": {
+        "kind": "contested",
+        "label": "Return called for",
+        "text": "Iraqi officials have called for the gate's return. It remains in the Pergamon Museum in Berlin, closed for renovation since 2023.",
+        "sources": [
+          {
+            "title": "Wikipedia: Ishtar Gate",
+            "url": "https://en.wikipedia.org/wiki/Ishtar_Gate"
+          },
+          {
+            "title": "Ancient Origins: Should the Ishtar Gate be returned from Germany?",
+            "url": "https://www.ancient-origins.net/weird-facts/ishtar-gate-germany-0020584"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Iraq",
+        "text": [
+          "The gate was built for Nebuchadnezzar II around 575 BCE and excavated at Babylon by Robert Koldewey from 1902. Its glazed brick fragments went to Berlin after a division of finds agreed in 1926, when Iraq was under British mandate.",
+          "Iraqi voices argue that the division was made when Iraq was not free to decide, and point to Babylon's inscription on the World Heritage List in 2019 as a reason to bring its monuments home."
+        ],
+        "sources": [
+          {
+            "title": "National Geographic: The quest for Babylon's Ishtar Gate",
+            "url": "https://www.nationalgeographic.com/history/history-magazine/article/history-babylon-ishtar-gate-quest"
+          },
+          {
+            "title": "Why History Guy: Bringing back Babylon",
+            "url": "https://thewhyhistoryguy.substack.com/p/bringing-back-babylon-greatest-of"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Vorderasiatisches Museum, Pergamon Museum, Berlin",
+        "text": [
+          "The museum reconstructed the gate from the fragments under Walter Andrae; it opened to the public in 1930.",
+          "Berlin regards the 1926 division as lawful, and stresses that the reconstruction, which combines original glazed bricks with modern ones, is fragile and could not be moved."
+        ],
+        "sources": [
+          {
+            "title": "JSTOR Daily: The rebirth of the Ishtar Gate",
+            "url": "https://about.jstor.org/blog/the-rebirth-of-the-ishtar-gate/"
+          },
+          {
+            "title": "Wikipedia: Ishtar Gate",
+            "url": "https://en.wikipedia.org/wiki/Ishtar_Gate"
+          }
+        ]
+      }
+    },
+    "23": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "The British Museum keeps the bark shield; its identification as the shield taken at Kamay in 1770 has been questioned. Four spears from the same landing were returned from Cambridge to the La Perouse community in April 2024.",
+        "sources": [
+          {
+            "title": "Trinity College Cambridge: Return of the Gweagal spears",
+            "url": "https://www.trin.cam.ac.uk/news/return-of-the-gweagal-spears-to-the-la-perouse-aboriginal-community/"
+          },
+          {
+            "title": "Critical Legal Thinking: How the British Museum changed its story about the Gweagal shield",
+            "url": "https://criticallegalthinking.com/2022/02/24/how-the-british-museum-changed-its-story-about-the-gweagal-shield/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Rodney Kelly and Gweagal descendants",
+        "text": [
+          "Rodney Kelly, who identifies as a descendant of the Gweagal man shot by Cook's party, has campaigned since 2016 for the shield's return, describing it as a symbol of his ancestors' resistance.",
+          "Supporters argue that uncertainty about the shield's provenance is itself a product of colonial collecting, and should not be used against the community's claim."
+        ],
+        "sources": [
+          {
+            "title": "Change.org: Return the Gweagal shield",
+            "url": "https://www.change.org/p/british-museum-british-museum-return-the-gweagal-shield-artefacts-of-our-ancestors-to-australia"
+          },
+          {
+            "title": "Wikipedia: Gweagal shield",
+            "url": "https://en.wikipedia.org/wiki/Gweagal_shield"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "British Museum, London",
+        "text": [
+          "The museum lent the shield to the National Museum of Australia in 2015–2016. It has since accepted research suggesting that the shield may not be the one taken in 1770.",
+          "It says that the British Museum Act 1963 prevents it from giving up objects, and prefers loans and collaboration with Aboriginal communities."
+        ],
+        "sources": [
+          {
+            "title": "Critical Legal Thinking: How the British Museum changed its story",
+            "url": "https://criticallegalthinking.com/2022/02/24/how-the-british-museum-changed-its-story-about-the-gweagal-shield/"
+          },
+          {
+            "title": "CNN: Aboriginal spears returned to Australia after 250 years",
+            "url": "https://www.cnn.com/2024/04/23/style/gweagal-spears-return-scli-intl/index.html"
+          }
+        ]
+      }
+    },
+    "24": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned 2016 · permanent 2020",
+        "text": "The cloak and helmet came back to Hawaiʻi in March 2016 on a long-term loan from Te Papa. In July 2020 Te Papa announced that they would stay in Hawaiʻi permanently, held in trust by Bishop Museum.",
+        "sources": [
+          {
+            "title": "Te Papa: Feather cloak and helmet gifted to Captain Cook to return permanently to Hawaiʻi",
+            "url": "https://www.tepapa.govt.nz/about/press-and-media/press-releases/2020-media-releases/feather-cloak-and-helmet-gifted-captain"
+          },
+          {
+            "title": "Bishop Museum: The ʻahu ʻula and mahiole of Kalaniʻōpuʻu",
+            "url": "https://www.bishopmuseum.org/the-treasured-mahiole-feathered-helmet-and-ahu-ula-feathered-cloak-of-kalaniopuu/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Office of Hawaiian Affairs and Bishop Museum",
+        "text": [
+          "Kalaniʻōpuʻu gave his ʻahu ʻula and mahiole to James Cook at Kealakekua Bay in 1779. For Native Hawaiians they carry the mana of the aliʻi who wore them.",
+          "The Office of Hawaiian Affairs and Bishop Museum travelled to Aotearoa in 2016 to receive them with protocol, and describe their return as a homecoming for the people of Hawaiʻi."
+        ],
+        "sources": [
+          {
+            "title": "Office of Hawaiian Affairs: The return of the royal cloak and helmet of Kalaniʻōpuʻu",
+            "url": "https://www.oha.org/kalaniopuu/"
+          },
+          {
+            "title": "Maui Now: Cloak and helmet to return to Hawaiʻi after 237 years",
+            "url": "https://mauinow.com/2016/02/16/treasured-cloak-and-helmet-of-kalaniopuu-to-return-to-hawaii-after-237-years/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Te Papa Tongarewa, Wellington (until 2020)",
+        "text": [
+          "The regalia came to New Zealand in 1912 as a gift from Lord St Oswald to the Dominion Museum, Te Papa's predecessor.",
+          "Te Papa framed the return as a relationship between Pacific peoples, and made it permanent in 2020 in recognition that the regalia belong with the people of Hawaiʻi."
+        ],
+        "sources": [
+          {
+            "title": "Te Papa blog: Kalaniʻōpuʻu's gift to Cook, a sacred cloak and its history of display",
+            "url": "https://blog.tepapa.govt.nz/2020/07/10/kalaniopuus-gift-to-cook-a-sacred-cloak-and-its-history-of-display/"
+          },
+          {
+            "title": "Smithsonian: Hawaiian chief's cloak and helmet repatriated after 241 years",
+            "url": "https://www.smithsonianmag.com/smart-news/cloak-helmet-hawaii-captain-cook-180975298/"
+          }
+        ]
+      }
+    },
+    "25": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested",
+        "text": "Mexico has asked Austria for the headdress, most recently as a loan for the 500th anniversary of the fall of Tenochtitlan in 2021. Austria declined, citing a 2010–2012 binational study that found it too fragile to travel.",
+        "sources": [
+          {
+            "title": "ARTnews: Mexico's loan request for the Aztec headdress denied",
+            "url": "https://www.artnews.com/art-news/news/aztec-headdress-mexico-weltmuseum-wien-loan-request-denied-1234601661/"
+          },
+          {
+            "title": "Mexico Daily Post: Moctezuma's headdress will remain in Austria (2021)",
+            "url": "https://mexicodailypost.com/2021/08/18/moctezumas-headdress-will-remain-in-austria/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Mexico",
+        "text": [
+          "The headdress is one of the very few surviving works of Aztec featherwork, made by amanteca artists in Tenochtitlan around 1515. It reached Europe after the Spanish conquest of 1519–1521.",
+          "Mexican governments have raised it at the highest level of diplomacy. Critics in Mexico question the fragility study and the idea that an object's fragility justifies keeping it where colonial history left it."
+        ],
+        "sources": [
+          {
+            "title": "Courthouse News: Mexico–Austria dispute about more than Moctezuma's headdress",
+            "url": "https://www.courthousenews.com/mexico-austria-dispute-over-artifacts-about-more-than-moctezumas-headdress/"
+          },
+          {
+            "title": "Wikipedia: Moctezuma's headdress",
+            "url": "https://en.wikipedia.org/wiki/Moctezuma%27s_headdress"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Weltmuseum Wien, Vienna",
+        "text": [
+          "The headdress was recorded in 1596 in the collection of Archduke Ferdinand II at Ambras Castle and has been in Vienna since the nineteenth century.",
+          "The museum says that the vibrations of road or air transport would damage the feathers and their fastenings, as the joint Mexican-Austrian study concluded, and displays it in a specially designed case."
+        ],
+        "sources": [
+          {
+            "title": "European Traveler: Moctezuma's feather headdress at the Weltmuseum Vienna",
+            "url": "https://www.european-traveler.com/austria/see-moctezumas-feather-headdress-from-mexico-in-the-weltmuseum-vienna/"
+          },
+          {
+            "title": "ARTnews: Mexico's loan request denied",
+            "url": "https://www.artnews.com/art-news/news/aztec-headdress-mexico-weltmuseum-wien-loan-request-denied-1234601661/"
+          }
+        ]
+      }
+    },
+    "26": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested · court ruling 2017",
+        "text": "On 19 October 2017 Colombia's Constitutional Court ordered the government to seek the treasure's return from Spain. Spain has declined and has declared the collection a Bien de Interés Cultural.",
+        "sources": [
+          {
+            "title": "Harvard HALO: The claim for the Filandia collection, or Quimbaya treasure, of Colombia against Spain (2025)",
+            "url": "https://orgs.law.harvard.edu/halo/2025/03/13/the-claim-for-the-filandia-collection-or-quimbaya-treasure-of-colombia-against-spain/"
+          },
+          {
+            "title": "The City Paper Bogotá: Colombia considers another showdown over ancient treasure",
+            "url": "https://thecitypaperbogota.com/news/colombia-considers-another-showdown-over-ancient-treasure/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Colombia: Constitutional Court and campaigners",
+        "text": [
+          "The lawyer Felipe Rincón began legal action in 2006, arguing that President Carlos Holguín had no authority to give away national property in 1893.",
+          "The Constitutional Court agreed that the gift disregarded the rules protecting public property and ordered the government to take diplomatic steps for the treasure's return."
+        ],
+        "sources": [
+          {
+            "title": "CGU Cultural Property Disputes Resource: 122 relics of the Quimbaya treasure",
+            "url": "https://research.cgu.edu/cultural-property-disputes-resource/cpdr/122-relics-of-the-quimbaya-treasure/"
+          },
+          {
+            "title": "Aldia News: Colombia wants its treasure",
+            "url": "https://aldianews.com/en/culture/heritage-and-history/colombia-wants-its-treasure"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Museo de América, Madrid (Spanish state)",
+        "text": [
+          "The treasure has been in Madrid since it was shown at the Historical American Exposition of 1892 and given to Queen Regent Maria Cristina in 1893.",
+          "Spain regards the gift as a valid act of a sovereign state, and its legal protection as a Bien de Interés Cultural makes any export more difficult."
+        ],
+        "sources": [
+          {
+            "title": "Harvard HALO: The claim for the Quimbaya treasure",
+            "url": "https://orgs.law.harvard.edu/halo/2025/03/13/the-claim-for-the-filandia-collection-or-quimbaya-treasure-of-colombia-against-spain/"
+          },
+          {
+            "title": "Wikipedia: Quimbaya artifacts",
+            "url": "https://en.wikipedia.org/wiki/Quimbaya_artifacts"
+          }
+        ]
+      }
+    },
+    "27": {
+      "status": {
+        "kind": "returned",
+        "label": "Returned to Venice 1815",
+        "text": "Napoleon's France returned the horses to Venice in December 1815. The earlier removal from Constantinople in 1204 has never been reversed, and no claim for it has been pursued.",
+        "sources": [
+          {
+            "title": "Wikipedia: The Return of the Horses of San Marco",
+            "url": "https://en.wikipedia.org/wiki/The_Return_of_the_Horses_of_San_Marco"
+          },
+          {
+            "title": "Wikipedia: Horses of Saint Mark",
+            "url": "https://en.wikipedia.org/wiki/Horses_of_Saint_Mark"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Constantinople (Istanbul), the Byzantine source",
+        "text": [
+          "The horses stood in Constantinople, probably in the Hippodrome, until the Venetians took them in the sack of the city by the Fourth Crusade in 1204.",
+          "Pope John Paul II expressed regret for the sack in 2001 and 2004, but its spoils, including the horses, have stayed in Venice."
+        ],
+        "sources": [
+          {
+            "title": "The History Avenue: Imperial spoils, the horses of St Mark in the Republic of Venice (2026)",
+            "url": "https://the-history-avenue.eu/2026/02/28/imperial-spoils-the-horses-of-st-mark-in-the-republic-of-venice/"
+          },
+          {
+            "title": "World History Encyclopedia: The horses of St Mark's",
+            "url": "https://etc.worldhistory.org/uncategorized/the-horses-of-st-marks/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Procuratoria di San Marco, Venice",
+        "text": [
+          "For Venice the horses have been a civic symbol for eight centuries. Their return from Paris in 1815 was celebrated as a restoration of the city's heritage.",
+          "Since 1982 the originals have been kept in the Museum of St Mark inside the basilica to protect them from pollution, with replicas on the loggia."
+        ],
+        "sources": [
+          {
+            "title": "Images of Venice: The four horses of St Mark",
+            "url": "https://imagesofvenice.com/four-horses-of-st-mark/"
+          },
+          {
+            "title": "Wikipedia: Horses of Saint Mark",
+            "url": "https://en.wikipedia.org/wiki/Horses_of_Saint_Mark"
+          }
+        ]
+      }
+    },
+    "28": {
+      "status": {
+        "kind": "returned",
+        "label": "Recovered 1945",
+        "text": "The Monuments Men recovered the altarpiece from the Altaussee salt mine in 1945 and returned it to Ghent. The panel of the Just Judges, stolen in 1934, has never been found and is replaced by a copy.",
+        "sources": [
+          {
+            "title": "International Journal of Cultural Property: The Ghent Altarpiece after World War II",
+            "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/ghent-altarpiece-after-world-war-ii-restitution-restoration-and-redemption/D29B8A47E4CFF1E23927363E70AB99E0"
+          },
+          {
+            "title": "TheCollector: Who stole the Ghent Altarpiece?",
+            "url": "https://www.thecollector.com/who-stole-the-ghent-altarpiece/"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "St Bavo's Cathedral, Ghent",
+        "text": [
+          "The altarpiece was made for a chapel in the church, and apart from its periods of absence has always been there. Its return in 1815, 1920 and 1945 restored it to the building it was made for.",
+          "Since 2021 it has been shown in a new visitor centre in the cathedral after a long restoration by the Royal Institute for Cultural Heritage."
+        ],
+        "sources": [
+          {
+            "title": "Catholic Leader: From Napoleon to Nazis, one of the most stolen artworks of all time",
+            "url": "https://catholicleader.com.au/life/faith/from-napoleon-to-nazis-this-is-the-story-of-one-of-the-most-stolen-artwork-of-all-time-the-ghent-altarpiece/"
+          },
+          {
+            "title": "Gerald Stiebel: The Ghent Altarpiece, most stolen",
+            "url": "https://www.geraldstiebel.com/2022/07/the-ghent-altarpiece-most-stolen.html"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Former holders: France, Prussia, Nazi Germany",
+        "text": [
+          "French revolutionary commissioners took the central panels in 1794; Prussia bought the wings in 1821; Nazi Germany seized the whole altarpiece in 1942.",
+          "Each removal was reversed: by the Allied settlement of 1815, by Article 247 of the Treaty of Versailles and by the Allied recovery of looted art after 1945."
+        ],
+        "sources": [
+          {
+            "title": "Ace Cultural Tours: The world's most stolen artwork",
+            "url": "https://www.aceculturaltours.co.uk/blog/worlds-most-stolen-artwork-the-ghent-piece"
+          },
+          {
+            "title": "International Journal of Cultural Property: The Ghent Altarpiece after World War II",
+            "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/ghent-altarpiece-after-world-war-ii-restitution-restoration-and-redemption/D29B8A47E4CFF1E23927363E70AB99E0"
+          }
+        ]
+      }
+    },
+    "29": {
+      "status": {
+        "kind": "contested",
+        "label": "Contested · three claimants",
+        "text": "The treasure is in the Pushkin Museum in Moscow, where it has been shown since 1996. Russia treats it as state property under a 1998 law; Germany and Türkiye both claim it.",
+        "sources": [
+          {
+            "title": "Wikipedia: Priam's Treasure",
+            "url": "https://en.wikipedia.org/wiki/Priam%27s_Treasure"
+          },
+          {
+            "title": "Russia Beyond: The treasures of Troy on display in Russia",
+            "url": "https://www.rbth.com/multimedia/history/2016/12/17/the-treasures-of-troy-on-display-in-russia_659764"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Türkiye, as the country of origin",
+        "text": [
+          "Schliemann smuggled the treasure out of the Ottoman Empire in 1873, breaking his agreement to share his finds with the Imperial Museum in Constantinople.",
+          "Türkiye argues that its claim comes first, since the treasure left its territory illegally, and has opened the Troy Museum near the site, where objects returned from abroad are displayed."
+        ],
+        "sources": [
+          {
+            "title": "Time: Troy's lost treasure",
+            "url": "https://time.com/archive/6728894/troys-lost-treasure/"
+          },
+          {
+            "title": "Staatliche Museen zu Berlin: 150 years since Schliemann uncovered the 'treasure of Priam'",
+            "url": "https://www.smb.museum/en/whats-new/detail/150-years-since-heinrich-schliemann-uncovered-the-treasure-of-priamos-in-troy/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "Pushkin State Museum of Fine Arts, Moscow, and Germany",
+        "text": [
+          "The Red Army took the treasure from Berlin in 1945. Russia's 1998 law declares cultural property brought to the USSR after the war to be Russian property, as compensation for Nazi destruction.",
+          "Germany, which received the treasure from Schliemann in 1881, calls it wartime loot and asks for its return under the treaties of 1990 and 1992."
+        ],
+        "sources": [
+          {
+            "title": "Staatliche Museen zu Berlin: 150 years since Schliemann uncovered the treasure",
+            "url": "https://www.smb.museum/en/whats-new/detail/150-years-since-heinrich-schliemann-uncovered-the-treasure-of-priamos-in-troy/"
+          },
+          {
+            "title": "GW2RU: Gold of Troy, USSR war booty",
+            "url": "https://www.gw2ru.com/arts/2431-gold-troy-ussr-war-booty"
+          }
+        ]
+      }
+    },
+    "30": {
+      "status": {
+        "kind": "unclaimed",
+        "label": "No formal claim · loaned 2007–08",
+        "text": "The Codex is Swedish state property, held by the National Library of Sweden. It was lent to Prague for an exhibition in 2007–2008; no formal restitution claim has been made.",
+        "sources": [
+          {
+            "title": "National Library of Sweden: History of the Codex Gigas",
+            "url": "https://www.kb.se/eng/the-codex-gigas/history-of-the-codex-gigas.html"
+          },
+          {
+            "title": "Wikipedia: Codex Gigas",
+            "url": "https://en.wikipedia.org/wiki/Codex_Gigas"
+          }
+        ]
+      },
+      "origin": {
+        "voice": "Czech Republic",
+        "text": [
+          "The Codex was made at the Benedictine monastery of Podlažice in Bohemia in the early thirteenth century and kept at Prague Castle from 1594.",
+          "Czech visitors queued to see it during the 2007–2008 loan, its first visit in 359 years; there have been calls for its permanent return, but no formal claim."
+        ],
+        "sources": [
+          {
+            "title": "History.com: The Codex Gigas, the Devil's Bible",
+            "url": "https://www.history.com/articles/codex-gigas-devils-bible"
+          },
+          {
+            "title": "TheCollector: The Codex Gigas",
+            "url": "https://www.thecollector.com/codex-gigas-medieval-manuscript/"
+          }
+        ]
+      },
+      "holder": {
+        "voice": "National Library of Sweden, Stockholm",
+        "text": [
+          "The library explains that Swedish troops took the Codex from Prague Castle in 1648, at the end of the Thirty Years' War, as war booty.",
+          "It has held the Codex since 1878, displays it in Stockholm and has published a complete digital facsimile online."
+        ],
+        "sources": [
+          {
+            "title": "National Library of Sweden: From Prague to Stockholm",
+            "url": "https://www.kb.se/eng/the-codex-gigas/history-of-the-codex-gigas/from-prague-to-stockholm.html"
+          },
+          {
+            "title": "Strong Sense of Place: Visiting the Codex Gigas at the National Library of Sweden",
+            "url": "https://strongsenseofplace.com/2020/04/22/visiting-the-codex-gigas-devils-bible-at-national-library-of-sweden/"
+          }
+        ]
+      }
+    }
+  }
+}

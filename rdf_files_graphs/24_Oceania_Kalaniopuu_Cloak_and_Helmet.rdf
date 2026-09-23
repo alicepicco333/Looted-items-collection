@@ -1,0 +1,96 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="http://www.itemsontology.com/item_features/Kalaniopuu_ahu_ula_and_mahiole">
+        <rdfs:label>Kalaniʻōpuʻu&#x27;s Cloak and Helmet</rdfs:label>
+        <dc:title>ʻAhu ʻula and mahiole of Kalaniʻōpuʻu</dc:title>
+        <dc:creator>Hawaiian featherworkers</dc:creator>
+        <dc:description>Feathered cloak (ʻahu ʻula) and helmet (mahiole) that the high chief Kalaniʻōpuʻu gave to James Cook at Kealakekua Bay in 1779. Given to New Zealand&#x27;s Dominion Museum in 1912, they returned to Hawaiʻi on loan in 2016 and permanently in 2020, held by Bishop Museum.</dc:description>
+        <dc:subject>Featherwork--Hawaii</dc:subject>
+        <dc:subject>Kalaniʻōpuʻu, -1782</dc:subject>
+        <dc:subject>Cook, James, 1728-1779</dc:subject>
+        <dc:type>Feather cloak and helmet</dc:type>
+        <dct:created>before 1779</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q2879655"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_production"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_gift_1779"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_gift_1912"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_return_2016"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q826520"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q826520"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.475</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-155.9214</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_production">
+        <rdfs:label>Making of the Kalaniʻōpuʻu&#x27;s Cloak and Helmet</rdfs:label>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q2879655"/>
+        <cid:P4_has_time-span>before 1779</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_gift_1779">
+        <rdfs:label>Gift to James Cook</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q13605720"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q84"/>
+        <cid:P3_has_note>From Kealakekua Bay</cid:P3_has_note>
+        <cid:P4_has_time-span>1779</cid:P4_has_time-span>
+    </cid:E10>
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_gift_1912">
+        <rdfs:label>Gift to the Dominion Museum</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Lord_St_Oswald"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q23661"/>
+        <cid:P3_has_note>From London</cid:P3_has_note>
+        <cid:P4_has_time-span>1912</cid:P4_has_time-span>
+    </cid:E10>
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_return_2016">
+        <rdfs:label>Return to Hawaiʻi</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q915603"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q18094"/>
+        <cid:P3_has_note>From Wellington</cid:P3_has_note>
+        <cid:P4_has_time-span>2016</cid:P4_has_time-span>
+        <cid:P3_has_note>Long-term loan, made permanent in 2020.</cid:P3_has_note>
+    </cid:E10>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Kalaniopuu_Cloak_and_Helmet_condition">
+        <rdfs:label>Returned</rdfs:label>
+        <cid:P3_has_note>Returned. Held in trust for the people of Hawaiʻi.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q13605720">
+        <rdfs:label>Kalaniʻōpuʻu</rdfs:label>
+    </cid:E21>
+    <cid:E21 rdf:about="http://www.itemsontology.com/item_features/Lord_St_Oswald">
+        <rdfs:label>Rowland Winn, 2nd Baron St Oswald</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q826520">
+        <rdfs:label>Bishop Museum</rdfs:label>
+    </cid:E40>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q915603">
+        <rdfs:label>Te Papa</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q18094">
+        <rdfs:label>Honolulu</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q2879655">
+        <rdfs:label>Kealakekua Bay</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q84">
+        <rdfs:label>London</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q23661">
+        <rdfs:label>Wellington</rdfs:label>
+    </cid:E53>
+</rdf:RDF>

@@ -1,0 +1,82 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q119723801">
+        <rdfs:label>Ngonnso&#x27;</rdfs:label>
+        <dc:title>Ngonnso&#x27;</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q7067573"/>
+        <dc:description>Carved figure representing Ngonnso&#x27;, founder and mother of the Nso&#x27; people of Cameroon. Taken by the colonial officer Kurt von Pavel and given to Berlin&#x27;s Ethnological Museum in 1903. The Prussian Cultural Heritage Foundation agreed to return her in 2022.</dc:description>
+        <dc:subject>Nso (African people)</dc:subject>
+        <dc:subject>Sculpture, Cameroonian</dc:subject>
+        <dc:subject>Mother goddesses</dc:subject>
+        <dc:type>Figure</dc:type>
+        <dct:created>19th century</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q2533580"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Ngonnso_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Ngonnso_seizure_1902"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Ngonnso_decision_2022"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Ngonnso_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q688353"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q685171"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.2167</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.6833</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Ngonnso_production">
+        <rdfs:label>Making of the Ngonnso&#x27;</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q7067573"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q2533580"/>
+        <cid:P4_has_time-span>before 1902</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Ngonnso_seizure_1902">
+        <rdfs:label>Seizure during the German campaign against Nso&#x27;</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Kurt_von_Pavel"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q64"/>
+        <cid:P3_has_note>From Kumbo</cid:P3_has_note>
+        <cid:P4_has_time-span>1902</cid:P4_has_time-span>
+        <cid:P3_has_note>Donated to the Royal Museum of Ethnology, Berlin, in 1903.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Ngonnso_decision_2022">
+        <rdfs:label>Decision to return</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q685171"/>
+        <cid:P4_has_time-span>2022</cid:P4_has_time-span>
+        <cid:P3_has_note>Return authorised in June 2022; delayed by the conflict in Cameroon&#x27;s Anglophone regions.</cid:P3_has_note>
+    </cid:E7>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Ngonnso_condition">
+        <rdfs:label>Return agreed, pending</rdfs:label>
+        <cid:P3_has_note>Return agreed, pending.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="http://www.itemsontology.com/item_features/Kurt_von_Pavel">
+        <rdfs:label>Kurt von Pavel</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q688353">
+        <rdfs:label>Ethnological Museum of Berlin</rdfs:label>
+    </cid:E40>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q685171">
+        <rdfs:label>Prussian Cultural Heritage Foundation</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q64">
+        <rdfs:label>Berlin</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q2533580">
+        <rdfs:label>Kumbo</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="https://www.wikidata.org/wiki/Q7067573">
+        <rdfs:label>Nso people</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

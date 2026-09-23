@@ -1,0 +1,93 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q26082">
+        <rdfs:label>Ishtar Gate</rdfs:label>
+        <dc:title>The Ishtar Gate of Babylon</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q12591"/>
+        <dc:description>Monumental gate of glazed bricks with dragons and bulls, built for Nebuchadnezzar II on the processional way of Babylon. Excavated by Robert Koldewey from 1902, shipped to Berlin and reconstructed in the Pergamon Museum from 1928. Iraqi officials have called for its return.</dc:description>
+        <dc:subject>Babylon (Extinct city)</dc:subject>
+        <dc:subject>Glazed brick</dc:subject>
+        <dc:subject>Architecture, Babylonian</dc:subject>
+        <dc:type>Gate (glazed brick)</dc:type>
+        <dct:created>c. 575 BCE</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q5684"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Ishtar_Gate_production"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Ishtar_Gate_excavation"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Ishtar_Gate_division_1926"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Ishtar_Gate_reconstruction"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Ishtar_Gate_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q157298"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q685171"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.5364</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">44.421</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Ishtar_Gate_production">
+        <rdfs:label>Making of the Ishtar Gate</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q12591"/>
+        <cid:P3_has_note>Nebuchadnezzar II: built for</cid:P3_has_note>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q5684"/>
+        <cid:P4_has_time-span>c. 575 BCE</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Ishtar_Gate_excavation">
+        <rdfs:label>Excavation at Babylon</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q60700"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q5684"/>
+        <cid:P4_has_time-span>1899-1917</cid:P4_has_time-span>
+        <cid:P3_has_note>Excavated for the Deutsche Orient-Gesellschaft; the gate was uncovered from 1902.</cid:P3_has_note>
+    </cid:E7>
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Ishtar_Gate_division_1926">
+        <rdfs:label>Division of finds and shipment to Berlin</rdfs:label>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q5684"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q64"/>
+        <cid:P4_has_time-span>1926-1927</cid:P4_has_time-span>
+        <cid:P3_has_note>Agreed with the Iraqi Department of Antiquities under the British mandate.</cid:P3_has_note>
+    </cid:E9>
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Ishtar_Gate_reconstruction">
+        <rdfs:label>Reconstruction in the Pergamon Museum</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q67392"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q64"/>
+        <cid:P4_has_time-span>1928-1930</cid:P4_has_time-span>
+    </cid:E7>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Ishtar_Gate_condition">
+        <rdfs:label>Return called for by Iraqi officials</rdfs:label>
+        <cid:P3_has_note>Return called for by Iraqi officials.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q12591">
+        <rdfs:label>Nebuchadnezzar II</rdfs:label>
+    </cid:E21>
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q60700">
+        <rdfs:label>Robert Koldewey</rdfs:label>
+    </cid:E21>
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q67392">
+        <rdfs:label>Walter Andrae</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q157298">
+        <rdfs:label>Pergamon Museum</rdfs:label>
+    </cid:E40>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q685171">
+        <rdfs:label>Prussian Cultural Heritage Foundation</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q5684">
+        <rdfs:label>Babylon</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q64">
+        <rdfs:label>Berlin</rdfs:label>
+    </cid:E53>
+</rdf:RDF>

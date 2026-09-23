@@ -1,0 +1,93 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q212180">
+        <rdfs:label>Codex Gigas</rdfs:label>
+        <dc:title>Codex Gigas (the Devil&#x27;s Bible)</dc:title>
+        <dc:creator rdf:resource="http://www.itemsontology.com/item_features/Podlazice_monastery"/>
+        <dc:description>The largest surviving medieval manuscript, made in the Benedictine monastery of Podlažice in Bohemia and famous for its full-page picture of the Devil. Taken from Prague Castle by the Swedish army in 1648; in the National Library of Sweden since 1878, lent to Prague in 2007–2008.</dc:description>
+        <dc:subject>Manuscripts, Latin (Medieval and modern)</dc:subject>
+        <dc:subject>Bible</dc:subject>
+        <dc:subject>Thirty Years&#x27; War, 1618-1648--Spoils</dc:subject>
+        <dc:type>Manuscript</dc:type>
+        <dct:created>early 13th century</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q1076872"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Codex_Gigas_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Codex_Gigas_acquisition_1594"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Codex_Gigas_seizure_1648"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Codex_Gigas_loan_2007"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Codex_Gigas_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q953058"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q953058"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0755</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.4378</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Codex_Gigas_production">
+        <rdfs:label>Making of the Codex Gigas</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Podlazice_monastery"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q1076872"/>
+        <cid:P4_has_time-span>early 13th century</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Codex_Gigas_acquisition_1594">
+        <rdfs:label>Acquisition by Rudolf II</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q150586"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q193369"/>
+        <cid:P4_has_time-span>1594</cid:P4_has_time-span>
+    </cid:E8>
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Codex_Gigas_seizure_1648">
+        <rdfs:label>Seizure as war booty</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Swedish_army_1648"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q1754"/>
+        <cid:P3_has_note>From Prague Castle</cid:P3_has_note>
+        <cid:P4_has_time-span>1648</cid:P4_has_time-span>
+        <cid:P3_has_note>Taken when Swedish troops captured Prague Castle at the end of the Thirty Years&#x27; War.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Codex_Gigas_loan_2007">
+        <rdfs:label>Loan to Prague</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q953058"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q193369"/>
+        <cid:P3_has_note>From Stockholm</cid:P3_has_note>
+        <cid:P4_has_time-span>2007-2008</cid:P4_has_time-span>
+    </cid:E10>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Codex_Gigas_condition">
+        <rdfs:label>No formal claim</rdfs:label>
+        <cid:P3_has_note>No formal claim.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q150586">
+        <rdfs:label>Rudolf II, Holy Roman Emperor</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q953058">
+        <rdfs:label>National Library of Sweden</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1076872">
+        <rdfs:label>Podlažice (Chrast)</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q193369">
+        <rdfs:label>Prague Castle</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1754">
+        <rdfs:label>Stockholm</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/Podlazice_monastery">
+        <rdfs:label>Benedictine monastery of Podlažice</rdfs:label>
+    </cid:E74>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/Swedish_army_1648">
+        <rdfs:label>Swedish army</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

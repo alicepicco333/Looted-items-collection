@@ -1,0 +1,74 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q494235">
+        <rdfs:label>Diamond Sutra</rdfs:label>
+        <dc:title>The Diamond Sutra (Dunhuang, 868)</dc:title>
+        <dc:creator>Printed for Wang Jie</dc:creator>
+        <dc:description>Printed scroll of the Diamond Sutra, dated 868, the world&#x27;s earliest dated printed book. Found in the sealed Library Cave at Mogao and sold by the Daoist monk Wang Yuanlu to Aurel Stein in 1907; in the British Library.</dc:description>
+        <dc:subject>Buddhist literature</dc:subject>
+        <dc:subject>Printing--History</dc:subject>
+        <dc:subject>Dunhuang manuscripts</dc:subject>
+        <dc:type>Printed scroll</dc:type>
+        <dct:created>868 CE</dct:created>
+        <dct:spatial>Mogao Caves, Dunhuang (China)</dct:spatial>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Diamond_Sutra_production"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Diamond_Sutra_sealing"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Diamond_Sutra_sale_1907"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Diamond_Sutra_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q23308"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q23308"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0425</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">94.8042</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Diamond_Sutra_production">
+        <rdfs:label>Making of the Diamond Sutra</rdfs:label>
+        <cid:P4_has_time-span>868 CE</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Diamond_Sutra_sealing">
+        <rdfs:label>Deposit in the Library Cave</rdfs:label>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q43286"/>
+        <cid:P4_has_time-span>c. 1000</cid:P4_has_time-span>
+        <cid:P3_has_note>The cave was sealed in the early 11th century.</cid:P3_has_note>
+    </cid:E9>
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Diamond_Sutra_sale_1907">
+        <rdfs:label>Sale to Aurel Stein</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q313061"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q84"/>
+        <cid:P3_has_note>From Mogao Caves</cid:P3_has_note>
+        <cid:P4_has_time-span>1907</cid:P4_has_time-span>
+        <cid:P3_has_note>Obtained from Wang Yuanlu in exchange for donations to his restoration of the caves.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Diamond_Sutra_condition">
+        <rdfs:label>No formal claim</rdfs:label>
+        <cid:P3_has_note>No formal claim. Digitised by the International Dunhuang Project.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q313061">
+        <rdfs:label>Aurel Stein</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q23308">
+        <rdfs:label>British Library</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q84">
+        <rdfs:label>London</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q43286">
+        <rdfs:label>Mogao Caves</rdfs:label>
+    </cid:E53>
+</rdf:RDF>

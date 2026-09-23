@@ -1,0 +1,115 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q734834">
+        <rdfs:label>Ghent Altarpiece</rdfs:label>
+        <dc:title>The Ghent Altarpiece (Adoration of the Mystic Lamb)</dc:title>
+        <dc:creator rdf:resource="http://www.itemsontology.com/item_features/Hubert_and_Jan_van_Eyck"/>
+        <dc:description>Polyptych by Hubert and Jan van Eyck completed in 1432 for St Bavo&#x27;s in Ghent, often called the most stolen artwork in history. Panels were taken to Paris by French revolutionary troops in 1794, sold and taken to Berlin, stolen in 1934, and seized by the Nazis before its recovery from the Altaussee salt mine in 1945.</dc:description>
+        <dc:subject>Painting, Flemish</dc:subject>
+        <dc:subject>Altarpieces</dc:subject>
+        <dc:subject>Art thefts</dc:subject>
+        <dc:type>Polyptych</dc:type>
+        <dct:created>1432</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q1296"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_production"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_seizure_1794"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_sale_1816"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_theft_1934"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_seizure_1942"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_recovery_1945"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Ghent_Altarpiece_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q938154"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q938154"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">51.053</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7275</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_production">
+        <rdfs:label>Making of the Ghent Altarpiece</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Hubert_and_Jan_van_Eyck"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q1296"/>
+        <cid:P4_has_time-span>1432</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_seizure_1794">
+        <rdfs:label>Seizure of the central panels</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/French_revolutionary_commissioners"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P3_has_note>From Ghent</cid:P3_has_note>
+        <cid:P4_has_time-span>1794</cid:P4_has_time-span>
+        <cid:P3_has_note>Returned in 1815.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_sale_1816">
+        <rdfs:label>Sale of the wings</rdfs:label>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q64"/>
+        <cid:P3_has_note>From Ghent</cid:P3_has_note>
+        <cid:P4_has_time-span>1816</cid:P4_has_time-span>
+        <cid:P3_has_note>Bought by Frederick William III of Prussia in 1821; returned under Article 247 of the Treaty of Versailles.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_theft_1934">
+        <rdfs:label>Theft of two panels</rdfs:label>
+        <cid:P4_has_time-span>1934</cid:P4_has_time-span>
+        <cid:P3_has_note>The Just Judges panel has never been recovered.</cid:P3_has_note>
+    </cid:E7>
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_seizure_1942">
+        <rdfs:label>Seizure by Nazi Germany</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Nazi_German_authorities"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q262951"/>
+        <cid:P3_has_note>From Ghent</cid:P3_has_note>
+        <cid:P4_has_time-span>1942</cid:P4_has_time-span>
+        <cid:P3_has_note>Taken from Pau to Germany and stored in the Altaussee salt mine.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_recovery_1945">
+        <rdfs:label>Recovery and return</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q2273396"/>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q262951"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q1296"/>
+        <cid:P4_has_time-span>1945</cid:P4_has_time-span>
+    </cid:E9>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Ghent_Altarpiece_condition">
+        <rdfs:label>Returned</rdfs:label>
+        <cid:P3_has_note>Returned. The Just Judges panel is a copy.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q2273396">
+        <rdfs:label>Monuments, Fine Arts, and Archives program</rdfs:label>
+    </cid:E40>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q938154">
+        <rdfs:label>Saint Bavo&#x27;s Cathedral, Ghent</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q262951">
+        <rdfs:label>Altaussee</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q64">
+        <rdfs:label>Berlin</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1296">
+        <rdfs:label>Ghent</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q90">
+        <rdfs:label>Paris</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/French_revolutionary_commissioners">
+        <rdfs:label>French revolutionary commissioners</rdfs:label>
+    </cid:E74>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/Hubert_and_Jan_van_Eyck">
+        <rdfs:label>Hubert and Jan van Eyck</rdfs:label>
+    </cid:E74>
+    <cid:E74 rdf:about="http://www.itemsontology.com/item_features/Nazi_German_authorities">
+        <rdfs:label>Nazi German authorities</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

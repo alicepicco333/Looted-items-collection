@@ -1,0 +1,12 @@
+{
+  "name": "stolen-archive-llm",
+  "private": true,
+  "type": "module",
+  "description": "Offline Claude enrichment for The Stolen Archive: writes ../llm-data.json and RDF drafts",
+  "scripts": {
+    "enrich": "node enrich.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  }
+}

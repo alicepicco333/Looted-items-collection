@@ -1,0 +1,89 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q7272045">
+        <rdfs:label>Quimbaya Treasure</rdfs:label>
+        <dc:title>The Quimbaya Treasure</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q958351"/>
+        <dc:description>122 gold objects from two tombs found at Filandia in 1890, given by Colombia&#x27;s president Carlos Holguín to Queen Maria Cristina of Spain in 1893. In the Museo de América in Madrid. In 2017 Colombia&#x27;s Constitutional Court ordered the government to seek their return.</dc:description>
+        <dc:subject>Goldwork, Pre-Columbian--Colombia</dc:subject>
+        <dc:subject>Quimbaya Indians</dc:subject>
+        <dc:subject>Funerary objects</dc:subject>
+        <dc:type>Gold objects</dc:type>
+        <dct:created>c. 250–430 CE</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q1525384"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Quimbaya_Treasure_production"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Quimbaya_Treasure_find_1890"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Quimbaya_Treasure_gift_1893"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Quimbaya_Treasure_ruling_2017"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Quimbaya_Treasure_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q2568412"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q2568412"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.675</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-75.6583</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Quimbaya_Treasure_production">
+        <rdfs:label>Making of the Quimbaya Treasure</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q958351"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q1525384"/>
+        <cid:P4_has_time-span>c. 250–430 CE</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Quimbaya_Treasure_find_1890">
+        <rdfs:label>Discovery by guaqueros</rdfs:label>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q1525384"/>
+        <cid:P4_has_time-span>1890</cid:P4_has_time-span>
+        <cid:P3_has_note>Two tombs at La Soledad.</cid:P3_has_note>
+    </cid:E7>
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Quimbaya_Treasure_gift_1893">
+        <rdfs:label>Gift to Queen Regent Maria Cristina</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q2579727"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q2807"/>
+        <cid:P3_has_note>From Filandia, Quindío</cid:P3_has_note>
+        <cid:P4_has_time-span>1893</cid:P4_has_time-span>
+        <cid:P3_has_note>Shown at the Historical American Exposition, Madrid, 1892.</cid:P3_has_note>
+    </cid:E10>
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Quimbaya_Treasure_ruling_2017">
+        <rdfs:label>Constitutional Court ruling SU-649</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q3000937"/>
+        <cid:P4_has_time-span>2017-10-19</cid:P4_has_time-span>
+        <cid:P3_has_note>Ordered the Colombian government to seek the treasure&#x27;s return.</cid:P3_has_note>
+    </cid:E7>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Quimbaya_Treasure_condition">
+        <rdfs:label>Contested</rdfs:label>
+        <cid:P3_has_note>Contested.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q2579727">
+        <rdfs:label>Carlos Holguín Mallarino</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q3000937">
+        <rdfs:label>Constitutional Court of Colombia</rdfs:label>
+    </cid:E40>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q2568412">
+        <rdfs:label>Museo de América</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q1525384">
+        <rdfs:label>Filandia, Quindío</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q2807">
+        <rdfs:label>Madrid</rdfs:label>
+    </cid:E53>
+    <cid:E74 rdf:about="https://www.wikidata.org/wiki/Q958351">
+        <rdfs:label>Quimbaya</rdfs:label>
+    </cid:E74>
+</rdf:RDF>

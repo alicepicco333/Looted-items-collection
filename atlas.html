@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas · The Stolen Archive</title>
+    <meta name="description" content="Where the objects of The Stolen Archive were taken from, where they are held today, and their rooms in the virtual museum.">
+    <link rel="icon" type="image/png" href="images/world-map_favicon.png">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER: same on every page, set aria-current on the current link -->
+    <header class="site-header">
+        <div class="site-header__inner grid">
+            <a class="wordmark" href="index.html">The Stolen<br>Archive<span>.</span></a>
+            <nav class="site-nav" aria-label="Main">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+                <ul class="site-nav__links" id="nav-links">
+                    <li><a href="collection.html"><span class="mono">01</span>Collection</a></li>
+                    <li><a href="tours.html"><span class="mono">02</span>Tours</a></li>
+                    <li><a href="atlas.html" aria-current="page"><span class="mono">03</span>Atlas</a></li>
+                    <li><a href="about.html"><span class="mono">04</span>About</a></li>
+                </ul>
+            </nav>
+            <div class="site-header__actions">
+                <button class="theme-toggle" type="button" aria-pressed="false">
+                    <span class="visually-hidden">Light mode</span>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+                </button>
+                <a class="btn btn--signal" href="Object-page.html" data-start-tour="Timeline Tour">Start tour <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- page intro -->
+        <header class="page-head grid">
+            <p class="section-label"><b>03</b> Atlas</p>
+            <h1 class="page-head__title">Then &amp; now</h1>
+            <p class="page-head__lead">Where each object was taken from, where it is held today, and where you find it in the virtual museum. Hover an object to follow its route; select it to open its page.</p>
+        </header>
+
+        <!-- world -->
+        <section class="section atlas-world" aria-labelledby="world-title">
+            <div class="grid">
+                <p class="section-label"><b>§01</b> World</p>
+                <h2 class="section-title" id="world-title">Thirty routes</h2>
+                <div class="atlas-world__map">
+                    <div id="atlas-map" role="img" aria-label="World map with a line from each object's place of origin to the city where it is held today. The same information is in the list next to it."></div>
+                    <p class="atlas__legend mono">
+                        <span><span class="legend-dot"></span>Place of origin</span>
+                        <span><span class="legend-square"></span>Held today</span>
+                        <span><span class="legend-square legend-square--former"></span>Former holder</span>
+                        <span><span class="legend-line"></span>Removal</span>
+                        <span><span class="legend-line legend-line--returned"></span>Since returned</span>
+                    </p>
+                </div>
+                <ol class="atlas-list" id="atlas-list" aria-label="Objects, from origin to current location"></ol>
+            </div>
+        </section>
+
+        <!-- museum -->
+        <section class="section atlas-museum" aria-labelledby="museum-title">
+            <div class="grid">
+                <p class="section-label"><b>§02</b> Museum</p>
+                <h2 class="section-title" id="museum-title">Two floors, twelve rooms</h2>
+                <div class="atlas-museum__plan">
+                <div class="floor-switch tabs" role="tablist" aria-label="Museum floors" data-for="floor-plan">
+                    <button type="button" class="tab" role="tab" data-floor="1" aria-selected="true">Floor 1<small>Rooms 1–8</small></button>
+                    <button type="button" class="tab" role="tab" data-floor="2" aria-selected="false" tabindex="-1">Floor 2<small>Rooms 9–13</small></button>
+                </div>
+                <svg id="floor-plan" class="museum-map" viewBox="60 96 728 518" role="img" aria-labelledby="floor-plan-title" xmlns="http://www.w3.org/2000/svg">
+                    <title id="floor-plan-title">Museum floor plans with the thirty objects</title>
+                    <!-- floor 1: rooms 1-8 (walls, room numbers, stairs) -->
+                    <g class="museum-floor" data-floor="1">
+                        <g class="museum-map-walls">
+                            <rect x="64" y="117" width="720" height="475" rx="9"/>
+                            <path d="M186 593V362C186 360.343 187.343 359 189 359H338"/>
+                            <path d="M527 259H737.5"/>
+                            <path d="M338 470H705.5"/>
+                            <path d="M192 115.5V281"/>
+                            <path d="M526 117V358.5"/>
+                            <path d="M337 358.5V524.5"/>
+                            <path d="M343.5 117V271"/>
+                        </g>
+                        <!-- room numbers -->
+                        <g class="museum-map-labels">
+                            <path data-room="1" d="M87.02 147V145.041H90.8176V137.102H87.6058V135.486C90.5752 135.284 91.1408 134.274 91.4034 133.264H93.2214V145.041H96.716V147H87.02ZM98.968 144.172H101.796V147H98.968V144.172Z"/>
+                            <path data-room="2" d="M211.717 146V143.98L216.282 139.92C217.817 138.566 218.767 137.718 218.767 136.385C218.767 135.294 218.019 134.284 216.464 134.284C214.888 134.284 214.08 135.355 214.06 137.334H211.636C211.434 134.001 213.636 132.062 216.646 132.062C219.656 132.062 221.231 133.981 221.231 136.102C221.231 138.364 219.959 139.879 218.282 141.233L215.373 143.576H221.292V146H211.717ZM223.968 143.172H226.796V146H223.968V143.172Z"/>
+                            <path data-room="3" d="M369.313 137.9H370.444C371.676 137.9 372.524 137.072 372.524 136.021C372.524 135.072 371.979 134.284 370.383 134.284C368.626 134.284 368.161 135.375 368.02 136.93H365.596C365.394 134.607 367.192 132.062 370.605 132.062C373.615 132.062 375.11 134.042 375.11 135.718C375.11 136.991 374.605 138.183 373.373 138.768C374.807 139.455 375.393 140.445 375.393 141.758C375.393 144.081 373.615 146.202 370.403 146.202C366.99 146.202 365.192 143.657 365.394 141.334H367.818C367.757 142.748 368.606 143.98 370.383 143.98C371.979 143.98 372.726 143.051 372.726 141.758C372.726 140.627 371.999 139.718 370.444 139.718H369.313V137.9ZM377.968 143.172H380.796V146H377.968V143.172Z"/>
+                            <path data-room="4" d="M363.212 383.728V381.708L369.211 373.264H371.817V381.708H374.241V383.728H371.817V387H369.211V383.728H363.212ZM365.495 381.708H369.211V376.617L365.495 381.708ZM375.968 384.172H378.796V387H375.968V384.172Z"/>
+                            <path data-room="7" d="M363.576 491.264H373.878V492.88C371.252 494.9 368.949 497.506 368.949 505H365.757C365.757 499.889 368.141 495.748 370.242 493.688H363.576V491.264ZM375.968 502.172H378.796V505H375.968V502.172Z"/>
+                            <path data-room="8" d="M216.504 388.202C213.798 388.202 211.616 386.647 211.616 384.122C211.616 382.607 212.404 381.435 213.616 380.748C212.646 380.122 212.02 379.152 212.02 377.9C212.02 375.658 213.697 374.062 216.504 374.062C219.332 374.062 221.029 375.658 221.029 377.9C221.029 379.152 220.403 380.122 219.433 380.728C220.686 381.415 221.433 382.586 221.433 384.122C221.433 386.647 219.373 388.202 216.504 388.202ZM216.504 379.657C217.737 379.657 218.504 379.092 218.504 377.981C218.504 376.87 217.737 376.304 216.504 376.304C215.272 376.304 214.525 376.87 214.525 377.981C214.525 379.092 215.272 379.657 216.504 379.657ZM216.504 386.202C217.939 386.202 218.908 385.313 218.908 384.081C218.908 382.849 217.939 381.94 216.504 381.94C215.07 381.94 214.121 382.849 214.121 384.081C214.121 385.313 215.07 386.202 216.504 386.202ZM223.968 385.172H226.796V388H223.968V385.172Z"/>
+                            <path data-room="5" d="M553.464 283.001H550.959C551.384 280.314 551.626 278.294 551.687 275.284L559.969 275.264V277.688H553.747L553.505 280.536C554.191 280.051 555.06 279.769 556.252 279.769C558.817 279.769 560.453 281.667 560.453 284.354C560.453 287.081 558.393 289.202 555.403 289.202C552.919 289.202 550.454 287.263 550.959 284.213H553.181C553.02 286.01 553.989 286.98 555.525 286.98C557.1 286.98 557.949 285.788 557.949 284.374C557.949 282.96 557.262 281.647 555.565 281.647C554.272 281.647 553.626 282.455 553.464 283.001ZM562.968 286.172H565.796V289H562.968V286.172Z"/>
+                            <path data-room="6" d="M560.635 141.354C560.635 144.081 558.777 146.202 555.828 146.202C552.636 146.202 550.616 143.475 550.616 139.334C550.616 134.789 552.899 132.062 556.312 132.062C559.1 132.062 560.514 134.001 560.514 135.92H558.09C557.969 135.274 557.565 134.264 555.908 134.264C554.151 134.264 553.02 135.476 552.899 138.243C553.686 137.314 554.717 136.647 556.434 136.647C558.999 136.647 560.635 138.667 560.635 141.354ZM555.868 139.011C554.252 139.011 553.606 140.203 553.606 141.617C553.606 143.031 554.252 144.222 555.868 144.222C557.484 144.222 558.13 143.031 558.13 141.617C558.13 140.203 557.484 139.011 555.868 139.011ZM562.968 143.172H565.796V146H562.968V143.172Z"/>
+                        </g>
+                        <g class="museum-map-stairs" aria-hidden="true"><rect x="712" y="522" width="60" height="58"/><path d="M712 534H772M712 546H772M712 558H772M712 570H772"/></g>
+                    </g>
+                    <!-- floor 2: rooms 9-13 -->
+                    <g class="museum-floor" data-floor="2" hidden>
+                        <g class="museum-map-walls">
+                            <rect x="64" y="117" width="720" height="475" rx="9"/>
+                            <path d="M300 117V250M300 290V420M300 460V592"/>
+                            <path d="M64 400H140M180 400H300"/>
+                            <path d="M560 117V200M560 240V330"/>
+                            <path d="M300 330H400M440 330H640M680 330H784"/>
+                        </g>
+                        <g class="museum-map-labels museum-map-labels--text">
+                            <text data-room="9" x="86" y="147">9.</text>
+                            <text data-room="10" x="322" y="147">10.</text>
+                            <text data-room="11" x="582" y="147">11.</text>
+                            <text data-room="12" x="86" y="430">12.</text>
+                            <text data-room="13" x="322" y="360">13.</text>
+                        </g>
+                        <g class="museum-map-stairs" aria-hidden="true"><rect x="712" y="522" width="60" height="58"/><path d="M712 534H772M712 546H772M712 558H772M712 570H772"/></g>
+                    </g>
+                    <!-- numbered markers, added by atlas.js from inventory.js -->
+                    <g id="floor-markers"></g>
+                </svg>
+                </div>
+                <ol class="room-list" id="room-list" aria-label="Rooms and their objects"></ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: same on every page -->
+    <footer class="site-footer grid">
+        <p class="site-footer__word" aria-hidden="true">The Stolen <span>Archive</span></p>
+        <div class="site-footer__col">
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="atlas.html">Atlas</a></li>
+                <li><a href="about.html">About &amp; team</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+            </ul>
+        </div>
+        <div class="site-footer__col site-footer__col--wide">
+            <h2>The project</h2>
+            <p>Developed for the final examination of Information Modelling and Web Technologies, held by professor Fabio Vitali, in the Master's Degree in Digital Humanities and Digital Knowledge at Alma Mater Studiorum, University of Bologna. It will not be maintained or updated past the scope of the course's examination.</p>
+        </div>
+        <div class="site-footer__col">
+            <h2>Contact</h2>
+            <p>Claims or suggestions? Reach us through the <a href="about.html#contact">team page</a>.</p>
+        </div>
+        <div class="site-footer__legal mono">
+            <span>© 2024 The Stolen Archive</span>
+            <span>Inv. 001 — 030</span>
+        </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="inventory.js"></script>
+    <script src="atlas-map.js"></script>
+    <script src="atlas.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q3100139">
+        <rdfs:label>Dendera Zodiac</rdfs:label>
+        <dc:title>The Dendera Zodiac</dc:title>
+        <dc:creator>Unknown (Ptolemaic Egypt)</dc:creator>
+        <dc:description>Sandstone ceiling relief from a chapel on the roof of the Temple of Hathor at Dendera, a map of the sky with the zodiac and constellations. Cut out with explosives in 1820 and taken to Paris; in the Louvre since 1922. Egypt has asked for its return.</dc:description>
+        <dc:subject>Astronomy, Egyptian</dc:subject>
+        <dc:subject>Zodiac</dc:subject>
+        <dc:subject>Temple of Hathor (Dendera)</dc:subject>
+        <dc:type>Ceiling relief</dc:type>
+        <dct:created>c. 50 BCE</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q735254"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Dendera_Zodiac_production"/>
+        <cid:P25i_moved_by rdf:resource="http://www.itemsontology.com/item_features/Dendera_Zodiac_removal_1820"/>
+        <cid:P24i_changed_ownership_through rdf:resource="http://www.itemsontology.com/item_features/Dendera_Zodiac_purchase_1821"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Dendera_Zodiac_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q19675"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q19675"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">26.1417</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.67</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Dendera_Zodiac_production">
+        <rdfs:label>Making of the Dendera Zodiac</rdfs:label>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q735254"/>
+        <cid:P4_has_time-span>c. 50 BCE</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E9 rdf:about="http://www.itemsontology.com/item_features/Dendera_Zodiac_removal_1820">
+        <rdfs:label>Removal from the temple</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Jean-Baptiste_Lelorrain"/>
+        <cid:P27_moved_from rdf:resource="https://www.wikidata.org/wiki/Q735254"/>
+        <cid:P26_moved_to rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P4_has_time-span>1820</cid:P4_has_time-span>
+        <cid:P3_has_note>Cut out with saws, chisels and gunpowder for the collector Sébastien Louis Saulnier.</cid:P3_has_note>
+    </cid:E9>
+    <cid:E8 rdf:about="http://www.itemsontology.com/item_features/Dendera_Zodiac_purchase_1821">
+        <rdfs:label>Purchase by Louis XVIII</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="http://www.itemsontology.com/item_features/Sebastien_Louis_Saulnier"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q90"/>
+        <cid:P4_has_time-span>1821</cid:P4_has_time-span>
+        <cid:P3_has_note>Shown in the royal library, in the Louvre since 1922.</cid:P3_has_note>
+    </cid:E8>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Dendera_Zodiac_condition">
+        <rdfs:label>Contested</rdfs:label>
+        <cid:P3_has_note>Contested. Egypt asks for its return.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="http://www.itemsontology.com/item_features/Jean-Baptiste_Lelorrain">
+        <rdfs:label>Jean-Baptiste Lelorrain</rdfs:label>
+    </cid:E21>
+    <cid:E21 rdf:about="http://www.itemsontology.com/item_features/Sebastien_Louis_Saulnier">
+        <rdfs:label>Sébastien Louis Saulnier</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q19675">
+        <rdfs:label>Louvre</rdfs:label>
+    </cid:E40>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q735254">
+        <rdfs:label>Dendera temple complex</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q90">
+        <rdfs:label>Paris</rdfs:label>
+    </cid:E53>
+</rdf:RDF>

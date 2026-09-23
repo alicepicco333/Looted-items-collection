@@ -128,3 +128,8 @@ document.addEventListener('click', (event) => {
     }
   });
 
+
+// Escape closes the enlarged image
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
+});

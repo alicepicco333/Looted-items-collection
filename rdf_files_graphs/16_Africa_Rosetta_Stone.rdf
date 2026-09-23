@@ -1,0 +1,90 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dct="http://purl.org/dc/terms/"
+ xmlns:cid="http://www.cidoc-crm.org/cidoc-crm/"
+ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+ xmlns:dir="https://www.wikidata.org/prop/direct/"
+ xmlns:wiki="https://www.wikidata.org/wiki/">
+    <!-- Written September 2026. Wikidata identifiers were checked against the Wikipedia
+         articles' linked Wikidata items; entities without one use itemsontology URIs. -->
+
+    <!-- the object -->
+    <cid:E22 rdf:about="https://www.wikidata.org/wiki/Q48584">
+        <rdfs:label>Rosetta Stone</rdfs:label>
+        <dc:title>The Rosetta Stone</dc:title>
+        <dc:creator rdf:resource="https://www.wikidata.org/wiki/Q39957"/>
+        <dc:description>Granodiorite stele inscribed with a decree of 196 BCE in hieroglyphic, Demotic and ancient Greek, the key to the decipherment of Egyptian hieroglyphs. Found by French soldiers in 1799 and surrendered to the British under the Capitulation of Alexandria in 1801; in the British Museum since 1802.</dc:description>
+        <dc:subject>Hieroglyphics</dc:subject>
+        <dc:subject>Egyptian language--Demotic</dc:subject>
+        <dc:subject>Decipherment</dc:subject>
+        <dc:type>Stele</dc:type>
+        <dct:created>196 BCE</dct:created>
+        <dct:spatial rdf:resource="https://www.wikidata.org/wiki/Q5715"/>
+        <cid:P108i_was_produced_by rdf:resource="http://www.itemsontology.com/item_features/Rosetta_Stone_production"/>
+        <cid:P12i_was_present_at rdf:resource="http://www.itemsontology.com/item_features/Rosetta_Stone_find_1799"/>
+        <cid:P30i_custody_transferred_through rdf:resource="http://www.itemsontology.com/item_features/Rosetta_Stone_transfer_1801"/>
+        <cid:P44_has_condition rdf:resource="http://www.itemsontology.com/item_features/Rosetta_Stone_condition"/>
+        <cid:P55_has_current_location rdf:resource="https://www.wikidata.org/wiki/Q6373"/>
+        <cid:P52_has_current_owner rdf:resource="https://www.wikidata.org/wiki/Q6373"/>
+        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">31.4044</geo:lat>
+        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.4164</geo:long>
+    </cid:E22>
+
+    <!-- making -->
+    <cid:E12 rdf:about="http://www.itemsontology.com/item_features/Rosetta_Stone_production">
+        <rdfs:label>Making of the Rosetta Stone</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q39957"/>
+        <cid:P3_has_note>Ptolemy V Epiphanes: decree issued for</cid:P3_has_note>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q5715"/>
+        <cid:P4_has_time-span>196 BCE</cid:P4_has_time-span>
+    </cid:E12>
+
+    <!-- history -->
+    <cid:E7 rdf:about="http://www.itemsontology.com/item_features/Rosetta_Stone_find_1799">
+        <rdfs:label>Discovery by French soldiers</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q253684"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q243699"/>
+        <cid:P4_has_time-span>1799</cid:P4_has_time-span>
+        <cid:P3_has_note>Found built into a wall of Fort Julien near Rashid.</cid:P3_has_note>
+    </cid:E7>
+    <cid:E10 rdf:about="http://www.itemsontology.com/item_features/Rosetta_Stone_transfer_1801">
+        <rdfs:label>Surrender to the British</rdfs:label>
+        <cid:P14_carried_out_by rdf:resource="https://www.wikidata.org/wiki/Q5035987"/>
+        <cid:P7_took_place_at rdf:resource="https://www.wikidata.org/wiki/Q84"/>
+        <cid:P3_has_note>From Alexandria</cid:P3_has_note>
+        <cid:P4_has_time-span>1801</cid:P4_has_time-span>
+        <cid:P3_has_note>Under Article 16 of the Capitulation of Alexandria.</cid:P3_has_note>
+    </cid:E10>
+    <cid:E3 rdf:about="http://www.itemsontology.com/item_features/Rosetta_Stone_condition">
+        <rdfs:label>Contested</rdfs:label>
+        <cid:P3_has_note>Contested. Egyptian archaeologists call for its return.</cid:P3_has_note>
+    </cid:E3>
+
+    <!-- people, institutions and places -->
+    <cid:E21 rdf:about="https://www.wikidata.org/wiki/Q39957">
+        <rdfs:label>Ptolemy V Epiphanes</rdfs:label>
+    </cid:E21>
+    <cid:E40 rdf:about="https://www.wikidata.org/wiki/Q6373">
+        <rdfs:label>British Museum</rdfs:label>
+    </cid:E40>
+    <cid:E5 rdf:about="https://www.wikidata.org/wiki/Q5035987">
+        <rdfs:label>Capitulation of Alexandria (1801)</rdfs:label>
+    </cid:E5>
+    <cid:E5 rdf:about="https://www.wikidata.org/wiki/Q253684">
+        <rdfs:label>French invasion of Egypt and Syria</rdfs:label>
+    </cid:E5>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q87">
+        <rdfs:label>Alexandria</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q84">
+        <rdfs:label>London</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q5715">
+        <rdfs:label>Memphis, Egypt</rdfs:label>
+    </cid:E53>
+    <cid:E53 rdf:about="https://www.wikidata.org/wiki/Q243699">
+        <rdfs:label>Rashid (Rosetta)</rdfs:label>
+    </cid:E53>
+</rdf:RDF>
